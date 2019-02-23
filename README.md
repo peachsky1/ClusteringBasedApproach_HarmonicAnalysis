@@ -20,7 +20,7 @@ $ py pitchFinder.py -i sample
 >>![](dumpfile/pitchSet.gif)
 
 >Final result looks like
->>![](dump_files/Screen Shot 2019-02-23 at 1.21.42 AM.png)
+>>![](dumpfile/y.png)
 
 ## Input & Output
 Input
