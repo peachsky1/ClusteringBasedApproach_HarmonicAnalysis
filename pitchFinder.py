@@ -31,12 +31,13 @@ def csv_generator(df_X, d):
 	print("filename: \"{}\" has been successfully created :^D".format(filename))
 
 
-def csv_gen(df_X, directoryName, pieceName, composerName):
+def csv_gen(df_X, directoryName, pieceName, composerName, optionalString):
 	directory = directoryName
 	cwd = os.getcwd()
 	title = str(pieceName)
 	composer = str(composerName)
-	filename = 'pitchSet_' + title + '_by_' + composer + '.csv'
+	opt = str(optionalString)
+	filename = opt +'_pitchSet_' + title + '_by_' + composer + '.csv'
 	dir_path = os.path.join(cwd,directory)
 	new_path = os.path.join(dir_path,composer)
 	# print(df_X)
@@ -60,25 +61,45 @@ def pitchSet(df_x):
 	offset_begin = head_node['offset'].iloc[0]
 	offset_end = tail_node['offset'].iloc[0]
 	offsetRange = str(offset_begin) + " to " + str(offset_end)
-	# print(offsetRange)
-	# df_x["offsetRange"] = offsetRange
-	# print(df_x)
 	
-	str_list=[]
+	pitch_list=[]
+	oct_list = []
 	for index, row in df_x.iterrows():
 		k = row['PCsInNormalForm']
-		# converting str to list
+		m = row['octScalePitch']
 		k = ast.literal_eval(k)
-		str_list +=k
-	list_set = set(str_list)
-	# print(list_set)
-	# print(offsetRange)
-	# print(list_set)
-	data_row = [(offsetRange,list_set)]
-	df_new = pd.DataFrame(data_row, columns=['offsetRange','pitchSet'])
+		pitch_list +=k
+		oct_list +=m
+
+	# k.sort(key=lambda x:(not x.islower(), x))
+	# sorted(k)
+	k = k.sort()
+	# sorted(pitch_list)
+	# sorted(oct_list)
+
+	# print(pitch_list)
+	# print(oct_list)
+	# sorted(oct_list_set)
+	# sorted(list_set)
+
+
+
+
+	list_set = set(pitch_list)
+	oct_list_set = set(oct_list)
+	list_set = sorted(list_set)
+	oct_list_set = sorted(oct_list_set)
+	data_row = [(offsetRange,list_set,oct_list_set)]
+
+	df_new = pd.DataFrame(data_row, columns=['offsetRange','pitchSet','oct_list_set'])
 
 	# returning df which has 2 col('offsetRange', 'pitchSet') of CHUNK splitted by user custom offset interval 
 	return df_new
+def octScalePitch(c):
+	s = c['Chord']
+	l = s[21:-1].split()
+	# print(l)
+	return l
 
 def main():
 	
@@ -106,6 +127,8 @@ def main():
 			# defining engine to avoid memory overflow issue
 			df= pd.read_csv(path, engine="python")
 			# print(df)
+			df['octScalePitch'] = df.apply(octScalePitch, axis = 1)
+
 			piece_name = df['file'].iloc[0]
 			composer_name = df['Composer'].iloc[0]
 
@@ -114,36 +137,34 @@ def main():
 			last_offset = chunk_count * offset_term
 
 			chunk_list = list(range(0,last_offset,offset_term))
-			df_final = pd.DataFrame()
+			df_pitchSetOnly = pd.DataFrame()
 			# k = None
+			df_att2 = pd.DataFrame(columns=['offsetRange','pitchSet','oct_list_set'])
 			for x in chunk_list:
-				# print(x)
 				k = df[(df['offset']>=x)&(df['offset']<x+offset_term)]
 				df_row = pitchSet(k)
-				df_final = df_final.append(df_row, ignore_index=True)
-			print(df_final)
+				df_att = pd.DataFrame(columns=['offsetRange','pitchSet','oct_list_set'])
+				for z in range(len(k)):
+					# print(z)
+					df_att = df_att.append(df_row, ignore_index=True)
+				c1 = df_row['offsetRange']
+				c2 = df_row['pitchSet']
+				c3 = df_row['oct_list_set']
+				df_pitchSetOnly = df_pitchSetOnly.append(df_row, ignore_index=True)
+				df_att2 = df_att2.append(df_att,ignore_index=True)
+
+			df['offsetRange'] = df_att2['offsetRange']
+			df['pitchSet'] = df_att2['pitchSet']
+			df['oct_list_set'] = df_att2['oct_list_set']
+			print(df)
+			optionalString = ""
+
+			csv_gen(df_pitchSetOnly, directory, piece_name, composer_name,"pitchSetOnly")
+			csv_gen(df, directory, piece_name, composer_name,optionalString)
 
 
-			csv_gen(df_final, directory, piece_name, composer_name)
 
 
-			# print(df_final)
-
-			# print(df['offset']==df['offset'].between(4,4+offset_term))
-			# df = df[(df['offset'] >= 4) & (df['offset'] < 8)]
-			# print(df)
-			# print(k)
-			# print(df['offset'].between(0,4))
-
-			# This will return the entire row with max value
-			# df[df['Value']==df['Value'].max()]
-
-			# # taking col name as "file" which is title
-			# df_file = df["file"]
-			# # eliminating duplicates and store as list
-			# df_unique_list = df_file.unique().tolist()
-			# for x in df_unique_list:
-			# 	csv_generator(splitter(df,x),directory)
 
 		# ignoring some other log files
 		else:
