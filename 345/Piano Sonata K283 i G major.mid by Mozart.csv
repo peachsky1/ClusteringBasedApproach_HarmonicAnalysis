@@ -1,0 +1,1183 @@
+offset,Chord,NormalForm,PCsInNormalForm,GlobalScaleDegrees,HighestPitch,LowestPitch,file,Composer,LocalTonic,LocalMode,LocalSDForm_BassSD,Confidence
+2.0,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+2.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+3.0,<music21.chord.Chord D5 G3>,"[0, 5]","[2, 7]","[7, 0]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_0",0.9044384604286004
+3.5,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.9044384604286004
+3.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+4.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+4.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+5.0,<music21.chord.Chord G4 D4>,"[0, 5]","[2, 7]","[7, 0]",67,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9044384604286004
+5.5,<music21.chord.Chord G4 B3>,"[0, 4]","[7, 11]","[0, 4]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9044384604286004
+6.0,<music21.chord.Chord F#4 A3>,"[0, 3]","[6, 9]","[11, 2]",66,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_2",0.9044384604286004
+6.5,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9044384604286004
+7.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+7.5,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9044384604286004
+8.0,<music21.chord.Chord A5 D4>,"[0, 5]","[9, 2]","[2, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9044384604286004
+8.5,<music21.chord.Chord A5 C4>,"[0, 3]","[9, 0]","[2, 5]",81,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_5",0.9044384604286004
+8.75,<music21.chord.Chord F#5 C4>,"[0, 6]","[0, 6]","[5, 11]",78,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_5",0.9044384604286004
+9.0,<music21.chord.Chord A5 F#3>,"[0, 3]","[6, 9]","[11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9044384604286004
+9.5,<music21.chord.Chord A5 A3>,[0],[9],[2],81,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9044384604286004
+9.75,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9044384604286004
+10.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+10.5,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.8912249825447328
+11.0,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8912249825447328
+11.5,<music21.chord.Chord C5 A3>,"[0, 3]","[9, 0]","[2, 5]",72,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.8866640197695539
+12.0,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.8866640197695539
+12.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8866640197695539
+13.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8866640197695539
+13.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8866640197695539
+14.0,<music21.chord.Chord G5 G3>,[0],[7],[0],79,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8866640197695539
+14.625,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8866640197695539
+14.75,<music21.chord.Chord F#5 G3>,"[0, 1]","[6, 7]","[11, 0]",78,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0]_0",0.8866640197695539
+15.0,<music21.chord.Chord F#5 C4 G4>,"[0, 1, 6]","[6, 7, 0]","[11, 0, 5]",78,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0, 5]_5",0.8866640197695539
+15.375,<music21.chord.Chord C4 G4>,"[0, 5]","[7, 0]","[0, 5]",67,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 0]_0",0.8616187791092129
+15.5,<music21.chord.Chord E5 C4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",76,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 4, 7]_0",0.8616187791092129
+15.75,<music21.chord.Chord C4 G4>,"[0, 5]","[7, 0]","[0, 5]",67,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 0]_0",0.8616187791092129
+16.0,<music21.chord.Chord E5 C4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",76,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 4, 7]_0",0.8616187791092129
+16.875,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8616187791092129
+17.0,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8616187791092129
+17.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9022000848045284
+18.0,<music21.chord.Chord E5 B3 G4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_4",0.9022000848045284
+18.375,<music21.chord.Chord B3 G4>,"[0, 4]","[7, 11]","[0, 4]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9279117986139728
+18.5,<music21.chord.Chord D5 B3 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9279117986139728
+18.75,<music21.chord.Chord B3 G4>,"[0, 4]","[7, 11]","[0, 4]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9279117986139728
+19.0,<music21.chord.Chord D5 B3 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9279117986139728
+19.875,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9374152003850316
+20.0,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9374152003850316
+20.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9706823054881693
+21.0,<music21.chord.Chord D5 A3 C4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_2",0.9706823054881693
+21.33333333,<music21.chord.Chord A3 C4>,"[0, 3]","[9, 0]","[2, 5]",60,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9706823054881693
+22.0,<music21.chord.Chord D5 G3 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.9706823054881693
+22.33333333,<music21.chord.Chord G3 B3>,"[0, 4]","[7, 11]","[0, 4]",59,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9706823054881693
+23.0,<music21.chord.Chord D5 F#3 A3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.9706823054881693
+23.33333333,<music21.chord.Chord F#3 A3>,"[0, 3]","[6, 9]","[11, 2]",57,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9706823054881693
+24.0,<music21.chord.Chord D5 G3 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.9706823054881693
+24.25,<music21.chord.Chord E5 G3 B3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_0",0.9706823054881693
+24.5,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9706823054881693
+24.75,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9706823054881693
+25.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9706823054881693
+25.25,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9706823054881693
+25.5,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9706823054881693
+25.75,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9706823054881693
+26.0,<music21.chord.Chord C6 E3 G3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",84,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.9706823054881693
+26.25,<music21.chord.Chord B5 E3 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",83,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_9",0.9706823054881693
+26.5,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9706823054881693
+26.75,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9706823054881693
+27.0,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9706823054881693
+27.25,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9706823054881693
+27.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9706823054881693
+27.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9706823054881693
+28.0,<music21.chord.Chord B4 G3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9706823054881693
+28.25,<music21.chord.Chord D5 G3 D3>,"[0, 5]","[2, 7]","[7, 0]",74,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9706823054881693
+28.5,<music21.chord.Chord B4 G3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9706823054881693
+28.75,<music21.chord.Chord G4 G3 D3>,"[0, 5]","[2, 7]","[7, 0]",67,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9706823054881693
+29.0,<music21.chord.Chord A4 C4 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.9706823054881693
+29.25,<music21.chord.Chord C5 C4 D3>,"[0, 2]","[0, 2]","[5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.938578945731827
+29.5,<music21.chord.Chord A4 C4 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.938578945731827
+29.75,<music21.chord.Chord F#4 C4 D3>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",66,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_7",0.938578945731827
+30.0,<music21.chord.Chord G4 G3 B3>,"[0, 4]","[7, 11]","[0, 4]",67,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.938578945731827
+31.0,<music21.chord.Chord G2>,[0],[7],[0],43,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.938578945731827
+32.0,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8044324902214911
+32.75,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,0,major,[6]_6,0.8044324902214911
+33.0,<music21.chord.Chord F#4 C3 G3>,"[0, 1, 6]","[6, 7, 0]","[11, 0, 5]",66,48,Piano Sonata K283 i G major.mid,Mozart,0,major,"[6, 7, 0]_0",0.8044324902214911
+33.375,<music21.chord.Chord C3 G3>,"[0, 5]","[7, 0]","[0, 5]",55,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_5",0.905288003420941
+33.5,<music21.chord.Chord E4 C3 G3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",64,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.905288003420941
+33.75,<music21.chord.Chord C3 G3>,"[0, 5]","[7, 0]","[0, 5]",55,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_5",0.905288003420941
+34.0,<music21.chord.Chord E4 C3 G3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",64,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.905288003420941
+34.625,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.905288003420941
+35.0,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.905288003420941
+35.75,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9351655303592477
+36.0,<music21.chord.Chord E4 B2 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",64,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_4",0.9351655303592477
+36.375,<music21.chord.Chord B2 G3>,"[0, 4]","[7, 11]","[0, 4]",55,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9590265935656528
+36.5,<music21.chord.Chord D4 B2 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",62,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9590265935656528
+36.75,<music21.chord.Chord B2 G3>,"[0, 4]","[7, 11]","[0, 4]",55,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9590265935656528
+37.0,<music21.chord.Chord D4 B2 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",62,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9590265935656528
+37.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9650773797337808
+38.0,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9650773797337808
+38.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9835092794281942
+39.0,<music21.chord.Chord D5 A3 C4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_2",0.9835092794281942
+39.5,<music21.chord.Chord A3 C4>,"[0, 3]","[9, 0]","[2, 5]",60,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9835092794281942
+40.0,<music21.chord.Chord D5 G3 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.9835092794281942
+40.5,<music21.chord.Chord G3 B3>,"[0, 4]","[7, 11]","[0, 4]",59,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9835092794281942
+41.0,<music21.chord.Chord D5 F#3 A3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.9835092794281942
+41.5,<music21.chord.Chord F#3 A3>,"[0, 3]","[6, 9]","[11, 2]",57,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9835092794281942
+42.0,<music21.chord.Chord D5 G3 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.9835092794281942
+42.25,<music21.chord.Chord E5 G3 B3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_0",0.9835092794281942
+42.5,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9835092794281942
+42.75,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9835092794281942
+43.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9835092794281942
+43.25,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9835092794281942
+43.5,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9835092794281942
+43.75,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9835092794281942
+44.0,<music21.chord.Chord C6 E3 G3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",84,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.9835092794281942
+44.25,<music21.chord.Chord B5 E3 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",83,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_9",0.9835092794281942
+44.5,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9835092794281942
+44.75,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9835092794281942
+45.0,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9835092794281942
+45.25,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9835092794281942
+45.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9835092794281942
+45.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9835092794281942
+46.0,<music21.chord.Chord B4 G3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9835092794281942
+46.25,<music21.chord.Chord D5 G3 D3>,"[0, 5]","[2, 7]","[7, 0]",74,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9835092794281942
+46.5,<music21.chord.Chord B4 G3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9835092794281942
+46.75,<music21.chord.Chord G4 G3 D3>,"[0, 5]","[2, 7]","[7, 0]",67,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9835092794281942
+47.0,<music21.chord.Chord A4 C4 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.9835092794281942
+47.25,<music21.chord.Chord C5 C4 D3>,"[0, 2]","[0, 2]","[5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.959680852749112
+47.5,<music21.chord.Chord A4 C4 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.959680852749112
+47.75,<music21.chord.Chord F#4 C4 D3>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",66,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_7",0.959680852749112
+48.0,<music21.chord.Chord G4 G3 B3>,"[0, 4]","[7, 11]","[0, 4]",67,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.959680852749112
+49.5,<music21.chord.Chord G3 G1 G2>,[0],[7],[0],55,31,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8797766742090906
+49.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8797766742090906
+50.0,<music21.chord.Chord A3 A1 A2>,[0],[9],[2],57,33,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.8797766742090906
+50.25,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8651970715779368
+50.5,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8651970715779368
+50.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8651970715779368
+51.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8651970715779368
+52.5,<music21.chord.Chord A3 A1 A2>,[0],[9],[2],57,33,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.8651970715779368
+52.75,<music21.chord.Chord C4 A1 A2>,"[0, 3]","[9, 0]","[2, 5]",60,33,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.8651970715779368
+52.875,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8651970715779368
+53.0,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8651970715779368
+53.25,<music21.chord.Chord D4 B1 B2>,"[0, 3]","[11, 2]","[4, 7]",62,35,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.8651970715779368
+53.375,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8651970715779368
+53.5,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8651970715779368
+53.75,<music21.chord.Chord E4 C2 C3>,"[0, 4]","[0, 4]","[5, 9]",64,36,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.8651970715779368
+53.875,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.8651970715779368
+54.0,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8651970715779368
+55.5,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8083777610865062
+55.625,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8083777610865062
+55.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+56.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8083777610865062
+56.125,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8083777610865062
+56.25,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8083777610865062
+56.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+56.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+56.75,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,0,major,[5]_5,0.8083777610865062
+57.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8083777610865062
+57.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+57.25,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,7,major,[10]_10,0.9481254578445938
+57.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+57.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+57.75,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+58.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9481254578445938
+58.125,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9481254578445938
+58.25,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+58.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+58.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+58.75,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,7,major,[10]_10,0.9481254578445938
+59.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+59.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+59.25,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+59.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+59.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+59.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+60.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+60.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+60.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+60.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+60.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+60.75,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+61.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+61.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+61.25,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+61.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+61.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9481254578445938
+61.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+62.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+62.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+62.25,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+62.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+62.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+62.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9481254578445938
+63.0,<music21.chord.Chord B4 B2 B3>,[0],[11],[4],71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+63.125,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+63.25,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9481254578445938
+63.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+63.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+63.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+64.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+64.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9481254578445938
+64.25,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+64.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+64.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9481254578445938
+64.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9481254578445938
+65.0,<music21.chord.Chord B4 B2 B3>,[0],[11],[4],71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+65.125,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9481254578445938
+65.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+65.5,<music21.chord.Chord C#5 C#3 C#4>,[0],[1],[6],73,49,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9481254578445938
+65.625,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9481254578445938
+65.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9481254578445938
+66.0,<music21.chord.Chord D5 D3 D4>,[0],[2],[7],74,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9481254578445938
+67.0,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9326722882707356
+69.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9326722882707356
+69.5,<music21.chord.Chord A5 A4>,[0],[9],[2],81,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9326722882707356
+70.0,<music21.chord.Chord A5 E4>,"[0, 5]","[4, 9]","[9, 2]",81,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_2",0.9326722882707356
+70.5,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9361485839927124
+71.0,<music21.chord.Chord G5 D4>,"[0, 5]","[2, 7]","[7, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 5]_0",0.9361485839927124
+71.5,<music21.chord.Chord F#5 A4>,"[0, 3]","[6, 9]","[11, 2]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9361485839927124
+72.0,<music21.chord.Chord F#5 C#4>,"[0, 5]","[1, 6]","[6, 11]",78,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 4]_11",0.9361485839927124
+72.5,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9361485839927124
+73.0,<music21.chord.Chord E5 B3>,"[0, 5]","[11, 4]","[4, 9]",76,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 2]_9",0.9361485839927124
+73.5,<music21.chord.Chord D5 A4>,"[0, 5]","[9, 2]","[2, 7]",74,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_7",0.9361485839927124
+74.0,<music21.chord.Chord D5 A3>,"[0, 5]","[9, 2]","[2, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_7",0.9361485839927124
+74.5,<music21.chord.Chord C#5 A4>,"[0, 4]","[9, 1]","[2, 6]",73,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9361485839927124
+75.0,<music21.chord.Chord E5 B3>,"[0, 5]","[11, 4]","[4, 9]",76,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 2]_9",0.9361485839927124
+75.25,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0]_9",0.9361485839927124
+75.5,<music21.chord.Chord D5 A4>,"[0, 5]","[9, 2]","[2, 7]",74,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_7",0.9361485839927124
+75.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9361485839927124
+76.0,<music21.chord.Chord F#5 C#4>,"[0, 5]","[1, 6]","[6, 11]",78,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 4]_11",0.9361485839927124
+76.25,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9361485839927124
+76.5,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9361485839927124
+76.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9361485839927124
+77.0,<music21.chord.Chord G5 D4>,"[0, 5]","[2, 7]","[7, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 5]_0",0.9361485839927124
+77.25,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9361485839927124
+77.5,<music21.chord.Chord F#5 A4>,"[0, 3]","[6, 9]","[11, 2]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9361485839927124
+77.875,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9361485839927124
+78.0,<music21.chord.Chord A5 E4>,"[0, 5]","[4, 9]","[9, 2]",81,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_2",0.9361485839927124
+78.33333333,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9361485839927124
+78.5,<music21.chord.Chord A5 A4>,[0],[9],[2],81,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9361485839927124
+78.75,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9361485839927124
+78.83333333,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.9361485839927124
+79.0,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9361485839927124
+79.33333333,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.8496352456026323
+79.5,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.8496352456026323
+79.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.8496352456026323
+80.0,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.8496352456026323
+80.5,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.8942576872537275
+81.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.8942576872537275
+81.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9020171836716644
+81.5,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_4",0.9020171836716644
+81.75,<music21.chord.Chord B5 A4>,"[0, 2]","[9, 11]","[2, 4]",83,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 9]_7",0.9020171836716644
+82.0,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5]_2",0.9020171836716644
+82.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9020171836716644
+82.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9020171836716644
+82.5,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5]_2",0.9020171836716644
+82.75,<music21.chord.Chord A5 A4>,[0],[9],[2],81,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9020171836716644
+83.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9020171836716644
+83.125,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9020171836716644
+83.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9020171836716644
+83.5,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9020171836716644
+83.75,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9020171836716644
+84.0,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9020171836716644
+84.125,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9020171836716644
+84.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9020171836716644
+84.5,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9020171836716644
+84.75,<music21.chord.Chord F#5 A4>,"[0, 3]","[6, 9]","[11, 2]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9020171836716644
+85.0,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0]_9",0.9020171836716644
+85.125,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,2,major,[9]_9,0.9039723145074184
+85.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9039723145074184
+85.5,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0]_9",0.9039723145074184
+85.75,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9039723145074184
+86.0,<music21.chord.Chord C#5 A3>,"[0, 4]","[9, 1]","[2, 6]",73,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9039723145074184
+86.125,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9336246284972156
+86.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9336246284972156
+86.5,<music21.chord.Chord C#5 A3>,"[0, 4]","[9, 1]","[2, 6]",73,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9336246284972156
+86.75,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9336246284972156
+87.0,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0]_9",0.9336246284972156
+87.25,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9336246284972156
+87.5,<music21.chord.Chord F#5 B3>,"[0, 5]","[6, 11]","[11, 4]",78,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 9]_9",0.9336246284972156
+87.75,<music21.chord.Chord D5 A4>,"[0, 5]","[9, 2]","[2, 7]",74,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_7",0.9336246284972156
+88.0,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9336246284972156
+88.25,<music21.chord.Chord F#5 A4>,"[0, 3]","[6, 9]","[11, 2]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9336246284972156
+88.5,<music21.chord.Chord G5 C#4>,"[0, 6]","[1, 7]","[6, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 11]_11",0.9336246284972156
+88.75,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9336246284972156
+89.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9336246284972156
+89.25,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9336246284972156
+89.5,<music21.chord.Chord A5 D4>,"[0, 5]","[9, 2]","[2, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_0",0.9336246284972156
+89.75,<music21.chord.Chord F#5 A4>,"[0, 3]","[6, 9]","[11, 2]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9336246284972156
+90.0,<music21.chord.Chord A5 E4>,"[0, 5]","[4, 9]","[9, 2]",81,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_2",0.9336246284972156
+90.25,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9336246284972156
+90.5,<music21.chord.Chord A5 E4>,"[0, 5]","[4, 9]","[9, 2]",81,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_2",0.9336246284972156
+90.75,<music21.chord.Chord G5 A4>,"[0, 2]","[7, 9]","[0, 2]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9336246284972156
+91.0,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9336246284972156
+91.25,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9336246284972156
+91.5,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9336246284972156
+91.75,<music21.chord.Chord E5 A4>,"[0, 5]","[4, 9]","[9, 2]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9336246284972156
+92.0,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9336246284972156
+92.25,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.9336246284972156
+92.5,<music21.chord.Chord F#3>,[0],[6],[11],54,54,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9336246284972156
+92.75,<music21.chord.Chord E3>,[0],[4],[9],52,52,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9336246284972156
+93.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9336246284972156
+93.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9336246284972156
+94.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9336246284972156
+94.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9336246284972156
+95.0,<music21.chord.Chord E5 G5 C#4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_11",0.9336246284972156
+95.5,<music21.chord.Chord D5 F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9268373298419642
+96.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9268373298419642
+96.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949999905835839
+97.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.8949999905835839
+97.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8155275994465236
+98.0,<music21.chord.Chord G5 B5 C#4>,"[0, 4, 6]","[7, 11, 1]","[0, 4, 6]",83,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 11]_11",0.8155275994465236
+98.5,<music21.chord.Chord F#5 A5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_0",0.7878456526707409
+99.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.7878456526707409
+99.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8424608828143001
+100.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.8424608828143001
+100.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8424608828143001
+101.0,<music21.chord.Chord B5 D6 G#4>,"[0, 3, 6]","[8, 11, 2]","[1, 4, 7]",86,68,Piano Sonata K283 i G major.mid,Mozart,2,major,"[6, 9, 0]_6",0.8424608828143001
+101.5,<music21.chord.Chord A5 C#6 A4>,"[0, 4]","[9, 1]","[2, 6]",85,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.8424608828143001
+102.0,<music21.chord.Chord A5 C6 F#4>,"[0, 3, 6]","[6, 9, 0]","[11, 2, 5]",84,66,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 10]_4",0.8424608828143001
+102.5,<music21.chord.Chord G5 B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.8667067007892927
+103.0,<music21.chord.Chord F5 G#5 D4>,"[0, 3, 6]","[2, 5, 8]","[7, 10, 1]",80,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 3, 6]_0",0.8667067007892927
+103.5,<music21.chord.Chord E5 A5 C#4>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_11",0.8667067007892927
+104.0,<music21.chord.Chord E-5 F#5 C4>,"[0, 3, 6]","[0, 3, 6]","[5, 8, 11]",78,60,Piano Sonata K283 i G major.mid,Mozart,2,major,"[10, 1, 4]_10",0.8667067007892927
+104.5,<music21.chord.Chord D5 G5 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_9",0.8811899547109227
+105.0,<music21.chord.Chord G5 A3>,"[0, 2]","[7, 9]","[0, 2]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.8811899547109227
+105.25,<music21.chord.Chord E5 A3>,"[0, 5]","[4, 9]","[9, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.9202346382674154
+105.5,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9202346382674154
+105.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9202346382674154
+106.0,<music21.chord.Chord G#4>,[0],[8],[1],68,68,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.9202346382674154
+106.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+106.5,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,2,major,[9]_9,0.961187545943436
+106.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+107.0,<music21.chord.Chord G5 G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",79,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.961187545943436
+107.25,<music21.chord.Chord E5 G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.961187545943436
+107.5,<music21.chord.Chord C#5 G3 A3 E4>,"[0, 3, 6, 8]","[1, 4, 7, 9]","[6, 9, 0, 2]",73,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5, 7]_5",0.961187545943436
+107.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+108.0,<music21.chord.Chord A5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.961187545943436
+108.25,<music21.chord.Chord F#5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",78,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.961187545943436
+108.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.961187545943436
+108.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+109.0,<music21.chord.Chord G#4>,[0],[8],[1],68,68,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.961187545943436
+109.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+109.5,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,2,major,[9]_9,0.961187545943436
+109.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+110.0,<music21.chord.Chord A5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.961187545943436
+110.25,<music21.chord.Chord F#5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",78,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.961187545943436
+110.5,<music21.chord.Chord D5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.961187545943436
+110.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.961187545943436
+111.0,<music21.chord.Chord B4 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.961187545943436
+111.25,<music21.chord.Chord E5 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.961187545943436
+111.5,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.961187545943436
+111.75,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,2,major,[9]_9,0.961187545943436
+112.0,<music21.chord.Chord B5 D4 F#4 A3>,"[0, 3, 5, 8]","[6, 9, 11, 2]","[11, 2, 4, 7]",83,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 9, 0]_7",0.961187545943436
+112.25,<music21.chord.Chord A5 D4 F#4 A3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_7",0.961187545943436
+112.5,<music21.chord.Chord G5 D4 F#4 A3>,"[0, 4, 5, 7]","[2, 6, 7, 9]","[7, 11, 0, 2]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 5, 7]_7",0.961187545943436
+112.75,<music21.chord.Chord F#5 A3>,"[0, 3]","[6, 9]","[11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.961187545943436
+113.0,<music21.chord.Chord F#5 E4 G4 A3>,"[0, 2, 3, 5]","[4, 6, 7, 9]","[9, 11, 0, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 5, 7]_7",0.961187545943436
+113.25,<music21.chord.Chord E5 E4 G4 A3>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_7",0.961187545943436
+113.5,<music21.chord.Chord D5 E4 G4 A3>,"[0, 2, 5, 7]","[2, 4, 7, 9]","[7, 9, 0, 2]",74,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 2, 5, 7]_7",0.961187545943436
+113.75,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.961187545943436
+114.0,<music21.chord.Chord D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.961187545943436
+114.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.961187545943436
+115.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.961187545943436
+115.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9284132612978188
+116.0,<music21.chord.Chord B5 D6 G#4>,"[0, 3, 6]","[8, 11, 2]","[1, 4, 7]",86,68,Piano Sonata K283 i G major.mid,Mozart,2,major,"[6, 9, 0]_6",0.9284132612978188
+116.5,<music21.chord.Chord A5 C#6 A4>,"[0, 4]","[9, 1]","[2, 6]",85,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9284132612978188
+117.0,<music21.chord.Chord A5 C6 F#4>,"[0, 3, 6]","[6, 9, 0]","[11, 2, 5]",84,66,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 10]_4",0.9284132612978188
+117.5,<music21.chord.Chord G5 B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.9284132612978188
+118.0,<music21.chord.Chord F5 G#5 D4>,"[0, 3, 6]","[2, 5, 8]","[7, 10, 1]",80,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 3, 6]_0",0.9284132612978188
+118.5,<music21.chord.Chord E5 A5 C#4>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_11",0.9284132612978188
+119.0,<music21.chord.Chord E-5 F#5 C4>,"[0, 3, 6]","[0, 3, 6]","[5, 8, 11]",78,60,Piano Sonata K283 i G major.mid,Mozart,2,major,"[10, 1, 4]_10",0.9284132612978188
+119.5,<music21.chord.Chord D5 G5 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_9",0.9164573335433304
+120.0,<music21.chord.Chord G5 A3>,"[0, 2]","[7, 9]","[0, 2]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.9164573335433304
+120.25,<music21.chord.Chord E5 A3>,"[0, 5]","[4, 9]","[9, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.932431274891658
+120.375,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.932431274891658
+120.5,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.932431274891658
+120.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.932431274891658
+121.0,<music21.chord.Chord G#4>,[0],[8],[1],68,68,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.932431274891658
+121.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.932431274891658
+121.5,<music21.chord.Chord B4 A3 C#4 E4>,"[0, 2, 4, 7]","[9, 11, 1, 4]","[2, 4, 6, 9]",71,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 9, 11, 2]_7",0.932431274891658
+121.625,<music21.chord.Chord A3 C#4 E4>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",64,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_7",0.932431274891658
+121.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.932431274891658
+122.0,<music21.chord.Chord G5 G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",79,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.932431274891658
+122.25,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.932431274891658
+122.5,<music21.chord.Chord C#5 G3 A3 E4>,"[0, 3, 6, 8]","[1, 4, 7, 9]","[6, 9, 0, 2]",73,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5, 7]_5",0.932431274891658
+122.625,<music21.chord.Chord G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",64,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.932431274891658
+122.75,<music21.chord.Chord A4 G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",69,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.932431274891658
+122.875,<music21.chord.Chord G3 A3 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",64,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_5",0.932431274891658
+123.0,<music21.chord.Chord A5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.932431274891658
+123.25,<music21.chord.Chord F#5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",78,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+123.375,<music21.chord.Chord F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",62,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+123.5,<music21.chord.Chord D5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+123.625,<music21.chord.Chord F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",62,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+123.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9350590958063218
+124.0,<music21.chord.Chord G#4>,[0],[8],[1],68,68,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.9350590958063218
+124.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9350590958063218
+124.5,<music21.chord.Chord B4 F#3 A3 D4>,"[0, 3, 5, 8]","[6, 9, 11, 2]","[11, 2, 4, 7]",71,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 9, 0]_4",0.9350590958063218
+124.625,<music21.chord.Chord F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",62,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+124.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9350590958063218
+125.0,<music21.chord.Chord A5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+125.25,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9350590958063218
+125.5,<music21.chord.Chord D5 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+125.625,<music21.chord.Chord F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",62,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+125.75,<music21.chord.Chord A4 F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",69,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+125.875,<music21.chord.Chord F#3 A3 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",62,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.9350590958063218
+126.0,<music21.chord.Chord B4 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.25,<music21.chord.Chord E5 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.375,<music21.chord.Chord G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",64,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.5,<music21.chord.Chord G5 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",79,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.625,<music21.chord.Chord G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",64,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.75,<music21.chord.Chord B5 G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",83,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+126.875,<music21.chord.Chord G3 B3 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",64,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9350590958063218
+127.0,<music21.chord.Chord B5 D4 F#4 A3>,"[0, 3, 5, 8]","[6, 9, 11, 2]","[11, 2, 4, 7]",83,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 9, 0]_7",0.9350590958063218
+127.25,<music21.chord.Chord A5 D4 F#4 A3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_7",0.9404591807252696
+127.5,<music21.chord.Chord G5 D4 F#4 A3>,"[0, 4, 5, 7]","[2, 6, 7, 9]","[7, 11, 0, 2]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 5, 7]_7",0.9404591807252696
+127.75,<music21.chord.Chord F#5 D4 F#4 A3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_7",0.9404591807252696
+128.0,<music21.chord.Chord F#5 E4 G4 A3>,"[0, 2, 3, 5]","[4, 6, 7, 9]","[9, 11, 0, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 5, 7]_7",0.9404591807252696
+128.25,<music21.chord.Chord E5 E4 G4 A3>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_7",0.9404591807252696
+128.5,<music21.chord.Chord D5 E4 G4 A3>,"[0, 2, 5, 7]","[2, 4, 7, 9]","[7, 9, 0, 2]",74,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 2, 5, 7]_7",0.9404591807252696
+128.75,<music21.chord.Chord C#5 E4 G4 A3>,"[0, 3, 6, 8]","[1, 4, 7, 9]","[6, 9, 0, 2]",73,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5, 7]_7",0.9404591807252696
+129.0,<music21.chord.Chord D5 D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9404591807252696
+129.25,<music21.chord.Chord D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9440591001168648
+129.5,<music21.chord.Chord D5 D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9440591001168648
+129.75,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9440591001168648
+130.0,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9440591001168648
+130.25,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.9440591001168648
+130.5,<music21.chord.Chord F#5 A3>,"[0, 3]","[6, 9]","[11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9440591001168648
+130.75,<music21.chord.Chord A5 C#4>,"[0, 4]","[9, 1]","[2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_11",0.9440591001168648
+131.0,<music21.chord.Chord G5 B3>,"[0, 4]","[7, 11]","[0, 4]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_9",0.9440591001168648
+131.125,<music21.chord.Chord A5 B3>,"[0, 2]","[9, 11]","[2, 4]",81,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 9]_9",0.9440591001168648
+131.25,<music21.chord.Chord G5 D4>,"[0, 5]","[2, 7]","[7, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 5]_0",0.9440591001168648
+131.375,<music21.chord.Chord A5 D4>,"[0, 5]","[9, 2]","[2, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_0",0.9440591001168648
+131.5,<music21.chord.Chord G5 C#4>,"[0, 6]","[1, 7]","[6, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 11]_11",0.9440591001168648
+131.625,<music21.chord.Chord A5 C#4>,"[0, 4]","[9, 1]","[2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_11",0.9440591001168648
+131.6666667,<music21.chord.Chord G5 A5 C#4>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_11",0.9440591001168648
+131.75,<music21.chord.Chord F#5 G5 E4>,"[0, 2, 3]","[4, 6, 7]","[9, 11, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 5]_2",0.9440591001168648
+131.7916667,<music21.chord.Chord F#5 E4>,"[0, 2]","[4, 6]","[9, 11]",78,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4]_2",0.9440591001168648
+131.875,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5]_2",0.9440591001168648
+132.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9440591001168648
+132.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9440591001168648
+132.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9440591001168648
+132.75,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9440591001168648
+133.0,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9440591001168648
+133.25,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.9440591001168648
+133.5,<music21.chord.Chord F#5 A3>,"[0, 3]","[6, 9]","[11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.9440591001168648
+133.75,<music21.chord.Chord A5 C#4>,"[0, 4]","[9, 1]","[2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_11",0.9440591001168648
+134.0,<music21.chord.Chord G5 B3>,"[0, 4]","[7, 11]","[0, 4]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_9",0.9440591001168648
+134.125,<music21.chord.Chord A5 B3>,"[0, 2]","[9, 11]","[2, 4]",81,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 9]_9",0.9440591001168648
+134.25,<music21.chord.Chord G5 D4>,"[0, 5]","[2, 7]","[7, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 5]_0",0.9440591001168648
+134.375,<music21.chord.Chord A5 D4>,"[0, 5]","[9, 2]","[2, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_0",0.9440591001168648
+134.5,<music21.chord.Chord G5 C#4>,"[0, 6]","[1, 7]","[6, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 11]_11",0.9440591001168648
+134.625,<music21.chord.Chord A5 C#4>,"[0, 4]","[9, 1]","[2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_11",0.9440591001168648
+134.66666669999998,<music21.chord.Chord G5 A5 C#4>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_11",0.9440591001168648
+134.75,<music21.chord.Chord F#5 G5 E4>,"[0, 2, 3]","[4, 6, 7]","[9, 11, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 5]_2",0.9440591001168648
+134.79166669999998,<music21.chord.Chord F#5 E4>,"[0, 2]","[4, 6]","[9, 11]",78,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4]_2",0.9440591001168648
+134.875,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5]_2",0.9440591001168648
+135.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9440591001168648
+135.5,<music21.chord.Chord B5 F#5 D4>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",83,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0, 4]_0",0.9440591001168648
+136.0,<music21.chord.Chord E5 B5 C#4>,"[0, 2, 5]","[11, 1, 4]","[4, 6, 9]",83,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 11, 2]_11",0.9440591001168648
+136.5,<music21.chord.Chord A5 E5 C#4>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_11",0.9440591001168648
+137.0,<music21.chord.Chord D5 A5 B3>,"[0, 2, 5]","[9, 11, 2]","[2, 4, 7]",81,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 9, 0]_9",0.9440591001168648
+137.5,<music21.chord.Chord G5 D5 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_9",0.9440591001168648
+138.0,<music21.chord.Chord C#5 G5 A3>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_7",0.9440591001168648
+138.5,<music21.chord.Chord F#5 C#5 A3>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 11]_7",0.9144917734494424
+139.0,<music21.chord.Chord B4 F#5 G3>,"[0, 1, 5]","[6, 7, 11]","[11, 0, 4]",78,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 5, 9]_5",0.9144917734494424
+139.5,<music21.chord.Chord E5 B4 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9144917734494424
+140.0,<music21.chord.Chord A4 E5 F#3>,"[0, 2, 5]","[4, 6, 9]","[9, 11, 2]",76,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 7]_4",0.9144917734494424
+140.5,<music21.chord.Chord D5 A4 F#3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.8965452536622659
+141.0,<music21.chord.Chord E-5 B4 G3>,"[0, 4, 8]","[3, 7, 11]","[8, 0, 4]",75,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[1, 5, 9]_5",0.8965452536622659
+141.375,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.8871101982320442
+141.5,<music21.chord.Chord E5 B4 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.8871101982320442
+141.75,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.8871101982320442
+142.0,<music21.chord.Chord E3>,[0],[4],[9],52,52,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.8871101982320442
+142.5,<music21.chord.Chord B4 G5 E3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",79,52,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_2",0.9000688751418975
+142.625,<music21.chord.Chord E3>,[0],[4],[9],52,52,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9000688751418975
+143.0,<music21.chord.Chord G4 E5 A3>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 7]_7",0.9000688751418975
+143.125,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9321603610059054
+143.5,<music21.chord.Chord E4 C#5 A3>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",73,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_7",0.9321603610059054
+143.75,<music21.chord.Chord E4 C#5>,"[0, 3]","[1, 4]","[6, 9]",73,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_2",0.9321603610059054
+144.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9321603610059054
+144.25,<music21.chord.Chord G#5 F#5 D4>,"[0, 4, 6]","[2, 6, 8]","[7, 11, 1]",80,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 6]_0",0.9321603610059054
+144.5,<music21.chord.Chord B-5 F#5 D4>,"[0, 4, 8]","[2, 6, 10]","[7, 11, 3]",82,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 8]_0",0.9321603610059054
+144.75,<music21.chord.Chord B5 F#5 D4>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",83,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0, 4]_0",0.9321603610059054
+145.0,<music21.chord.Chord E5 C#4>,"[0, 3]","[1, 4]","[6, 9]",76,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2]_11",0.9321603610059054
+145.25,<music21.chord.Chord B5 E5 C#4>,"[0, 2, 5]","[11, 1, 4]","[4, 6, 9]",83,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 11, 2]_11",0.9428741607612724
+145.5,<music21.chord.Chord G#5 E5 C#4>,"[0, 3, 7]","[1, 4, 8]","[6, 9, 1]",80,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 6]_11",0.9428741607612724
+145.75,<music21.chord.Chord A5 E5 C#4>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",81,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_11",0.9428741607612724
+146.0,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0]_9",0.9428741607612724
+146.25,<music21.chord.Chord E5 D5 B3>,"[0, 3, 5]","[11, 2, 4]","[4, 7, 9]",76,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0, 2]_9",0.9428741607612724
+146.5,<music21.chord.Chord F#5 D5 B3>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",78,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0, 4]_9",0.9428741607612724
+146.75,<music21.chord.Chord G5 D5 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_9",0.9428741607612724
+147.0,<music21.chord.Chord C#5 A3>,"[0, 4]","[9, 1]","[2, 6]",73,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9428741607612724
+147.25,<music21.chord.Chord G5 C#5 A3>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_7",0.962033340968879
+147.5,<music21.chord.Chord F5 C#5 A3>,"[0, 4, 8]","[1, 5, 9]","[6, 10, 2]",77,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[3, 7, 11]_7",0.962033340968879
+147.75,<music21.chord.Chord F#5 C#5 A3>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 11]_7",0.962033340968879
+148.0,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.962033340968879
+148.25,<music21.chord.Chord C#5 B4 G3>,"[0, 4, 6]","[7, 11, 1]","[0, 4, 6]",73,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 11]_5",0.962033340968879
+148.5,<music21.chord.Chord E-5 B4 G3>,"[0, 4, 8]","[3, 7, 11]","[8, 0, 4]",75,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[1, 5, 9]_5",0.962033340968879
+148.75,<music21.chord.Chord E5 B4 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.962033340968879
+149.0,<music21.chord.Chord A4 F#3>,"[0, 3]","[6, 9]","[11, 2]",69,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_4",0.962033340968879
+149.25,<music21.chord.Chord E5 A4 F#3>,"[0, 2, 5]","[4, 6, 9]","[9, 11, 2]",76,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 7]_4",0.962033340968879
+149.5,<music21.chord.Chord C#5 A4 F#3>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",73,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 11]_4",0.962033340968879
+149.75,<music21.chord.Chord D5 A4 F#3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_4",0.962033340968879
+150.0,<music21.chord.Chord E5 G3>,"[0, 3]","[4, 7]","[9, 0]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5]_5",0.962033340968879
+150.25,<music21.chord.Chord G5 G3>,[0],[7],[0],79,55,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.962033340968879
+150.5,<music21.chord.Chord B5 G3>,"[0, 4]","[7, 11]","[0, 4]",83,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.962033340968879
+150.75,<music21.chord.Chord G5 G3>,[0],[7],[0],79,55,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.962033340968879
+151.0,<music21.chord.Chord F#5 A3>,"[0, 3]","[6, 9]","[11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.962033340968879
+151.25,<music21.chord.Chord A5 A3>,[0],[9],[2],81,57,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.962033340968879
+151.5,<music21.chord.Chord D5 A3>,"[0, 5]","[9, 2]","[2, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 0]_7",0.962033340968879
+151.75,<music21.chord.Chord F#5 A3>,"[0, 3]","[6, 9]","[11, 2]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_7",0.962033340968879
+152.0,<music21.chord.Chord E5 A2>,"[0, 5]","[4, 9]","[9, 2]",76,45,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.962033340968879
+152.25,<music21.chord.Chord G5 A2>,"[0, 2]","[7, 9]","[0, 2]",79,45,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7]_7",0.962033340968879
+152.5,<music21.chord.Chord C#5 A2>,"[0, 4]","[9, 1]","[2, 6]",73,45,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.962033340968879
+152.75,<music21.chord.Chord E5 A2>,"[0, 5]","[4, 9]","[9, 2]",76,45,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 7]_7",0.962033340968879
+153.0,<music21.chord.Chord D5 D3>,[0],[2],[7],74,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+153.25,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+153.5,<music21.chord.Chord D5 C#4>,"[0, 1]","[1, 2]","[6, 7]",74,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 0]_11",0.962033340968879
+153.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+154.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+154.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+154.5,<music21.chord.Chord F#4 A4 C5 C#4>,"[0, 3, 6, 7]","[6, 9, 0, 1]","[11, 2, 5, 6]",72,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 10, 11]_11",0.962033340968879
+154.625,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.962033340968879
+154.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+155.0,<music21.chord.Chord G4 B4 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_0",0.962033340968879
+155.125,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+155.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.962033340968879
+155.5,<music21.chord.Chord E4 G4 C#5 C#4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",73,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_11",0.962033340968879
+155.75,<music21.chord.Chord E4 G4 C#5 D4>,"[0, 1, 3, 6]","[1, 2, 4, 7]","[6, 7, 9, 0]",73,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 0, 2, 5]_0",0.962033340968879
+156.0,<music21.chord.Chord F#4 A4 D5 D3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_0",0.962033340968879
+156.25,<music21.chord.Chord F#4 A4 D5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_0",0.9421592744197876
+156.5,<music21.chord.Chord F#4 A4 D5 C#4>,"[0, 1, 5, 8]","[1, 2, 6, 9]","[6, 7, 11, 2]",74,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 0, 4, 7]_11",0.9421592744197876
+156.75,<music21.chord.Chord F#4 A4 D5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_0",0.9421592744197876
+157.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9421592744197876
+157.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8925571839481132
+157.5,<music21.chord.Chord F#5 A5 C6 C#4>,"[0, 3, 6, 7]","[6, 9, 0, 1]","[11, 2, 5, 6]",84,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 10, 11]_11",0.8925571839481132
+157.625,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.8925571839481132
+157.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8925571839481132
+158.0,<music21.chord.Chord G5 B5 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",83,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9, 0]_0",0.8925571839481132
+158.125,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8541018122436705
+158.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8541018122436705
+158.5,<music21.chord.Chord E5 G5 C#6 C#4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",85,61,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_11",0.8541018122436705
+158.75,<music21.chord.Chord E5 G5 C#6 D4>,"[0, 1, 3, 6]","[1, 2, 4, 7]","[6, 7, 9, 0]",85,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 0, 2, 5]_0",0.8541018122436705
+159.0,<music21.chord.Chord F#5 A5 D6 D3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",86,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4, 7]_0",0.8541018122436705
+161.75,<music21.chord.Chord G#5>,[0],[8],[1],80,80,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.8633313545603498
+162.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.8633313545603498
+163.0,<music21.chord.Chord D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.8633313545603498
+164.0,<music21.chord.Chord D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.870153304780467
+165.0,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.8716184694717822
+165.25,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.8716184694717822
+165.5,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.8716184694717822
+165.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8716184694717822
+166.0,<music21.chord.Chord C#5 E4 G4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",73,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_2",0.8716184694717822
+166.5,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9299062874370452
+167.0,<music21.chord.Chord C#5 E4 G4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",73,64,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_2",0.9299062874370452
+167.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9299062874370452
+168.0,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9299062874370452
+169.0,<music21.chord.Chord F#4 A4>,"[0, 3]","[6, 9]","[11, 2]",69,66,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_4",0.9299062874370452
+170.0,<music21.chord.Chord F#4 A4>,"[0, 3]","[6, 9]","[11, 2]",69,66,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_4",0.9299062874370452
+171.0,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9299062874370452
+172.0,<music21.chord.Chord E5 G4 B4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.9299062874370452
+172.25,<music21.chord.Chord F#5 G4 B4>,"[0, 1, 5]","[6, 7, 11]","[11, 0, 4]",78,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 5, 9]_5",0.9397488010013364
+172.5,<music21.chord.Chord G5 G4 B4>,"[0, 4]","[7, 11]","[0, 4]",79,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 9]_5",0.9397488010013364
+172.75,<music21.chord.Chord F#5 G4 B4>,"[0, 1, 5]","[6, 7, 11]","[11, 0, 4]",78,67,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 5, 9]_5",0.9397488010013364
+173.0,<music21.chord.Chord A5 A4 C#5>,"[0, 4]","[9, 1]","[2, 6]",81,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.9397488010013364
+173.25,<music21.chord.Chord G5 A4 C#5>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",79,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_7",0.9397488010013364
+173.5,<music21.chord.Chord F#5 A4 C#5>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",78,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 11]_7",0.9397488010013364
+173.75,<music21.chord.Chord E5 A4 C#5>,"[0, 4, 7]","[9, 1, 4]","[2, 6, 9]",76,69,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11, 2]_7",0.9397488010013364
+174.0,<music21.chord.Chord G#5>,[0],[8],[1],80,80,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.9397488010013364
+174.25,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9397488010013364
+174.5,<music21.chord.Chord G#5>,[0],[8],[1],80,80,Piano Sonata K283 i G major.mid,Mozart,2,major,[6]_6,0.9397488010013364
+174.75,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9397488010013364
+175.0,<music21.chord.Chord B5 D3 F#3>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",83,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[9, 0, 4]_0",0.9397488010013364
+175.5,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9397488010013364
+176.0,<music21.chord.Chord D3 F#3>,"[0, 4]","[2, 6]","[7, 11]",54,50,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 4]_0",0.9397488010013364
+177.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,2,major,[7]_7,0.9397488010013364
+177.25,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,2,major,[5]_5,0.9397488010013364
+177.5,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,2,major,[4]_4,0.9397488010013364
+177.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.9397488010013364
+178.0,<music21.chord.Chord D5 E3 G3>,"[0, 2, 5]","[2, 4, 7]","[7, 9, 0]",74,52,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 2, 5]_2",0.9397488010013364
+178.375,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9397488010013364
+179.0,<music21.chord.Chord C#5 E3 G3>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",73,52,Piano Sonata K283 i G major.mid,Mozart,2,major,"[11, 2, 5]_2",0.9397488010013364
+180.0,<music21.chord.Chord C#6>,[0],[1],[6],85,85,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9397488010013364
+180.25,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9397488010013364
+180.5,<music21.chord.Chord C#6>,[0],[1],[6],85,85,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.9397488010013364
+180.75,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9397488010013364
+181.0,<music21.chord.Chord E6 F#3 A3>,"[0, 2, 5]","[4, 6, 9]","[9, 11, 2]",88,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 4, 7]_4",0.9397488010013364
+181.5,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.9181703829282568
+182.0,<music21.chord.Chord F#3 A3>,"[0, 3]","[6, 9]","[11, 2]",57,54,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7]_4",0.9181703829282568
+182.75,<music21.chord.Chord D6>,[0],[2],[7],86,86,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+183.0,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.8949274319019696
+184.0,<music21.chord.Chord E5 G3 B3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.8949274319019696
+184.25,<music21.chord.Chord E-5 G3 B3>,"[0, 4, 8]","[3, 7, 11]","[8, 0, 4]",75,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[1, 5, 9]_5",0.8949274319019696
+184.5,<music21.chord.Chord E5 G3 B3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[2, 5, 9]_5",0.8949274319019696
+184.75,<music21.chord.Chord F#5 G3 B3>,"[0, 1, 5]","[6, 7, 11]","[11, 0, 4]",78,55,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 5, 9]_5",0.8949274319019696
+185.0,<music21.chord.Chord A5 A3 C#4>,"[0, 4]","[9, 1]","[2, 6]",81,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[7, 11]_7",0.8949274319019696
+185.25,<music21.chord.Chord G5 A3 C#4>,"[0, 2, 6]","[7, 9, 1]","[0, 2, 6]",79,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[5, 7, 11]_7",0.8949274319019696
+185.5,<music21.chord.Chord F#5 A3 C#4>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",78,57,Piano Sonata K283 i G major.mid,Mozart,2,major,"[4, 7, 11]_7",0.8949274319019696
+185.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,2,major,[2]_2,0.8949274319019696
+186.0,<music21.chord.Chord D5 D3>,[0],[2],[7],74,50,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+186.5,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+187.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+187.5,<music21.chord.Chord E5 D4>,"[0, 2]","[2, 4]","[7, 9]",76,62,Piano Sonata K283 i G major.mid,Mozart,2,major,"[0, 2]_0",0.8949274319019696
+187.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+187.66666669999998,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+187.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+187.875,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,2,major,[11]_11,0.8949274319019696
+188.0,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,2,major,[0]_0,0.8949274319019696
+188.5,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8338460105675211
+189.0,<music21.chord.Chord G5 B5 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",83,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.8338460105675211
+189.5,<music21.chord.Chord F#5 A5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.8338460105675211
+190.0,<music21.chord.Chord E5 G5 D4>,"[0, 2, 5]","[2, 4, 7]","[7, 9, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9, 0]_7",0.8338460105675211
+190.5,<music21.chord.Chord D5 F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.8338460105675211
+191.0,<music21.chord.Chord C5 E5 D4>,"[0, 2, 4]","[0, 2, 4]","[5, 7, 9]",76,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 9]_7",0.8338460105675211
+191.5,<music21.chord.Chord B4 D5 D4>,"[0, 3]","[11, 2]","[4, 7]",74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8338460105675211
+192.0,<music21.chord.Chord A4 C5 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.8338460105675211
+192.5,<music21.chord.Chord A4 C5 D4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.8255405993768988
+192.75,<music21.chord.Chord A4 C5>,"[0, 3]","[9, 0]","[2, 5]",72,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.8255405993768988
+193.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8255405993768988
+193.5,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8584291964777845
+193.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8584291964777845
+193.66666669999998,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8584291964777845
+193.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8584291964777845
+193.875,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8584291964777845
+194.0,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8584291964777845
+194.5,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8688278584624587
+195.0,<music21.chord.Chord F#5 A5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",81,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.8688278584624587
+195.5,<music21.chord.Chord E5 G5 D4>,"[0, 2, 5]","[2, 4, 7]","[7, 9, 0]",79,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9, 0]_7",0.8688278584624587
+196.0,<music21.chord.Chord D5 F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.8688278584624587
+196.5,<music21.chord.Chord C5 E5 D4>,"[0, 2, 4]","[0, 2, 4]","[5, 7, 9]",76,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 9]_7",0.8688278584624587
+197.0,<music21.chord.Chord B4 D5 D4>,"[0, 3]","[11, 2]","[4, 7]",74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8688278584624587
+197.5,<music21.chord.Chord A4 C5 D4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.8730416865668561
+198.0,<music21.chord.Chord G4 B4 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.8730416865668561
+198.5,<music21.chord.Chord G4 B4 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.8730416865668561
+198.75,<music21.chord.Chord G4 B4>,"[0, 4]","[7, 11]","[0, 4]",71,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.8730416865668561
+199.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8730416865668561
+199.5,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8730416865668561
+199.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8730416865668561
+199.66666669999998,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8730416865668561
+199.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.8730416865668561
+199.875,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.8730416865668561
+200.0,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8730416865668561
+200.5,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8730416865668561
+201.0,<music21.chord.Chord B4 G5 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.8730416865668561
+201.25,<music21.chord.Chord B4 G5>,"[0, 4]","[7, 11]","[0, 4]",79,71,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.8730416865668561
+201.5,<music21.chord.Chord A4 F#5 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.8730416865668561
+202.0,<music21.chord.Chord C5 E5 D4>,"[0, 2, 4]","[0, 2, 4]","[5, 7, 9]",76,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 9]_7",0.8730416865668561
+202.25,<music21.chord.Chord C5 E5>,"[0, 4]","[0, 4]","[5, 9]",76,72,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.8730416865668561
+202.5,<music21.chord.Chord B4 D5 D4>,"[0, 3]","[11, 2]","[4, 7]",74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.8730416865668561
+203.0,<music21.chord.Chord A4 C5 D4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.8730416865668561
+203.5,<music21.chord.Chord G4 B4 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.8730416865668561
+204.0,<music21.chord.Chord F#4 A4 D4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",69,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.8730416865668561
+205.5,<music21.chord.Chord D4 D3>,[0],[2],[7],62,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8730416865668561
+205.75,<music21.chord.Chord E4 E3>,[0],[4],[9],64,52,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.8730416865668561
+206.0,<music21.chord.Chord F#4 F#3>,[0],[6],[11],66,54,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.8730416865668561
+206.5,<music21.chord.Chord G4 G3>,[0],[7],[0],67,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8270888288748427
+207.0,<music21.chord.Chord A4 A3>,[0],[9],[2],69,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.8270888288748427
+208.5,<music21.chord.Chord F#4 F#3>,[0],[6],[11],66,54,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9014167589301626
+208.75,<music21.chord.Chord G4 G3>,[0],[7],[0],67,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9014167589301626
+209.0,<music21.chord.Chord A4 A3>,[0],[9],[2],69,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9014167589301626
+209.5,<music21.chord.Chord B4 B3>,[0],[11],[4],71,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9014167589301626
+210.0,<music21.chord.Chord C5 C4>,[0],[0],[5],72,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9014167589301626
+211.5,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9014167589301626
+211.75,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9014167589301626
+212.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9014167589301626
+212.5,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9014167589301626
+212.75,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9014167589301626
+213.0,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9014167589301626
+213.5,<music21.chord.Chord F#5>,[0],[6],[11],78,78,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9014167589301626
+213.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9014167589301626
+214.0,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9014167589301626
+214.5,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+214.75,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9044384604286004
+215.0,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+215.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+216.0,<music21.chord.Chord D5 G3>,"[0, 5]","[2, 7]","[7, 0]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_0",0.9044384604286004
+216.5,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.9044384604286004
+216.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+217.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+217.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9044384604286004
+218.0,<music21.chord.Chord G4 D4>,"[0, 5]","[2, 7]","[7, 0]",67,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9044384604286004
+218.5,<music21.chord.Chord G4 B3>,"[0, 4]","[7, 11]","[0, 4]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_4",0.9044384604286004
+219.0,<music21.chord.Chord F#4 A3>,"[0, 3]","[6, 9]","[11, 2]",66,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_2",0.9044384604286004
+219.5,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9044384604286004
+220.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9044384604286004
+220.5,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9044384604286004
+221.0,<music21.chord.Chord A5 D4>,"[0, 5]","[9, 2]","[2, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9044384604286004
+221.5,<music21.chord.Chord A5 C4>,"[0, 3]","[9, 0]","[2, 5]",81,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_5",0.9044384604286004
+221.75,<music21.chord.Chord F#5 C4>,"[0, 6]","[0, 6]","[5, 11]",78,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_5",0.9044384604286004
+222.0,<music21.chord.Chord A5 F#3>,"[0, 3]","[6, 9]","[11, 2]",81,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9044384604286004
+222.5,<music21.chord.Chord A5 A3>,[0],[9],[2],81,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.904917361860862
+222.75,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.904917361860862
+223.0,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,[5]_5,0.904917361860862
+223.5,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.9236640271789192
+224.0,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[3, 5]_5",0.9236640271789192
+224.5,<music21.chord.Chord C5 A3>,"[0, 3]","[9, 0]","[2, 5]",72,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[0, 3]_0",0.9312800130542216
+224.75,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.9312800130542216
+225.0,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[10, 2]_10",0.9312800130542216
+225.25,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.9427097809558159
+225.5,<music21.chord.Chord B3 D4>,"[0, 3]","[11, 2]","[4, 7]",62,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[2, 5]_2",0.9427097809558159
+226.0,<music21.chord.Chord A3 C4>,"[0, 3]","[9, 0]","[2, 5]",60,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[0, 3]_0",0.9427097809558159
+226.5,<music21.chord.Chord G#3 B3>,"[0, 3]","[8, 11]","[1, 4]",59,56,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[11, 2]_11",0.9427097809558159
+227.0,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,9,minor,[7]_7,0.9427097809558159
+227.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,9,minor,[3]_3,0.9427097809558159
+228.0,<music21.chord.Chord E5 A3>,"[0, 5]","[4, 9]","[9, 2]",76,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[7, 0]_0",0.9427097809558159
+228.375,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,9,minor,[7]_7,0.9427097809558159
+228.5,<music21.chord.Chord E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[3, 7]_3",0.9427097809558159
+228.75,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,9,minor,[3]_3,0.9427097809558159
+229.0,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,[7]_7,0.9427097809558159
+229.5,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,9,minor,[3]_3,0.9427097809558159
+230.0,<music21.chord.Chord A4 E4>,"[0, 5]","[4, 9]","[9, 2]",69,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[7, 0]_7",0.9427097809558159
+230.375,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.9427097809558159
+230.5,<music21.chord.Chord A4 C4>,"[0, 3]","[9, 0]","[2, 5]",69,60,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[0, 3]_3",0.9427097809558159
+230.875,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,9,minor,[0]_0,0.9427097809558159
+231.0,<music21.chord.Chord G#4 B3>,"[0, 3]","[8, 11]","[1, 4]",68,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[11, 2]_2",0.9427097809558159
+231.375,<music21.chord.Chord G#4>,[0],[8],[1],68,68,Piano Sonata K283 i G major.mid,Mozart,9,minor,[11]_11,0.9427097809558159
+231.5,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,[5]_5,0.9427097809558159
+232.0,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,[7]_7,0.9427097809558159
+232.5,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,[5]_5,0.9427097809558159
+233.0,<music21.chord.Chord B5 E4>,"[0, 5]","[11, 4]","[4, 9]",83,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[2, 7]_7",0.9427097809558159
+233.375,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.9427097809558159
+233.5,<music21.chord.Chord B5 D4>,"[0, 3]","[11, 2]","[4, 7]",83,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[2, 5]_5",0.9427097809558159
+233.75,<music21.chord.Chord G#5 D4>,"[0, 6]","[2, 8]","[7, 1]",80,62,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[5, 11]_5",0.9427097809558159
+233.875,<music21.chord.Chord G#5>,[0],[8],[1],80,80,Piano Sonata K283 i G major.mid,Mozart,9,minor,[11]_11,0.9427097809558159
+234.0,<music21.chord.Chord B5 G#3>,"[0, 3]","[8, 11]","[1, 4]",83,56,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[11, 2]_11",0.9427097809558159
+234.375,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.901210290050498
+234.5,<music21.chord.Chord B5 B3>,[0],[11],[4],83,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.901210290050498
+234.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.901210290050498
+235.0,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,[7]_7,0.901210290050498
+235.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.8834421487121917
+236.0,<music21.chord.Chord D5 E4>,"[0, 2]","[2, 4]","[7, 9]",74,64,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[5, 7]_7",0.8834421487121917
+236.375,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,9,minor,[5]_5,0.8084446814653088
+236.5,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[2, 5]_2",0.8084446814653088
+236.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,[2]_2,0.8084446814653088
+237.0,<music21.chord.Chord C5 A3>,"[0, 3]","[9, 0]","[2, 5]",72,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[0, 3]_0",0.8084446814653088
+237.25,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,9,minor,[3]_3,0.7844365608598928
+237.5,<music21.chord.Chord C4 E4>,"[0, 4]","[0, 4]","[5, 9]",64,60,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[3, 7]_3",0.7844365608598928
+238.0,<music21.chord.Chord B3 D4>,"[0, 3]","[11, 2]","[4, 7]",62,59,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[2, 5]_2",0.7844365608598928
+238.5,<music21.chord.Chord A3 C4>,"[0, 3]","[9, 0]","[2, 5]",60,57,Piano Sonata K283 i G major.mid,Mozart,9,minor,"[0, 3]_0",0.7844365608598928
+239.0,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,9,minor,[3]_3,0.7844365608598928
+239.75,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,0,major,[9]_9,0.7999822107875422
+240.0,<music21.chord.Chord G5 A3>,"[0, 2]","[7, 9]","[0, 2]",79,57,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 9]_9",0.7999822107875422
+240.5,<music21.chord.Chord F5 C4>,"[0, 5]","[0, 5]","[5, 10]",77,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 5]_0",0.7999822107875422
+241.0,<music21.chord.Chord F5 F4>,[0],[5],[10],77,65,Piano Sonata K283 i G major.mid,Mozart,0,major,[5]_5,0.7999822107875422
+241.375,<music21.chord.Chord F5>,[0],[5],[10],77,77,Piano Sonata K283 i G major.mid,Mozart,0,major,[5]_5,0.8147203376509168
+241.5,<music21.chord.Chord F5 A3>,"[0, 4]","[5, 9]","[10, 2]",77,57,Piano Sonata K283 i G major.mid,Mozart,0,major,"[5, 9]_9",0.8147203376509168
+241.75,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,0,major,[9]_9,0.8147203376509168
+242.0,<music21.chord.Chord F5 B3>,"[0, 6]","[5, 11]","[10, 4]",77,59,Piano Sonata K283 i G major.mid,Mozart,0,major,"[5, 11]_11",0.8147203376509168
+242.375,<music21.chord.Chord F5>,[0],[5],[10],77,77,Piano Sonata K283 i G major.mid,Mozart,0,major,[5]_5,0.8147203376509168
+242.5,<music21.chord.Chord F5 G4>,"[0, 2]","[5, 7]","[10, 0]",77,67,Piano Sonata K283 i G major.mid,Mozart,0,major,"[5, 7]_7",0.8147203376509168
+242.75,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8147203376509168
+243.0,<music21.chord.Chord E-5 C4>,"[0, 3]","[0, 3]","[5, 8]",75,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 3]_0",0.8147203376509168
+243.375,<music21.chord.Chord E-5>,[0],[3],[8],75,75,Piano Sonata K283 i G major.mid,Mozart,0,major,[3]_3,0.8147203376509168
+243.5,<music21.chord.Chord E-5 G4>,"[0, 4]","[3, 7]","[8, 0]",75,67,Piano Sonata K283 i G major.mid,Mozart,0,major,"[3, 7]_7",0.8147203376509168
+243.75,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8147203376509168
+244.0,<music21.chord.Chord E5 C5>,"[0, 4]","[0, 4]","[5, 9]",76,72,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 4]_0",0.8147203376509168
+244.375,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+244.5,<music21.chord.Chord E5 G4>,"[0, 3]","[4, 7]","[9, 0]",76,67,Piano Sonata K283 i G major.mid,Mozart,0,major,"[4, 7]_7",0.8238979276744602
+244.75,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+245.0,<music21.chord.Chord C6 E4>,"[0, 4]","[0, 4]","[5, 9]",84,64,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 4]_4",0.8238979276744602
+245.375,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8238979276744602
+245.5,<music21.chord.Chord C6 G4>,"[0, 5]","[7, 0]","[0, 5]",84,67,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 0]_7",0.8238979276744602
+245.625,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+245.75,<music21.chord.Chord G5 G4>,[0],[7],[0],79,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+245.875,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+246.0,<music21.chord.Chord E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[0, 4]_0",0.8238979276744602
+246.375,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+246.5,<music21.chord.Chord E5 E4>,[0],[4],[9],76,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+246.75,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+247.0,<music21.chord.Chord E5 G4>,"[0, 3]","[4, 7]","[9, 0]",76,67,Piano Sonata K283 i G major.mid,Mozart,0,major,"[4, 7]_7",0.8238979276744602
+247.25,<music21.chord.Chord G5 G4>,[0],[7],[0],79,67,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+247.5,<music21.chord.Chord F#5 E4>,"[0, 2]","[4, 6]","[9, 11]",78,64,Piano Sonata K283 i G major.mid,Mozart,0,major,"[4, 6]_4",0.8238979276744602
+247.625,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+247.75,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,0,major,"[4, 7]_4",0.8238979276744602
+248.0,<music21.chord.Chord A5 C4>,"[0, 3]","[9, 0]","[2, 5]",81,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[9, 0]_0",0.8238979276744602
+248.25,<music21.chord.Chord G5 C4>,"[0, 5]","[7, 0]","[0, 5]",79,60,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 0]_0",0.8238979276744602
+248.375,<music21.chord.Chord G5>,[0],[7],[0],79,79,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+248.5,<music21.chord.Chord F#5 E4>,"[0, 2]","[4, 6]","[9, 11]",78,64,Piano Sonata K283 i G major.mid,Mozart,0,major,"[4, 6]_4",0.8238979276744602
+248.75,<music21.chord.Chord E5 E4>,[0],[4],[9],76,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+248.875,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8238979276744602
+249.0,<music21.chord.Chord C#5 B3 G4>,"[0, 4, 6]","[7, 11, 1]","[0, 4, 6]",73,59,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 11, 1]_11",0.8238979276744602
+249.375,<music21.chord.Chord B3 G4>,"[0, 4]","[7, 11]","[0, 4]",67,59,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 11]_11",0.8238979276744602
+249.5,<music21.chord.Chord D5 B3 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,0,major,"[7, 11, 2]_11",0.8238979276744602
+249.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8238979276744602
+250.5,<music21.chord.Chord G3 G1 G2>,[0],[7],[0],55,31,Piano Sonata K283 i G major.mid,Mozart,0,major,[7]_7,0.8238979276744602
+250.75,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8238979276744602
+251.0,<music21.chord.Chord A3 A1 A2>,[0],[9],[2],57,33,Piano Sonata K283 i G major.mid,Mozart,0,major,[9]_9,0.8238979276744602
+251.25,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8238979276744602
+251.5,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8238979276744602
+251.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8238979276744602
+252.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8238979276744602
+253.5,<music21.chord.Chord A3 A1 A2>,[0],[9],[2],57,33,Piano Sonata K283 i G major.mid,Mozart,0,major,[9]_9,0.8207569375379647
+253.75,<music21.chord.Chord C4 A1 A2>,"[0, 3]","[9, 0]","[2, 5]",60,33,Piano Sonata K283 i G major.mid,Mozart,0,major,"[9, 0]_9",0.8207569375379647
+253.875,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8207569375379647
+254.0,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8207569375379647
+254.25,<music21.chord.Chord D4 B1 B2>,"[0, 3]","[11, 2]","[4, 7]",62,35,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.8129529485621051
+254.375,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8129529485621051
+254.5,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8129529485621051
+254.75,<music21.chord.Chord E4 C2 C3>,"[0, 4]","[0, 4]","[5, 9]",64,36,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.8129529485621051
+254.875,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.8129529485621051
+255.0,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8129529485621051
+256.5,<music21.chord.Chord B3 B1 B2>,[0],[11],[4],59,35,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8083777610865062
+256.625,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,0,major,[11]_11,0.8083777610865062
+256.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+257.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8083777610865062
+257.125,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,0,major,[0]_0,0.8083777610865062
+257.25,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8083777610865062
+257.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+257.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,0,major,[2]_2,0.8083777610865062
+257.75,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,0,major,[5]_5,0.8083777610865062
+258.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,0,major,[4]_4,0.8083777610865062
+258.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.8422513894763557
+258.25,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,7,major,[10]_10,0.8422513894763557
+258.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8422513894763557
+258.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8422513894763557
+258.75,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.8422513894763557
+259.0,<music21.chord.Chord C4 C2 C3>,[0],[0],[5],60,36,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.8422513894763557
+259.125,<music21.chord.Chord C4>,[0],[0],[5],60,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9177282662732752
+259.25,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+259.5,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+259.625,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+259.75,<music21.chord.Chord F4>,[0],[5],[10],65,65,Piano Sonata K283 i G major.mid,Mozart,7,major,[10]_10,0.9177282662732752
+260.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+260.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+260.25,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+260.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+260.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+260.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+261.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+261.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+261.25,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+261.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+261.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+261.75,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+262.0,<music21.chord.Chord E4 E2 E3>,[0],[4],[9],64,40,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+262.125,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+262.25,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+262.5,<music21.chord.Chord F#4 F#2 F#3>,[0],[6],[11],66,42,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+262.625,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9177282662732752
+262.75,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+263.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+263.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+263.25,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+263.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+263.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+263.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9177282662732752
+264.0,<music21.chord.Chord B4 B2 B3>,[0],[11],[4],71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+264.125,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+264.25,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9177282662732752
+264.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+264.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+264.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+265.0,<music21.chord.Chord G4 G2 G3>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+265.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9177282662732752
+265.25,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+265.5,<music21.chord.Chord A4 A2 A3>,[0],[9],[2],69,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+265.625,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9177282662732752
+265.75,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9177282662732752
+266.0,<music21.chord.Chord B4 B2 B3>,[0],[11],[4],71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+266.125,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9177282662732752
+266.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+266.5,<music21.chord.Chord C#5 C#3 C#4>,[0],[1],[6],73,49,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9177282662732752
+266.625,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9177282662732752
+266.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9177282662732752
+267.0,<music21.chord.Chord D5 D3 D4>,[0],[2],[7],74,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+267.3333333,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+267.6666667,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+267.875,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9177282662732752
+268.0,<music21.chord.Chord D4 D2 D3>,[0],[2],[7],62,38,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9177282662732752
+270.0,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9348040413604206
+270.5,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9348040413604206
+271.0,<music21.chord.Chord D5 A3>,"[0, 5]","[9, 2]","[2, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_2",0.9348040413604206
+271.5,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9349143055614652
+272.0,<music21.chord.Chord C5 G3>,"[0, 5]","[7, 0]","[0, 5]",72,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_0",0.9349143055614652
+272.5,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9349143055614652
+273.0,<music21.chord.Chord B4 F#3>,"[0, 5]","[6, 11]","[11, 4]",71,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 4]_11",0.9349143055614652
+273.5,<music21.chord.Chord A4 D4>,"[0, 5]","[9, 2]","[2, 7]",69,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9349143055614652
+274.0,<music21.chord.Chord A4 E3>,"[0, 5]","[4, 9]","[9, 2]",69,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 2]_9",0.9349143055614652
+274.5,<music21.chord.Chord G4 D4>,"[0, 5]","[2, 7]","[7, 0]",67,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9349143055614652
+275.0,<music21.chord.Chord G4 D3>,"[0, 5]","[2, 7]","[7, 0]",67,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9349143055614652
+275.5,<music21.chord.Chord F#4 D4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9349143055614652
+276.0,<music21.chord.Chord A4 E3>,"[0, 5]","[4, 9]","[9, 2]",69,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 2]_9",0.9349143055614652
+276.25,<music21.chord.Chord G4 E3>,"[0, 3]","[4, 7]","[9, 0]",67,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0]_9",0.9349143055614652
+276.5,<music21.chord.Chord G4 D4>,"[0, 5]","[2, 7]","[7, 0]",67,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9349143055614652
+277.0,<music21.chord.Chord B4 F#3>,"[0, 5]","[6, 11]","[11, 4]",71,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 4]_11",0.9349143055614652
+277.25,<music21.chord.Chord A4 F#3>,"[0, 3]","[6, 9]","[11, 2]",69,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9349143055614652
+277.5,<music21.chord.Chord A4 D4>,"[0, 5]","[9, 2]","[2, 7]",69,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9349143055614652
+278.0,<music21.chord.Chord C5 G3>,"[0, 5]","[7, 0]","[0, 5]",72,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_0",0.9349143055614652
+278.25,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9349143055614652
+278.5,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9349143055614652
+279.0,<music21.chord.Chord D5 A3>,"[0, 5]","[9, 2]","[2, 7]",74,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_2",0.9349143055614652
+279.5,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9349143055614652
+279.75,<music21.chord.Chord C5 D4>,"[0, 2]","[0, 2]","[5, 7]",72,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9349143055614652
+280.0,<music21.chord.Chord A4 F#3>,"[0, 3]","[6, 9]","[11, 2]",69,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9349143055614652
+280.5,<music21.chord.Chord A4 D4>,"[0, 5]","[9, 2]","[2, 7]",69,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.8491452936570463
+281.0,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.8491452936570463
+281.5,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9025792840355776
+282.0,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9025792840355776
+282.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+282.5,<music21.chord.Chord D6 B4>,"[0, 3]","[11, 2]","[4, 7]",86,71,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.9092961585822664
+282.75,<music21.chord.Chord E6 D5>,"[0, 2]","[2, 4]","[7, 9]",88,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9]_7",0.9092961585822664
+283.0,<music21.chord.Chord C6 A4>,"[0, 3]","[9, 0]","[2, 5]",84,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9092961585822664
+283.125,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9092961585822664
+283.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+283.5,<music21.chord.Chord C6 A4>,"[0, 3]","[9, 0]","[2, 5]",84,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9092961585822664
+283.75,<music21.chord.Chord D6 D5>,[0],[2],[7],86,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+284.0,<music21.chord.Chord B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9092961585822664
+284.125,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9092961585822664
+284.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+284.5,<music21.chord.Chord B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9092961585822664
+284.75,<music21.chord.Chord C6 D5>,"[0, 2]","[0, 2]","[5, 7]",84,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9092961585822664
+285.0,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9092961585822664
+285.125,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9092961585822664
+285.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+285.5,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9092961585822664
+285.75,<music21.chord.Chord B5 D5>,"[0, 3]","[11, 2]","[4, 7]",83,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9092961585822664
+286.0,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0]_9",0.9092961585822664
+286.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9092961585822664
+286.5,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0]_9",0.9092961585822664
+286.75,<music21.chord.Chord A5 D5>,"[0, 5]","[9, 2]","[2, 7]",81,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9092961585822664
+287.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9092961585822664
+287.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9172891183742484
+287.5,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9172891183742484
+287.75,<music21.chord.Chord A5 D5>,"[0, 5]","[9, 2]","[2, 7]",81,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9172891183742484
+288.0,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0]_9",0.9172891183742484
+288.25,<music21.chord.Chord A5 D5>,"[0, 5]","[9, 2]","[2, 7]",81,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9172891183742484
+288.5,<music21.chord.Chord B5 E4>,"[0, 5]","[11, 4]","[4, 9]",83,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 9]_9",0.9172891183742484
+288.75,<music21.chord.Chord G5 D5>,"[0, 5]","[2, 7]","[7, 0]",79,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9172891183742484
+289.0,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9172891183742484
+289.25,<music21.chord.Chord B5 D5>,"[0, 3]","[11, 2]","[4, 7]",83,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9172891183742484
+289.5,<music21.chord.Chord C6 F#4>,"[0, 6]","[0, 6]","[5, 11]",84,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_11",0.9172891183742484
+289.75,<music21.chord.Chord A5 D5>,"[0, 5]","[9, 2]","[2, 7]",81,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9172891183742484
+290.0,<music21.chord.Chord B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9172891183742484
+290.25,<music21.chord.Chord C6 D5>,"[0, 2]","[0, 2]","[5, 7]",84,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9172891183742484
+290.5,<music21.chord.Chord D6 G4>,"[0, 5]","[2, 7]","[7, 0]",86,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_0",0.9172891183742484
+290.75,<music21.chord.Chord B5 D5>,"[0, 3]","[11, 2]","[4, 7]",83,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9172891183742484
+291.0,<music21.chord.Chord D6 A4>,"[0, 5]","[9, 2]","[2, 7]",86,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_2",0.9172891183742484
+291.25,<music21.chord.Chord C6 D5>,"[0, 2]","[0, 2]","[5, 7]",84,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9172891183742484
+291.5,<music21.chord.Chord D6 A4>,"[0, 5]","[9, 2]","[2, 7]",86,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_2",0.9172891183742484
+291.75,<music21.chord.Chord C6 D5>,"[0, 2]","[0, 2]","[5, 7]",84,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9172891183742484
+292.0,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9172891183742484
+292.25,<music21.chord.Chord A5 D5>,"[0, 5]","[9, 2]","[2, 7]",81,74,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9172891183742484
+292.5,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9172891183742484
+292.75,<music21.chord.Chord D5 F#4>,"[0, 4]","[2, 6]","[7, 11]",74,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_11",0.9172891183742484
+293.0,<music21.chord.Chord D4 F#4>,"[0, 4]","[2, 6]","[7, 11]",66,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9172891183742484
+293.25,<music21.chord.Chord C4 F#4>,"[0, 6]","[0, 6]","[5, 11]",66,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_5",0.9172891183742484
+293.5,<music21.chord.Chord B3>,[0],[11],[4],59,59,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9172891183742484
+293.75,<music21.chord.Chord A3>,[0],[9],[2],57,57,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9172891183742484
+294.0,<music21.chord.Chord G2 G3>,[0],[7],[0],55,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9172891183742484
+294.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9172891183742484
+295.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9172891183742484
+295.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9172891183742484
+296.0,<music21.chord.Chord A4 C5 F#3>,"[0, 3, 6]","[6, 9, 0]","[11, 2, 5]",72,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5]_11",0.9172891183742484
+296.5,<music21.chord.Chord G4 B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9064743170430168
+297.0,<music21.chord.Chord G2>,[0],[7],[0],43,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9064743170430168
+297.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8661527750517356
+298.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.8661527750517356
+298.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.7850946934917525
+299.0,<music21.chord.Chord C5 E5 F#3>,"[0, 4, 6]","[0, 4, 6]","[5, 9, 11]",76,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 11]_11",0.7850946934917525
+299.5,<music21.chord.Chord B4 D5 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.7936272985507073
+300.0,<music21.chord.Chord G2>,[0],[7],[0],43,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.7936272985507073
+300.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.835358443892316
+301.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.835358443892316
+301.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.835358443892316
+302.0,<music21.chord.Chord E5 G5 C#4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,7,major,"[6, 9, 0]_6",0.835358443892316
+302.5,<music21.chord.Chord D5 F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.835358443892316
+303.0,<music21.chord.Chord D5 F5 B3>,"[0, 3, 6]","[11, 2, 5]","[4, 7, 10]",77,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 10]_4",0.835358443892316
+303.5,<music21.chord.Chord C5 E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.8564969851582473
+304.0,<music21.chord.Chord B-4 C#5 G3>,"[0, 3, 6]","[7, 10, 1]","[0, 3, 6]",73,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 3, 6]_0",0.8564969851582473
+304.5,<music21.chord.Chord A4 D5 F#3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.8564969851582473
+305.0,<music21.chord.Chord G#4 B4 F3>,"[0, 3, 6]","[5, 8, 11]","[10, 1, 4]",71,53,Piano Sonata K283 i G major.mid,Mozart,7,major,"[10, 1, 4]_10",0.8564969851582473
+305.5,<music21.chord.Chord G4 C5 E3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",72,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.8819536438541006
+306.0,<music21.chord.Chord C5 D3>,"[0, 2]","[0, 2]","[5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.8819536438541006
+306.25,<music21.chord.Chord A4 D3>,"[0, 5]","[9, 2]","[2, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9248889346541634
+306.5,<music21.chord.Chord F#4 D3>,"[0, 4]","[2, 6]","[7, 11]",66,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9248889346541634
+306.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9248889346541634
+307.0,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9248889346541634
+307.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+307.5,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9629375865504508
+307.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+308.0,<music21.chord.Chord C5 C3 D3 A3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",72,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_5",0.9629375865504508
+308.25,<music21.chord.Chord A4 C3 D3 A3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_5",0.9629375865504508
+308.5,<music21.chord.Chord F#4 C3 D3 A3>,"[0, 3, 6, 8]","[6, 9, 0, 2]","[11, 2, 5, 7]",66,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5, 7]_5",0.9629375865504508
+308.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+309.0,<music21.chord.Chord D5 B2 D3 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9629375865504508
+309.25,<music21.chord.Chord B4 B2 D3 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9629375865504508
+309.375,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9629375865504508
+309.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9629375865504508
+309.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+310.0,<music21.chord.Chord C#4>,[0],[1],[6],61,61,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9629375865504508
+310.25,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+310.5,<music21.chord.Chord E4>,[0],[4],[9],64,64,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9629375865504508
+310.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+311.0,<music21.chord.Chord D5 B2 D3 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9629375865504508
+311.25,<music21.chord.Chord B4 B2 D3 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9629375865504508
+311.5,<music21.chord.Chord G4 B2 D3 G3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",67,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9629375865504508
+311.75,<music21.chord.Chord D4>,[0],[2],[7],62,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9629375865504508
+312.0,<music21.chord.Chord E4 C3 E3 A3>,"[0, 3, 7]","[9, 0, 4]","[2, 5, 9]",64,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 9]_5",0.9629375865504508
+312.25,<music21.chord.Chord A4 C3 E3 A3>,"[0, 3, 7]","[9, 0, 4]","[2, 5, 9]",69,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 9]_5",0.9629375865504508
+312.375,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9629375865504508
+312.5,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9629375865504508
+312.75,<music21.chord.Chord E5>,[0],[4],[9],76,76,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9629375865504508
+313.0,<music21.chord.Chord E5 G3 B3 D3>,"[0, 3, 5, 8]","[11, 2, 4, 7]","[4, 7, 9, 0]",76,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 9, 0]_7",0.9629375865504508
+313.25,<music21.chord.Chord D5 G3 B3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9629375865504508
+313.5,<music21.chord.Chord C5 G3 B3 D3>,"[0, 4, 5, 7]","[7, 11, 0, 2]","[0, 4, 5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 5, 7]_7",0.9629375865504508
+313.75,<music21.chord.Chord B4 G3 B3 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9629375865504508
+314.0,<music21.chord.Chord B4 A3 C4 D3>,"[0, 2, 3, 5]","[9, 11, 0, 2]","[2, 4, 5, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 5, 7]_7",0.9629375865504508
+314.25,<music21.chord.Chord A4 A3 C4 D3>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.9629375865504508
+314.5,<music21.chord.Chord G4 A3 C4 D3>,"[0, 2, 5, 7]","[7, 9, 0, 2]","[0, 2, 5, 7]",67,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 2, 5, 7]_7",0.9629375865504508
+314.75,<music21.chord.Chord F#4 A3 C4 D3>,"[0, 3, 6, 8]","[6, 9, 0, 2]","[11, 2, 5, 7]",66,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5, 7]_7",0.9629375865504508
+315.0,<music21.chord.Chord G3 B3>,"[0, 4]","[7, 11]","[0, 4]",59,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9629375865504508
+315.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9629375865504508
+316.0,<music21.chord.Chord F#4>,[0],[6],[11],66,66,Piano Sonata K283 i G major.mid,Mozart,7,major,[11]_11,0.9629375865504508
+316.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9424544174259804
+317.0,<music21.chord.Chord E5 G5 C#4>,"[0, 3, 6]","[1, 4, 7]","[6, 9, 0]",79,61,Piano Sonata K283 i G major.mid,Mozart,7,major,"[6, 9, 0]_6",0.9424544174259804
+317.5,<music21.chord.Chord D5 F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9424544174259804
+318.0,<music21.chord.Chord D5 F5 B3>,"[0, 3, 6]","[11, 2, 5]","[4, 7, 10]",77,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 10]_4",0.9424544174259804
+318.5,<music21.chord.Chord C5 E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.9424544174259804
+319.0,<music21.chord.Chord B-4 C#5 G3>,"[0, 3, 6]","[7, 10, 1]","[0, 3, 6]",73,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 3, 6]_0",0.9424544174259804
+319.5,<music21.chord.Chord A4 D5 F#3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.9424544174259804
+320.0,<music21.chord.Chord G#4 B4 F3>,"[0, 3, 6]","[5, 8, 11]","[10, 1, 4]",71,53,Piano Sonata K283 i G major.mid,Mozart,7,major,"[10, 1, 4]_10",0.9424544174259804
+320.5,<music21.chord.Chord G4 C5 E3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",72,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.90973417614882
+321.0,<music21.chord.Chord C6 D3>,"[0, 2]","[0, 2]","[5, 7]",84,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.90973417614882
+321.25,<music21.chord.Chord A5 D3>,"[0, 5]","[9, 2]","[2, 7]",81,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9365549505312176
+321.375,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+321.5,<music21.chord.Chord F#5 D3>,"[0, 4]","[2, 6]","[7, 11]",78,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9365549505312176
+321.625,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+321.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+322.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9365549505312176
+322.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+322.5,<music21.chord.Chord E5 D4 F#4 A4>,"[0, 2, 4, 7]","[2, 4, 6, 9]","[7, 9, 11, 2]",76,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9, 11, 2]_7",0.9365549505312176
+322.625,<music21.chord.Chord D4 F#4 A4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",69,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.9365549505312176
+322.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+323.0,<music21.chord.Chord C6 C4 D4 A4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",84,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_5",0.9365549505312176
+323.25,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9365549505312176
+323.5,<music21.chord.Chord F#5 C4 D4 A4>,"[0, 3, 6, 8]","[6, 9, 0, 2]","[11, 2, 5, 7]",78,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5, 7]_5",0.9365549505312176
+323.625,<music21.chord.Chord C4 D4 A4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",69,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_5",0.9365549505312176
+323.75,<music21.chord.Chord D5 C4 D4 A4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",74,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_5",0.9365549505312176
+324.0,<music21.chord.Chord D6 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",86,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+324.25,<music21.chord.Chord B5 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",83,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+324.375,<music21.chord.Chord B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+324.5,<music21.chord.Chord G5 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+324.625,<music21.chord.Chord B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+324.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+325.0,<music21.chord.Chord C#5>,[0],[1],[6],73,73,Piano Sonata K283 i G major.mid,Mozart,7,major,[6]_6,0.9365549505312176
+325.25,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+325.5,<music21.chord.Chord E5 B3 D4 G4>,"[0, 3, 5, 8]","[11, 2, 4, 7]","[4, 7, 9, 0]",76,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 9, 0]_4",0.9365549505312176
+325.625,<music21.chord.Chord B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",67,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+325.75,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+326.0,<music21.chord.Chord D6 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",86,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+326.25,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9365549505312176
+326.5,<music21.chord.Chord G5 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+326.75,<music21.chord.Chord D5 B3 D4 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9365549505312176
+326.875,<music21.chord.Chord D5>,[0],[2],[7],74,74,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9365549505312176
+327.0,<music21.chord.Chord E5 C4 E4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.9365549505312176
+327.25,<music21.chord.Chord A5 C4 E4 G4>,"[0, 3, 5, 8]","[4, 7, 9, 0]","[9, 0, 2, 5]",81,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 2, 5]_5",0.9365549505312176
+327.375,<music21.chord.Chord C4 E4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",67,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.9365549505312176
+327.5,<music21.chord.Chord C6 C4 E4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",84,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.9365549505312176
+327.625,<music21.chord.Chord C4 E4 G4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",67,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_5",0.9365549505312176
+327.75,<music21.chord.Chord E6>,[0],[4],[9],88,88,Piano Sonata K283 i G major.mid,Mozart,7,major,[9]_9,0.9365549505312176
+328.0,<music21.chord.Chord E6 G4 B4 D4>,"[0, 3, 5, 8]","[11, 2, 4, 7]","[4, 7, 9, 0]",88,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 9, 0]_7",0.9365549505312176
+328.25,<music21.chord.Chord D6 G4 B4 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",86,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9404591807252696
+328.5,<music21.chord.Chord C6 G4 B4 D4>,"[0, 4, 5, 7]","[7, 11, 0, 2]","[0, 4, 5, 7]",84,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 5, 7]_7",0.9404591807252696
+328.75,<music21.chord.Chord B5 G4 B4 D4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",83,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9404591807252696
+329.0,<music21.chord.Chord B5 A4 C5 D4>,"[0, 2, 3, 5]","[9, 11, 0, 2]","[2, 4, 5, 7]",83,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 5, 7]_7",0.9404591807252696
+329.25,<music21.chord.Chord A5 A4 C5 D4>,"[0, 3, 5]","[9, 0, 2]","[2, 5, 7]",81,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 7]_7",0.9404591807252696
+329.5,<music21.chord.Chord G5 A4 C5 D4>,"[0, 2, 5, 7]","[7, 9, 0, 2]","[0, 2, 5, 7]",79,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 2, 5, 7]_7",0.9404591807252696
+329.75,<music21.chord.Chord F#5 A4 C5 D4>,"[0, 3, 6, 8]","[6, 9, 0, 2]","[11, 2, 5, 7]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5, 7]_7",0.9404591807252696
+330.0,<music21.chord.Chord G5 G4 B4>,"[0, 4]","[7, 11]","[0, 4]",79,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9404591807252696
+330.25,<music21.chord.Chord G4 B4>,"[0, 4]","[7, 11]","[0, 4]",71,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9440591001168648
+330.5,<music21.chord.Chord G5 G4 B4>,"[0, 4]","[7, 11]","[0, 4]",79,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9440591001168648
+330.75,<music21.chord.Chord B5>,[0],[11],[4],83,83,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9440591001168648
+331.0,<music21.chord.Chord A5>,[0],[9],[2],81,81,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9440591001168648
+331.25,<music21.chord.Chord C6>,[0],[0],[5],84,84,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9440591001168648
+331.5,<music21.chord.Chord B5 D4>,"[0, 3]","[11, 2]","[4, 7]",83,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9440591001168648
+331.75,<music21.chord.Chord D6 F#4>,"[0, 4]","[2, 6]","[7, 11]",86,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_11",0.9440591001168648
+332.0,<music21.chord.Chord C6 E4>,"[0, 4]","[0, 4]","[5, 9]",84,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_9",0.9440591001168648
+332.125,<music21.chord.Chord D6 E4>,"[0, 2]","[2, 4]","[7, 9]",86,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9]_9",0.9440591001168648
+332.25,<music21.chord.Chord C6 G4>,"[0, 5]","[7, 0]","[0, 5]",84,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_0",0.9440591001168648
+332.375,<music21.chord.Chord D6 G4>,"[0, 5]","[2, 7]","[7, 0]",86,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_0",0.9440591001168648
+332.5,<music21.chord.Chord C6 F#4>,"[0, 6]","[0, 6]","[5, 11]",84,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_11",0.9440591001168648
+332.625,<music21.chord.Chord D6 F#4>,"[0, 4]","[2, 6]","[7, 11]",86,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_11",0.9440591001168648
+332.6666667,<music21.chord.Chord C6 D6 F#4>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",86,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_11",0.9440591001168648
+332.75,<music21.chord.Chord B5 C6 A4>,"[0, 2, 3]","[9, 11, 0]","[2, 4, 5]",84,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 5]_2",0.9440591001168648
+332.7916667,<music21.chord.Chord B5 A4>,"[0, 2]","[9, 11]","[2, 4]",83,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4]_2",0.9440591001168648
+332.875,<music21.chord.Chord C6 A4>,"[0, 3]","[9, 0]","[2, 5]",84,69,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9440591001168648
+333.0,<music21.chord.Chord B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9440591001168648
+333.25,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9440591001168648
+333.5,<music21.chord.Chord G4>,[0],[7],[0],67,67,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9440591001168648
+333.75,<music21.chord.Chord B4>,[0],[11],[4],71,71,Piano Sonata K283 i G major.mid,Mozart,7,major,[4]_4,0.9440591001168648
+334.0,<music21.chord.Chord A4>,[0],[9],[2],69,69,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9440591001168648
+334.25,<music21.chord.Chord C5>,[0],[0],[5],72,72,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9440591001168648
+334.5,<music21.chord.Chord B4 D3>,"[0, 3]","[11, 2]","[4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9440591001168648
+334.75,<music21.chord.Chord D5 F#3>,"[0, 4]","[2, 6]","[7, 11]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_11",0.9440591001168648
+335.0,<music21.chord.Chord C5 E3>,"[0, 4]","[0, 4]","[5, 9]",72,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_9",0.9440591001168648
+335.125,<music21.chord.Chord D5 E3>,"[0, 2]","[2, 4]","[7, 9]",74,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9]_9",0.9440591001168648
+335.25,<music21.chord.Chord C5 G3>,"[0, 5]","[7, 0]","[0, 5]",72,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_0",0.9440591001168648
+335.375,<music21.chord.Chord D5 G3>,"[0, 5]","[2, 7]","[7, 0]",74,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_0",0.9440591001168648
+335.5,<music21.chord.Chord C5 F#3>,"[0, 6]","[0, 6]","[5, 11]",72,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 11]_11",0.9440591001168648
+335.625,<music21.chord.Chord D5 F#3>,"[0, 4]","[2, 6]","[7, 11]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_11",0.9440591001168648
+335.6666667,<music21.chord.Chord C5 D5 F#3>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_11",0.9440591001168648
+335.75,<music21.chord.Chord B4 C5 A3>,"[0, 2, 3]","[9, 11, 0]","[2, 4, 5]",72,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 5]_2",0.9440591001168648
+335.7916667,<music21.chord.Chord B4 A3>,"[0, 2]","[9, 11]","[2, 4]",71,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4]_2",0.9440591001168648
+335.875,<music21.chord.Chord C5 A3>,"[0, 3]","[9, 0]","[2, 5]",72,57,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9440591001168648
+336.0,<music21.chord.Chord B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9440591001168648
+336.5,<music21.chord.Chord E5 B4 G3>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",76,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_0",0.9440591001168648
+337.0,<music21.chord.Chord A4 E5 F#3>,"[0, 2, 5]","[4, 6, 9]","[9, 11, 2]",76,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 11, 2]_11",0.9440591001168648
+337.5,<music21.chord.Chord D5 A4 F#3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",74,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.9440591001168648
+338.0,<music21.chord.Chord G4 D5 E3>,"[0, 2, 5]","[2, 4, 7]","[7, 9, 0]",74,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 9, 0]_9",0.9440591001168648
+338.5,<music21.chord.Chord C5 G4 E3>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",72,52,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.9440591001168648
+339.0,<music21.chord.Chord F#4 C5 D3>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_7",0.9440591001168648
+339.5,<music21.chord.Chord B4 F#4 D3>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 11]_7",0.9383277843614374
+340.0,<music21.chord.Chord E4 B4 C3>,"[0, 1, 5]","[11, 0, 4]","[4, 5, 9]",71,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 5, 9]_5",0.9383277843614374
+340.5,<music21.chord.Chord A4 E4 C3>,"[0, 3, 7]","[9, 0, 4]","[2, 5, 9]",69,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 9]_5",0.9430854639455624
+341.0,<music21.chord.Chord D4 A4 B2>,"[0, 2, 5]","[9, 11, 2]","[2, 4, 7]",69,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 7]_4",0.9430854639455624
+341.5,<music21.chord.Chord G4 D4 B2>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",67,47,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9430854639455624
+342.0,<music21.chord.Chord G#4 C3>,"[0, 4]","[8, 0]","[1, 5]",68,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[1, 5]_5",0.9430854639455624
+342.375,<music21.chord.Chord C3>,[0],[0],[5],48,48,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9430854639455624
+342.5,<music21.chord.Chord A4 C3>,"[0, 3]","[9, 0]","[2, 5]",69,48,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_5",0.9430854639455624
+343.0,<music21.chord.Chord A2>,[0],[9],[2],45,45,Piano Sonata K283 i G major.mid,Mozart,7,major,[2]_2,0.9430854639455624
+343.5,<music21.chord.Chord A4 C5 A2>,"[0, 3]","[9, 0]","[2, 5]",72,45,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5]_2",0.9430854639455624
+344.0,<music21.chord.Chord G4 B4 D3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",71,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_7",0.9430854639455624
+344.25,<music21.chord.Chord D3>,[0],[2],[7],50,50,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9430854639455624
+344.5,<music21.chord.Chord F#4 A4 D3>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_7",0.9430854639455624
+345.0,<music21.chord.Chord B5 G4>,"[0, 4]","[7, 11]","[0, 4]",83,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9430854639455624
+345.25,<music21.chord.Chord C#6 B5 G4>,"[0, 4, 6]","[7, 11, 1]","[0, 4, 6]",85,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 6]_0",0.9430854639455624
+345.5,<music21.chord.Chord D6 B5 G4>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",86,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.9430854639455624
+345.75,<music21.chord.Chord E6 B5 G4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",88,67,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_0",0.9430854639455624
+346.0,<music21.chord.Chord A5 F#4>,"[0, 3]","[6, 9]","[11, 2]",81,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2]_11",0.9430854639455624
+346.25,<music21.chord.Chord E6 A5 F#4>,"[0, 2, 5]","[4, 6, 9]","[9, 11, 2]",88,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 11, 2]_11",0.9430854639455624
+346.5,<music21.chord.Chord C#6 A5 F#4>,"[0, 3, 7]","[6, 9, 1]","[11, 2, 6]",85,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 6]_11",0.9430854639455624
+346.75,<music21.chord.Chord D6 A5 F#4>,"[0, 4, 7]","[2, 6, 9]","[7, 11, 2]",86,66,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11, 2]_11",0.9430854639455624
+347.0,<music21.chord.Chord G5 E4>,"[0, 3]","[4, 7]","[9, 0]",79,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0]_9",0.9430854639455624
+347.25,<music21.chord.Chord A5 G5 E4>,"[0, 3, 5]","[4, 7, 9]","[9, 0, 2]",81,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 2]_9",0.9430854639455624
+347.5,<music21.chord.Chord B5 G5 E4>,"[0, 3, 7]","[4, 7, 11]","[9, 0, 4]",83,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[9, 0, 4]_9",0.9430854639455624
+347.75,<music21.chord.Chord C6 G5 E4>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",84,64,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_9",0.9430854639455624
+348.0,<music21.chord.Chord F#5 D4>,"[0, 4]","[2, 6]","[7, 11]",78,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9430854639455624
+348.25,<music21.chord.Chord C6 F#5 D4>,"[0, 2, 6]","[0, 2, 6]","[5, 7, 11]",84,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7, 11]_7",0.9430854639455624
+348.5,<music21.chord.Chord B-5 F#5 D4>,"[0, 4, 8]","[2, 6, 10]","[7, 11, 3]",82,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[3, 7, 11]_7",0.9430854639455624
+348.75,<music21.chord.Chord B5 F#5 D4>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",83,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 11]_7",0.9430854639455624
+349.0,<music21.chord.Chord E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.9430854639455624
+349.25,<music21.chord.Chord F#5 E5 C4>,"[0, 4, 6]","[0, 4, 6]","[5, 9, 11]",78,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 11]_5",0.9391264138407616
+349.5,<music21.chord.Chord G#5 E5 C4>,"[0, 4, 8]","[0, 4, 8]","[5, 9, 1]",80,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[1, 5, 9]_5",0.9391264138407616
+349.75,<music21.chord.Chord A5 E5 C4>,"[0, 3, 7]","[9, 0, 4]","[2, 5, 9]",81,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 5, 9]_5",0.9391264138407616
+350.0,<music21.chord.Chord D5 B3>,"[0, 3]","[11, 2]","[4, 7]",74,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_4",0.9391264138407616
+350.25,<music21.chord.Chord A5 D5 B3>,"[0, 2, 5]","[9, 11, 2]","[2, 4, 7]",81,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 4, 7]_4",0.9391264138407616
+350.5,<music21.chord.Chord F#5 D5 B3>,"[0, 3, 7]","[11, 2, 6]","[4, 7, 11]",78,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 11]_4",0.9391264138407616
+350.75,<music21.chord.Chord G5 D5 B3>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,59,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_4",0.9391264138407616
+351.0,<music21.chord.Chord E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.9391264138407616
+351.25,<music21.chord.Chord G5 C4>,"[0, 5]","[7, 0]","[0, 5]",79,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 5]_5",0.9391264138407616
+351.5,<music21.chord.Chord E5 C4>,"[0, 4]","[0, 4]","[5, 9]",76,60,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9]_5",0.9391264138407616
+351.75,<music21.chord.Chord C5 C4>,[0],[0],[5],72,60,Piano Sonata K283 i G major.mid,Mozart,7,major,[5]_5,0.9391264138407616
+352.0,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9391264138407616
+352.25,<music21.chord.Chord D5 D4>,[0],[2],[7],74,62,Piano Sonata K283 i G major.mid,Mozart,7,major,[7]_7,0.9391264138407616
+352.5,<music21.chord.Chord G4 D4>,"[0, 5]","[2, 7]","[7, 0]",67,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 0]_7",0.9391264138407616
+352.75,<music21.chord.Chord B4 D4>,"[0, 3]","[11, 2]","[4, 7]",71,62,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7]_7",0.9391264138407616
+353.0,<music21.chord.Chord A4 D3>,"[0, 5]","[9, 2]","[2, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9391264138407616
+353.25,<music21.chord.Chord C5 D3>,"[0, 2]","[0, 2]","[5, 7]",72,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 7]_7",0.9391264138407616
+353.5,<music21.chord.Chord F#4 D3>,"[0, 4]","[2, 6]","[7, 11]",66,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[7, 11]_7",0.9391264138407616
+353.75,<music21.chord.Chord A4 D3>,"[0, 5]","[9, 2]","[2, 7]",69,50,Piano Sonata K283 i G major.mid,Mozart,7,major,"[2, 7]_7",0.9391264138407616
+354.0,<music21.chord.Chord G4 G2>,[0],[7],[0],67,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+354.25,<music21.chord.Chord G4 G3>,[0],[7],[0],67,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+354.5,<music21.chord.Chord G4 F#3>,"[0, 1]","[6, 7]","[11, 0]",67,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0]_11",0.9391264138407616
+354.75,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+355.0,<music21.chord.Chord G2>,[0],[7],[0],43,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+355.25,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+355.5,<music21.chord.Chord D4 F4 B4 F#3>,"[0, 3, 6, 7]","[11, 2, 5, 6]","[4, 7, 10, 11]",71,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 10, 11]_11",0.9391264138407616
+355.75,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+356.0,<music21.chord.Chord E4 G4 C5 G2>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",72,43,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_0",0.9391264138407616
+356.25,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9391264138407616
+356.5,<music21.chord.Chord F#4 A4 C5 F#3>,"[0, 3, 6]","[6, 9, 0]","[11, 2, 5]",72,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5]_11",0.9391264138407616
+356.75,<music21.chord.Chord F#4 A4 C5 G3>,"[0, 1, 3, 6]","[6, 7, 9, 0]","[11, 0, 2, 5]",72,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0, 2, 5]_0",0.9391264138407616
+357.0,<music21.chord.Chord G4 B4 G2>,"[0, 4]","[7, 11]","[0, 4]",71,43,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9391264138407616
+357.25,<music21.chord.Chord G4 B4 G3>,"[0, 4]","[7, 11]","[0, 4]",71,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4]_0",0.9155343077861928
+357.5,<music21.chord.Chord G4 B4 F#3>,"[0, 1, 5]","[6, 7, 11]","[11, 0, 4]",71,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0, 4]_11",0.9155343077861928
+357.75,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9155343077861928
+358.0,<music21.chord.Chord G2>,[0],[7],[0],43,43,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.9155343077861928
+358.25,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8365015915298356
+358.5,<music21.chord.Chord B4 D5 F5 F#3>,"[0, 3, 6, 7]","[11, 2, 5, 6]","[4, 7, 10, 11]",77,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[4, 7, 10, 11]_11",0.8365015915298356
+358.75,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8365015915298356
+359.0,<music21.chord.Chord C5 E5 G2>,"[0, 4, 7]","[0, 4, 7]","[5, 9, 0]",76,43,Piano Sonata K283 i G major.mid,Mozart,7,major,"[5, 9, 0]_0",0.8365015915298356
+359.25,<music21.chord.Chord G3>,[0],[7],[0],55,55,Piano Sonata K283 i G major.mid,Mozart,7,major,[0]_0,0.8365015915298356
+359.5,<music21.chord.Chord A4 C5 F#5 F#3>,"[0, 3, 6]","[6, 9, 0]","[11, 2, 5]",78,54,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 2, 5]_11",0.8365015915298356
+359.75,<music21.chord.Chord A4 C5 F#5 G3>,"[0, 1, 3, 6]","[6, 7, 9, 0]","[11, 0, 2, 5]",78,55,Piano Sonata K283 i G major.mid,Mozart,7,major,"[11, 0, 2, 5]_0",0.8365015915298356
+360.0,<music21.chord.Chord B4 D5 G5 G2>,"[0, 4, 7]","[7, 11, 2]","[0, 4, 7]",79,43,Piano Sonata K283 i G major.mid,Mozart,7,major,"[0, 4, 7]_0",0.8365015915298356

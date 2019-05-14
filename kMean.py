@@ -12,6 +12,8 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
 import matplotlib.pyplot as plt
+from ast import literal_eval
+import matplotlib
 # %matplotlib inline
 
 # 1st param = dataframe, 2nd param String(title)
@@ -311,10 +313,12 @@ def histogram(df):
 # input df
 def centroids_finder(arr, K):
 	# print(arr)
+	distortionFinder(arr)
+	# print(K)
 	kmeans = KMeans(n_clusters=K, random_state=1).fit(arr)
 	labels = kmeans.labels_
 	inertia = kmeans.inertia_
-	print(inertia)
+	# print(inertia)
 	centroids = kmeans.cluster_centers_
 	return centroids , labels , inertia
 
@@ -330,15 +334,19 @@ def listToArray(df):
 	max_coef = max(coef_list)
 	label_index = coef_list.index(max_coef)
 	max_coef_label = df2['label'][label_index]
-
-	# print(max_coef)
-	# print(max_coef_label)
 	return max_coef_label
-
+def strToArr(df):
+	# df = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
+	arr = []
+	df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'] = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'].apply(literal_eval)
+	for index, row in df.iterrows():
+		arr.append(row['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'])
+		# print(type(row['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']))
+	return arr
 def distortionFinder(X):
-	X = X[:,[0,1]]
+	# X = X[:,[0,1]]
 	distortions = []
-	for i in range(1,11):
+	for i in range(1,30):
 	    km = KMeans(n_clusters=i, 
 	                init='k-means++', 
 	                n_init=10, 
@@ -346,13 +354,32 @@ def distortionFinder(X):
 	                random_state=0)
 	    km.fit(X)
 	    distortions.append(km.inertia_)
-	plt.plot(range(1, 11), distortions, marker='o')
+	plt.plot(range(1, 30), distortions, marker='o')
 	plt.xlabel('Number of clusters')
 	plt.ylabel('Distortion')
 	plt.tight_layout()
 	# plt.savefig('./figures/elbow.png', dpi=300)
 	plt.show()
+
+
+
+def table(df,centroidIndex):
 	
+	c1 = df[df['CentroidLabelIndex_entireUnits'] == centroidIndex]
+	c1G = c1.groupby('triadLabel').size()
+
+
+	label = c1G.index.values.tolist()
+	count = c1G.tolist()
+	leng = len(label)
+	centr = [centroidIndex]*leng
+
+	data = [centr,label,count]
+	rows = zip(data[0], data[1], data[2])
+	# headers = ['centroid', 'label', 'count']
+	headers = ['Year', 'Month', 'Value']
+	df = pd.DataFrame(rows, columns=headers)	
+	return df
 def main():
 	
 # =============================================================================
@@ -369,128 +396,115 @@ def main():
 	dir_name = args.inputdirname
 # =============================================================================
     
-	# dir_name = "sample"
+	# dir_name = "Mozart"
 	cwd = os.getcwd()
 	directory = os.path.join(cwd,dir_name)
 
-	offset_term = int(input("Enter offset value to split: "))
-	transpose = int(input("Enter a value transposing by: "))
-
 	entireDF = pd.DataFrame()
-	entireVP =[]
-	# iterate dir
+	# print(entireDF)
 	for file in os.listdir(directory):
 		if file.endswith(".csv"):
 			filename = file
 			path = os.path.join(directory,filename)
 			# defining engine to avoid memory overflow issue
 			df= pd.read_csv(path, engine="python")
+			entireDF = entireDF.append(df, ignore_index=True)
 			# print(df)
-			df['octScalePitch'] = df.apply(octScalePitch, axis = 1)
-
-			piece_name = df['file'].iloc[0]
-			composer_name = df['Composer'].iloc[0]
-
-			last_offset = df['offset'].max()
-			if (last_offset%offset_term)==0:
-				chunk_count = math.ceil(last_offset/offset_term+0.00001)
-			elif (last_offset%offset_term) !=0:
-				chunk_count = math.ceil(last_offset/offset_term)
-			last_offset = chunk_count * offset_term
-
-			chunk_list = list(range(0,last_offset,offset_term))
-			# print(chunk_list)
-			df_pitchSetOnly = pd.DataFrame()
-			# k = None
-			vectorArrRet = []
-			df_att2 = pd.DataFrame(columns=['offsetRange','pitchSet','oct_list_set','[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'])
-			for x in chunk_list:
-				k = df[(df['offset']>=x)&(df['offset']<x+offset_term)]
-				# print(k)
-				if not k.empty:
-					df_row, vectorArr = pitchSet(k,transpose)
-					# asArray = np.asarray(vectorArr)
-					# print(asArray)
-					vectorArrRet.append(vectorArr)
-					entireVP.append(vectorArr)
-					# print(vectorArr)
-					df_att = pd.DataFrame(columns=['offsetRange','pitchSet','oct_list_set','[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'])
-					for z in range(len(k)):
-						# print(z)
-						df_att = df_att.append(df_row, ignore_index=True)
-					c1 = df_row['offsetRange']
-					c2 = df_row['pitchSet']
-					c3 = df_row['oct_list_set']
-					c4 = df_row['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
-					df_pitchSetOnly = df_pitchSetOnly.append(df_row, ignore_index=True)
-					df_att2 = df_att2.append(df_att,ignore_index=True)
-			# print(vectorArrRet)
-			majorRot, minorRot = vectorGen()
-			df['offsetRange'] = df_att2['offsetRange']
-			df['pitchSet'] = df_att2['pitchSet']
-			df['oct_list_set'] = df_att2['oct_list_set']
-			df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'] = df_att2['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
-
-			# print(df)
-			optionalString = ""
-
-			# csv_gen(df_pitchSetOnly, directory, piece_name, composer_name,"pitchSetOnly_")
-			# csv_gen(df, directory, piece_name, composer_name,optionalString)
-
-			# use df, majorRot, minorRot from now here.
-			df_p = df_pitchSetOnly
-			df_major = pd.DataFrame()
-			df_minor = pd.DataFrame()
-			df_triad = pd.DataFrame()
-			df_major['triad'] = majorRot
-			df_minor['triad'] = minorRot
-			major_label = ['cMajor','c#Major','dMajor','e-Major','eMajor','fMajor','f#Major','gMajor','g#Major','aMajor','b-Major','bMajor']
-			minor_label = ['cMinor','c#Minor','dMinor','e-Minor','eMinor','fMinor','f#Minor','gMinor','g#Minor','aMinor','b-Minor','bMinor']
-			df_major['label'] = major_label
-			df_minor['label'] = minor_label
-			df_triad = df_major.append(df_minor, ignore_index=True)
-			df_p = df_p.drop(['pitchSet','oct_list_set'], axis=1)
-
-			# create label on df_p
-			df_p['triadLabel']= df_p.apply(triadLabeling,args=(df_triad,), axis = 1)
-			df_p['triadCoef']= df_p.apply(labelCoef,args=(df_triad,), axis = 1)
-			df_p['coefList']= df_p.apply(coefList,args=(df_triad,), axis = 1)
-
-			# print(df_p) 
-			cwd = os.getcwd()
-			# out_dir = os.path.join(cwd,"outfile.csv")
-			# df_p.to_csv(out_dir, index = None)
-
-			# print(type(vectorArrRet))
-			# this vectorpoints type is np array. it was list.
-			vectorPoints = np.asarray(vectorArrRet)
-			# print(type(vectorPoints))
-
-			# print(vectorPoints)
-			# input, number of array, clusters
-			
-			centroidsVector, labelsArray, inertiaValue = centroids_finder(vectorPoints,10)
-			series = pd.Series(labelsArray)
-			df_p.insert(2, "CentroidLabelIndex_individualUnit", series)
-			df_p = df_p.drop(['triadCoef', 'coefList'], axis=1)
-			df_p['filename'] = df_p.apply(filenameAttach, args=(filename,), axis=1)
-			df_p = df_p.reset_index()
-			# index || offsetRange  || [C,C#,D,E-,E,F,F#,G,G#,A,B-,B] || CentroidLabelIndex || triadLabel || filename
-			# print(df_p)
-			# entireDF = entireDF.append(df_p, ignore_index=True)
-			# output = pd.DataFrame(centroidsVector)
-			# output.to_csv(os.path.join(cwd,"vectorPoints.csv"), index = None)
-
-			csv_gen(df_p, directory, piece_name, composer_name, optionalString)
 
 		else:
 			print("\"{}\" is not csv file".format(file))
+	optionalString= ""
+	composer_name = "Kmean"
+	piece_name = ""
+	directory = "all"
+	
+	entireVP = strToArr(entireDF)
 
-	# vectorPointE = np.asarray(entireVP)
-	# centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,10)
-	# seriesE = pd.Series(labelsArrayE)
-	# entireDF.insert(2, "CentroidLabelIndex_entireUnits", seriesE)
+	vectorPointE = np.asarray(entireVP)
+	centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,20)
+	print(labelsArrayE)
+	a = np.asarray(labelsArrayE)
+	np.savetxt("countList.csv", a, delimiter=",")
+
+	seriesE = pd.Series(labelsArrayE)
+	entireDF.insert(2, "CentroidLabelIndex_entireUnits", seriesE)
 	# print(entireDF)
+	csv_gen(entireDF, directory, piece_name, composer_name, optionalString)
+	print(centroidsVectorE)
+
+	# np csv out
+	a = np.asarray(centroidsVectorE)
+	np.savetxt("foo.csv", a, delimiter=",")
+
+	print(entireDF)
+
+
+
+
+
+
+	c1 = table(entireDF,0)
+	c2 = table(entireDF,1)
+	c3 = table(entireDF,2)
+	c4 = table(entireDF,3)
+	c5 = table(entireDF,4)
+	c6 = table(entireDF,5)
+	c7 = table(entireDF,6)
+	c8 = table(entireDF,7)
+	c9 = table(entireDF,8)
+	c10 = table(entireDF,9)
+
+	frames = [c1, c2,c3,c4,c5,c6,c7,c8,c9,c10]
+
+	df = pd.concat(frames,ignore_index=True)
+
+	# print(df)
+
+	# directory = directoryName
+	cwd = os.getcwd()
+	title = str("count")
+	composer = str("none")
+	opt = str("none")
+	filename =  title + '.csv'
+	# dir_path = os.path.join(cwd,directory)
+	# new_path = os.path.join(dir_path,composer)
+	new_path = os.path.join(cwd,composer)
+	# print(df_X)
+	if not os.path.exists(new_path):
+		os.mkdir(new_path)
+		print("=======================================")
+		print("directory \"{}\" has been created".format(new_path))
+		print("=======================================")
+	final_dir = os.path.join(new_path,filename)
+	df.to_csv(final_dir, index = None)
+	print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+
+	matplotlib.style.use('ggplot')
+
+
+	data = [[2000, 2000, 2000, 2001, 2001, 2001, 2002, 2002, 2002],
+		['Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar'],
+		[1, 2, 3, 4, 5, 6, 7, 8, 9]]
+
+	rows = zip(data[0], data[1], data[2])
+	headers = ['Year', 'Month', 'Value']
+	df = pd.DataFrame(rows, columns=headers)
+	print(df)
+
+	fig, ax = plt.subplots(figsize=(10,7))  
+
+	months = df['Month'].drop_duplicates()
+	margin_bottom = np.zeros(len(df['Year'].drop_duplicates()))
+	colors = ["#006D2C", "#31A354","#74C476"]
+
+	for num, month in enumerate(months):
+		values = list(df[df['Month'] == month].loc[:, 'Value'])
+		# print(":12123")
+		df[df['Month'] == month].plot.bar(x='Year',y='Value', ax=ax, stacked=True, bottom = margin_bottom, color=colors[num], label=month)
+		margin_bottom += values
+
+	plt.show()
 
 if __name__ == '__main__':
 	main()

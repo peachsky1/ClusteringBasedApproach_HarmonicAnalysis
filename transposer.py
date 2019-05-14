@@ -41,15 +41,14 @@ def csv_generator(df_X, d):
 
 
 def csv_gen(df_X, directoryName, pieceName, composerName, optionalString):
-	# directory = directoryName
+	directory = directoryName
 	cwd = os.getcwd()
 	title = str(pieceName)
 	composer = str(composerName)
 	opt = str(optionalString)
 	filename = opt +'pitchSet_' + title + '_by_' + composer + '.csv'
-	# dir_path = os.path.join(cwd,directory)
-	# new_path = os.path.join(dir_path,composer)
-	new_path = os.path.join(cwd,composer)
+	dir_path = os.path.join(cwd,directory)
+	new_path = os.path.join(dir_path,composer)
 	# print(df_X)
 	if not os.path.exists(new_path):
 		os.mkdir(new_path)
@@ -125,7 +124,7 @@ def indexFinder(x):
 
 # This method take chuck of dataframe which has been splitted by user input interval of offset.
 # Will return the set of pitchs
-def pitchSet(df_x,transpose):
+def pitchSet(df_x):
 
 	head_node = df_x.head(1)
 	tail_node = df_x.tail(1)
@@ -172,9 +171,6 @@ def pitchSet(df_x,transpose):
 			pitch_count_list[i] += 1
 	# print(pitch_count_list)
 # '[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'
-	# print(pitch_count_list)
-	pitch_count_list = (pitch_count_list[-transpose:] + pitch_count_list[:-transpose])
-	# print(pitch_count_list)
 	data_row = [(offsetRange,list_set,oct_list_set,pitch_count_list)]
 	# print(pitch_count_list)
 
@@ -335,24 +331,6 @@ def listToArray(df):
 	# print(max_coef_label)
 	return max_coef_label
 
-def distortionFinder(X):
-	X = X[:,[0,1]]
-	distortions = []
-	for i in range(1,11):
-	    km = KMeans(n_clusters=i, 
-	                init='k-means++', 
-	                n_init=10, 
-	                max_iter=300, 
-	                random_state=0)
-	    km.fit(X)
-	    distortions.append(km.inertia_)
-	plt.plot(range(1, 11), distortions, marker='o')
-	plt.xlabel('Number of clusters')
-	plt.ylabel('Distortion')
-	plt.tight_layout()
-	# plt.savefig('./figures/elbow.png', dpi=300)
-	plt.show()
-	
 def main():
 	
 # =============================================================================
@@ -374,7 +352,7 @@ def main():
 	directory = os.path.join(cwd,dir_name)
 
 	offset_term = int(input("Enter offset value to split: "))
-	transpose = int(input("Enter a value transposing by: "))
+	transposeBy = int(input("Enter a value which transposed by: "))
 
 	entireDF = pd.DataFrame()
 	entireVP =[]
@@ -408,7 +386,7 @@ def main():
 				k = df[(df['offset']>=x)&(df['offset']<x+offset_term)]
 				# print(k)
 				if not k.empty:
-					df_row, vectorArr = pitchSet(k,transpose)
+					df_row, vectorArr = pitchSet(k)
 					# asArray = np.asarray(vectorArr)
 					# print(asArray)
 					vectorArrRet.append(vectorArr)
@@ -434,8 +412,8 @@ def main():
 			# print(df)
 			optionalString = ""
 
-			# csv_gen(df_pitchSetOnly, directory, piece_name, composer_name,"pitchSetOnly_")
-			# csv_gen(df, directory, piece_name, composer_name,optionalString)
+			csv_gen(df_pitchSetOnly, directory, piece_name, composer_name,"pitchSetOnly_")
+			csv_gen(df, directory, piece_name, composer_name,optionalString)
 
 			# use df, majorRot, minorRot from now here.
 			df_p = df_pitchSetOnly
@@ -458,8 +436,8 @@ def main():
 
 			# print(df_p) 
 			cwd = os.getcwd()
-			# out_dir = os.path.join(cwd,"outfile.csv")
-			# df_p.to_csv(out_dir, index = None)
+			out_dir = os.path.join(cwd,"outfile.csv")
+			df_p.to_csv(out_dir, index = None)
 
 			# print(type(vectorArrRet))
 			# this vectorpoints type is np array. it was list.
@@ -477,20 +455,18 @@ def main():
 			df_p = df_p.reset_index()
 			# index || offsetRange  || [C,C#,D,E-,E,F,F#,G,G#,A,B-,B] || CentroidLabelIndex || triadLabel || filename
 			# print(df_p)
-			# entireDF = entireDF.append(df_p, ignore_index=True)
+			entireDF = entireDF.append(df_p, ignore_index=True)
 			# output = pd.DataFrame(centroidsVector)
 			# output.to_csv(os.path.join(cwd,"vectorPoints.csv"), index = None)
-
-			csv_gen(df_p, directory, piece_name, composer_name, optionalString)
 
 		else:
 			print("\"{}\" is not csv file".format(file))
 
-	# vectorPointE = np.asarray(entireVP)
-	# centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,10)
-	# seriesE = pd.Series(labelsArrayE)
-	# entireDF.insert(2, "CentroidLabelIndex_entireUnits", seriesE)
-	# print(entireDF)
+	vectorPointE = np.asarray(entireVP)
+	centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,10)
+	seriesE = pd.Series(labelsArrayE)
+	entireDF.insert(2, "CentroidLabelIndex_entireUnits", seriesE)
+	print(entireDF)
 
 if __name__ == '__main__':
 	main()
