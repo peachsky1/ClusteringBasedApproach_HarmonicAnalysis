@@ -1,0 +1,33 @@
+1. Labeling the centroids of each rows - done.
+2. clustering id
+3. construcs the histogram. elements of frequency of each cluster.
+
+4. attatch the name of the piece, movement.
+5. metadata contains time info.
+
+
+
+
+
+
+
+
+
+
+
+regularization(adding panelty function)
+1. start with linear function
+2. panalize the high degree polinomial
+
+J = inertia_
+
+
+assignment and update.
+Donna 866-306-7643 extension 6989 
+
+
+Questions
+1. input dataset(X) format.
+
+var(C) = Sigma(wi*wj*wij)
+

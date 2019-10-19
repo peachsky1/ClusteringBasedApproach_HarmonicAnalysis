@@ -32,3 +32,23 @@ Output
 
 >Single csv file name format : "title by composer.csv"
 >>https://drive.google.com/file/d/1NWwg0FcHZgk-8is8u8rEdqMOwYFiC0YT/view?usp=sharing
+
+
+### Sonata pieces list
+ 'Piano Sonata K279 i C major.mid by Mozart.csv',
+ 'Piano Sonata K279 ii F major.mid by Mozart.csv',
+ 'Piano Sonata K279 iii C major.mid by Mozart.csv',
+ 'Piano Sonata K280 i F major.mid by Mozart.csv',
+ 'Piano Sonata K282 i Eb major.mid by Mozart.csv',
+ 'Piano Sonata K283 i G major.mid by Mozart.csv',
+ 'Piano Sonata K284 i D major.mid by Mozart.csv',
+ 'Piano Sonata K309 i C major.mid by Mozart.csv',
+ 'Piano Sonata K311 i D major.mid by Mozart.csv',
+ 'Piano Sonata K330 i C major.mid by Mozart.csv',
+ 'Piano Sonata K330 iii C major.mid by Mozart.csv',
+ 'Piano Sonata K332 i F major.mid by Mozart.csv',
+ 'Piano Sonata K332 ii Bb major.mid by Mozart.csv',
+ 'Piano Sonata K333 i Bb major.mid by Mozart.csv',
+ 'Piano Sonata K545 i C major.mid by Mozart.csv',
+ 'Piano Sonata K570 i Bb major.mid by Mozart.csv',
+ 'Piano Sonata K576 ii A major.mid by Mozart.csv',

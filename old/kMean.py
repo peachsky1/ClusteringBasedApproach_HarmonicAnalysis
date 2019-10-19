@@ -48,7 +48,7 @@ def csv_gen(df_X, directoryName, pieceName, composerName, optionalString):
 	title = str(pieceName)
 	composer = str(composerName)
 	opt = str(optionalString)
-	filename = opt +'_' + title + '_' + composer + '.csv'
+	filename = opt +'pitchSet_' + title + '_by_' + composer + '.csv'
 	# dir_path = os.path.join(cwd,directory)
 	# new_path = os.path.join(dir_path,composer)
 	new_path = os.path.join(cwd,composer)
@@ -392,12 +392,11 @@ def main():
 	# parser.add_argument("-i", "--inputfilename", required=True,
 	#     help="Filepath to the input file csv file.")
 	args = parser.parse_args()
-   
 	# filename = args.inputfilename
 	dir_name = args.inputdirname
-    # =============================================================================
+# =============================================================================
     
-	dir_name = "MozartQuarterNote"
+	# dir_name = "Mozart"
 	cwd = os.getcwd()
 	directory = os.path.join(cwd,dir_name)
 
@@ -422,236 +421,90 @@ def main():
 	entireVP = strToArr(entireDF)
 
 	vectorPointE = np.asarray(entireVP)
-    #check optimized number of centroid
 	centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,20)
-    
-    
 	print(labelsArrayE)
 	a = np.asarray(labelsArrayE)
-	#np.savetxt("countList.csv", a, delimiter=",")
+	np.savetxt("countList.csv", a, delimiter=",")
 
 	seriesE = pd.Series(labelsArrayE)
 	entireDF.insert(2, "CentroidLabelIndex_entireUnits", seriesE)
 	# print(entireDF)
-    
-    #entireDF, directory, piece_name, composer_name, optionalString
 	csv_gen(entireDF, directory, piece_name, composer_name, optionalString)
 	print(centroidsVectorE)
 
 	# np csv out
 	a = np.asarray(centroidsVectorE)
-	np.savetxt("CentroidVectorCounts.csv", a, delimiter=",")
+	np.savetxt("foo.csv", a, delimiter=",")
 
-	print(entireDF.head(10))
-
-   
-    from pandas.plotting import table
-    
-    
-    # entire bar chart
-    countDF = entireDF.CentroidLabelIndex_entireUnits.value_counts(normalize=True)
-    countDF
-    countDF = countDF.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
-    #value as y axis. normalized
-    countDF.plot.bar(y=[0], alpha=0.5)
-    countDF
-
-
-    #Stage split
-    stageOne
-    stageTwo
-    stageThree
-    stageFour
-    stageFive
-
-    entireDF
-      #Splitting entire DF to small and sequence
-      #v = file name
-      #smallDF = each context
-    for v,smallDF in entireDF.groupby('filename'):
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-        print(smallDF)
-        cwd = os.getcwd()
-        filename = v+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-        final_dir= os.path.join(new_path,filename)
-        #smallDF.to_csv(final_dir, index = None)
-        print("filename: \"{}\" has been successfully created :^D".format(filename))
-
-        figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
-        #smallDF.plot(linewidth=0.5)
-        smallNorm = smallDF.CentroidLabelIndex_entireUnits.value_counts(normalize=True)
-        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
-        #smallNorm.plot.bar(y=[0], alpha=0.5, title=v)
-        smallNorm
-        countDF
-        plt.cla()
-        fig = plt.figure()
-        
-        df = pd.DataFrame({'Total': countDF, v: smallNorm} )
-        fig = df.plot.bar(rot=0)
-       
-        plt.savefig(firDir+'.norm-bar.png',dpi=500)     
-        print("Current working piece is: "+v)
-        print(smallDF.head(5))
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-  ##  ========resource below=================
-    
-    
-    
-
-    #Splitting entire DF to small and sequence
-    for v,smallDF in entireDF.groupby('filename'):
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-        
-        cwd = os.getcwd()
-        filename = v+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-        final_dir= os.path.join(new_path,filename)
-        smallDF.to_csv(final_dir, index = None)
-        print("filename: \"{}\" has been successfully created :^D".format(filename))
-
-        figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
-        smallDF.plot(linewidth=0.5)
-        plt.savefig(firDir+'.sequence.png',dpi=500)
-
-
-
-    
-    
-    #creating frequency chart ()
-    for v,smallDF in entireDF.groupby('filename'):
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-        
-        cwd = os.getcwd()
-        filename = v+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-        final_dir= os.path.join(new_path,filename)
-        #smallDF.to_csv(final_dir, index = None)
-        #print("filename: \"{}\" has been successfully created :^D".format(filename))
-
-
-        countDF = smallDF.reset_index(drop=True)
-        dfdf = countDF.CentroidLabelIndex_entireUnits.value_counts()
-        
-        dfdf = dfdf.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
-        print(dfdf)
-        dfdf.plot('bar', linewidth=0.5)
-        print("bar plot Generated")
-
-        figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
-        #countDF.plot()
-        plt.savefig(firDir+'.frequency.png',dpi=500)
-
-
-
-    
-    #sequence without index. centroid 
-    for v,smallDF in entireDF.groupby('filename'):
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-        
-        cwd = os.getcwd()
-        filename = v+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-        final_dir= os.path.join(new_path,filename)
-        #smallDF.to_csv(final_dir, index = None)
-        #print("filename: \"{}\" has been successfully created :^D".format(filename))
-        smallDF = smallDF.reset_index(drop=True)
-        
-        columns = ['index','CentroidLabelIndex_individualUnit'] 
-        smallDF.drop(columns, inplace=True, axis=1)
-        #smallDF = smallDF.iloc[:,2:].values
-        #smallDF = smallDF.drop(columns=[0])
-        #print(smallDF)
-        
-        
-        figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
-        smallDF.plot(linewidth=0.5)
-        plt.savefig(firDir+'.sequenceWithoutIndex.png',dpi=500)
+	print(entireDF)
 
 
 
 
 
-    #normalized histogram
-    for v,smallDF in entireDF.groupby('filename'):
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-        
-        cwd = os.getcwd()
-        filename = v+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-        final_dir= os.path.join(new_path,filename)
-        #smallDF.to_csv(final_dir, index = None)
-        #print("filename: \"{}\" has been successfully created :^D".format(filename))
 
-        figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
-        smallDF.hist(column='CentroidLabelIndex_entireUnits',normed=true)
-        plt.xlabel('Centroid Label')
-        plt.ylabel('Frequency')
-        plt.show()
-            
-    
-            # Remove title
-        smallDF.set_title("")
+	c1 = table(entireDF,0)
+	c2 = table(entireDF,1)
+	c3 = table(entireDF,2)
+	c4 = table(entireDF,3)
+	c5 = table(entireDF,4)
+	c6 = table(entireDF,5)
+	c7 = table(entireDF,6)
+	c8 = table(entireDF,7)
+	c9 = table(entireDF,8)
+	c10 = table(entireDF,9)
 
-        # Set x-axis label
-        smallDF.set_xlabel("CentroidLabel", labelpad=20, weight='bold', size=12)
+	frames = [c1, c2,c3,c4,c5,c6,c7,c8,c9,c10]
 
-        # Set y-axis label
-        smallDF.set_ylabel("Frequency", labelpad=20, weight='bold', size=12)
-        
-        #smallDF.plot(linewidth=0.5)
-        #plt.savefig(firDir+'.sequence.png',dpi=500)
+	df = pd.concat(frames,ignore_index=True)
 
-    
-       
-        
+	# print(df)
+
+	# directory = directoryName
+	cwd = os.getcwd()
+	title = str("count")
+	composer = str("none")
+	opt = str("none")
+	filename =  title + '.csv'
+	# dir_path = os.path.join(cwd,directory)
+	# new_path = os.path.join(dir_path,composer)
+	new_path = os.path.join(cwd,composer)
+	# print(df_X)
+	if not os.path.exists(new_path):
+		os.mkdir(new_path)
+		print("=======================================")
+		print("directory \"{}\" has been created".format(new_path))
+		print("=======================================")
+	final_dir = os.path.join(new_path,filename)
+	df.to_csv(final_dir, index = None)
+	print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+
+	matplotlib.style.use('ggplot')
+
+
+	data = [[2000, 2000, 2000, 2001, 2001, 2001, 2002, 2002, 2002],
+		['Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar'],
+		[1, 2, 3, 4, 5, 6, 7, 8, 9]]
+
+	rows = zip(data[0], data[1], data[2])
+	headers = ['Year', 'Month', 'Value']
+	df = pd.DataFrame(rows, columns=headers)
+	print(df)
+
+	fig, ax = plt.subplots(figsize=(10,7))  
+
+	months = df['Month'].drop_duplicates()
+	margin_bottom = np.zeros(len(df['Year'].drop_duplicates()))
+	colors = ["#006D2C", "#31A354","#74C476"]
+
+	for num, month in enumerate(months):
+		values = list(df[df['Month'] == month].loc[:, 'Value'])
+		# print(":12123")
+		df[df['Month'] == month].plot.bar(x='Year',y='Value', ax=ax, stacked=True, bottom = margin_bottom, color=colors[num], label=month)
+		margin_bottom += values
+
+	plt.show()
 
 if __name__ == '__main__':
 	main()
