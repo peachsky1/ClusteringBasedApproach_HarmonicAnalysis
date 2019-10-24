@@ -1,0 +1,21 @@
+﻿Old no.,chordName,pc-labels,color,newCentroidIndex
+11,iv_ofDmin,GBb-C#D,yello,0
+19,4ofC,F-AC,cyan,1
+8,Cmaj-root,C-EG,slateblue,2
+15,Cmaj1-4tet,C-DEF,blue,3
+2,2/4ofCmaj,DF,green,4
+17,CmajTriad,CEG,blueviolet,5
+10,Cmaj2-5tet,DEFG,violet,6
+9,6-1ofC,A-CF,deepskyblue,7
+4,Cmaj3rd5th,EG-C,mediumvioletred,8
+3,Gmaj-root,G-BD,red,9
+16,chr,FGAB,mediumpurple,10
+18,V-IofC,D-GBC,crimson,11
+13,Cmaj5-1tet,BC-AG,darkviolet,12
+6,GmajTriad,GBD,orange,13
+12,AminTriad,ACE,steelblue,14
+0,VofG,D-F#A,greenyellow,15
+1,Gmaj-IV/vii,F#G-ACE,salmon,16
+5,Gmaj3rd5th,BD-G,gold,17
+7,V7ofG,DF#AC,lime,18
+14,VofAmin,E-BCD,indigo,19
