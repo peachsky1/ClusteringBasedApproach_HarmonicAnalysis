@@ -456,15 +456,7 @@ def main():
 
 
     entireDF
-    
-    # entire bar chart
-    
-    countDF = entireDF.CentroidLabelIndex_entireUnits.value_counts(normalize=True)
-    countDF
-    countDF = countDF.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
-    #value as y axis. normalized
-    countDF.plot.bar(y=[0], alpha=0.5)
-    countDF
+
     
 #    
 #    #Stage split
@@ -709,12 +701,21 @@ def main():
        ######## ######## ######## ######## ######## ######## ######## ######## ######## ########
    
     
+        
+
     
     
     entireDF = entireDF.drop(['CentroidLabelIndex_individualUnit'],axis=1)
     entireDF.rename(columns={'CentroidLabelIndex_entireUnits':'oldCentroidIndex'}, inplace=True)
     
-
+    # entire bar chart
+    
+    countDF = entireDF.newCentroidIndex.value_counts(normalize=True)
+    countDF
+    countDF = countDF.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
+    #value as y axis. normalized
+    countDF.plot.bar(y=[0], alpha=0.5)
+    countDF
 
     entireDF
     
