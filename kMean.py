@@ -14,6 +14,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from ast import literal_eval
 import matplotlib
+from matplotlib import cm
 # %matplotlib inline
 
 # 1st param = dataframe, 2nd param String(title)
@@ -385,7 +386,20 @@ def table(df,centroidIndex):
 
 
 
+def compute_pos(xticks, width, i, models):
+    index = np.arange(len(xticks))
+    n = len(models)
+    correction = i-0.5*(n-1)
+    return index + width*correction
 
+def present_height(ax, bar):
+    for rect in bar:
+        height = rect.get_height()
+        posx = rect.get_x()+rect.get_width()*0.5
+        posy = height*1.01
+        ax.text(posx, posy, '%.3f' % height, rotation=90, ha='center', va='bottom')
+		
+                
 
 def main():
     
@@ -718,11 +732,8 @@ def main():
     countDF
 
     entireDF
-    
-      #Splitting entire DF to small and sequence
-      #v = file name
-      #smallDF = each context
-      #Refactoring - coloring task1
+  
+        
     for v,smallDF in entireDF.groupby('filename'):
         #print(smallDF['filename'].iloc[0])
         #print(v)
@@ -750,13 +761,18 @@ def main():
         countDF
         plt.cla()
         fig = plt.figure()
-        
         df = pd.DataFrame({'Total': countDF, v: smallNorm} )
-        fig = df.plot.bar(rot=0)
-       
+        
+        
+
+        
+        fig = df.plot.bar(rot=45)
+        
         plt.savefig(firDir+'.norm-bar.png',dpi=500)     
         print("Current working piece is: "+v)
         print(smallDF.head(5))
+        
+        
     dfOut=os.path.join(cwd,"entireDF.csv")
     entireDF.to_csv(dfOut,index=None)
     
@@ -807,13 +823,53 @@ def main():
         
         
         
+          
+      #Splitting entire DF to small and sequence
+      #v = file name
+      #smallDF = each context
+      #Refactoring - coloring task1
+    for v,smallDF in entireDF.groupby('filename'):
+        #print(smallDF['filename'].iloc[0])
+        #print(v)
+        print(smallDF)
+        cwd = os.getcwd()
+        filename = v+'.csv'
+        new_path = os.path.join(cwd,"smallDF")
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+            print("=======================================")
+            print("directory \"{}\" has been created".format(new_path))
+            print("=======================================")
+        final_dir= os.path.join(new_path,filename)
+        ####!!!!Save smallDF as needeed!
+        smallDF.to_csv(final_dir, index = None)
+        print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,v)
+        #smallDF.plot(linewidth=0.5)
+        smallNorm = smallDF.newCentroidIndex.value_counts(normalize=True)
+        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
+        #smallNorm.plot.bar(y=[0], alpha=0.5, title=v)
+        #reindex for missing index
+        #smallNorm.reindex(list(range(smallNorm.index.min(),smallNorm.index.max()+1)),fill_value=0)
+        smallNorm = smallNorm.reindex(list(range(0,20)),fill_value=0)
         
+        plt.cla()
+        fig = plt.figure()
+        x = list(range(0,20,1))
+        y = list(smallNorm)
+
+        height = y
+        bars = x
+        y_pos = x
+        plt.bar(y_pos, height, color=color)
+        plt.xticks(y_pos, bars)
         
-        
-        
-        
-        
-        
+
+        plt.savefig(firDir+str(v)+'_norm_colormap.png',dpi=500)
+                
+                
         
         
         
