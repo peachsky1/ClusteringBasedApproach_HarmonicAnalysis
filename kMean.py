@@ -762,12 +762,42 @@ def main():
     
     # x-axis: Year(in order), y-axis: norm dist, 20 charts
     # normal distributed 20 charts vs year per Chart
-    for v, smallDF in entireDF.groupby('year'):
+    # v = cluster index, smallDF = corresponding dataframe
+    for v, smallDF in entireDF.groupby('newCentroidIndex'):
         print(smallDF)
         print(v)
         
-    
-    
+        #print(smallDF['filename'].iloc[0])
+        #print(v)
+#        print(smallDF)
+        cwd = os.getcwd()
+#        filename = 'custerIndex_'+ str(v)+'.csv'
+        new_path = os.path.join(cwd,"smallDF")
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+            print("=======================================")
+            print("directory \"{}\" has been created".format(new_path))
+            print("=======================================")
+#        final_dir= os.path.join(new_path,filename)
+        ####!!!!Save smallDF as needeed!
+#        Do not save this dataframe. only for plot
+#        smallDF.to_csv(final_dir, index = None)
+#        print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,'ClusterIndex_')
+        smallDF.plot(linewidth=0.5)
+        smallNorm = smallDF.year.value_counts(normalize=True)
+        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
+        #smallNorm.plot.bar(y=[0], alpha=0.5, title='ClusterIndex_'+v)
+        smallNorm
+        plt.cla()
+        fig = plt.figure()
+        fig = smallNorm.plot.bar(rot=0, color=(0.2, 0.4, 0.6, 0.6))
+       
+        plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
+        print("Current working cluster index is: "+str(v))
+        print(smallDF.head(5))
         
         
         
