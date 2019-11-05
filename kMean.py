@@ -482,8 +482,7 @@ def main():
 #
 #    
     
-    
-    
+
     ######## ######## ######## ######## ######## ######## ######## ######## ######## ########
      ######## ######## ######## ######## ######## ######## ######## ######## ######## ########
       ######## ######## ######## ######## From there to bottom, adding year, nad oldCentroid    chordName    pc-labels    color    newCentroidIndex ######## ######## ########
@@ -494,6 +493,13 @@ def main():
     entireDF.head(10)
     fileList = entireDF['filename'].unique().tolist()
     sorted(fileList)
+    
+    
+
+    
+    
+    
+    
     
     entireDF.loc[entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv','year']=1774
     entireDF.loc[entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv','year']=1774
@@ -512,11 +518,14 @@ def main():
     entireDF.loc[entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv','year']=1788
     entireDF.loc[entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv','year']=1789
     entireDF.loc[entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv','year']=1789
+    
     yearList = entireDF['year'].unique().tolist()
     sorted(yearList)
     entireDF.head(10)
-    
-    
+    yearCount = entireDF.sort_values(['year'],ascending=False).groupby('year').count()[['index']]
+    yearCount['index'] = yearCount
+    yearCount = yearCount.rename({'index': 'rowCount'}, axis='columns')
+    yearCount['percentage'] = yearCount['rowCount']/yearCount['rowCount'].sum()*100
       
     
 
@@ -733,6 +742,196 @@ def main():
 
     entireDF
   
+        
+    entireDF['PS'] = 0
+    entireDF.head()
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv') & (entireDF['index'] < 93),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv') & (entireDF['index'] >= 93) & (entireDF['index'] < 212),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv') & (entireDF['index'] >= 212) & (entireDF['index'] < 316),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv') & (entireDF['index'] >= 316) & (entireDF['index'] < 381),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 i C major.mid by Mozart.csv') & (entireDF['index'] >= 381) ,'PS']=5
+    ##
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv') & (entireDF['index'] < 45),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv') & (entireDF['index'] >= 45) & (entireDF['index'] < 120),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv') & (entireDF['index'] >= 120) & (entireDF['index'] < 173),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv') & (entireDF['index'] >= 173) & (entireDF['index'] < 210),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 ii F major.mid by Mozart.csv') & (entireDF['index'] >= 210) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 iii C major.mid by Mozart.csv') & (entireDF['index'] < 62),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 62) & (entireDF['index'] < 151),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 151) & (entireDF['index'] < 235),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 235) & (entireDF['index'] < 294),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K279 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 294) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K280 i F major.mid by Mozart.csv') & (entireDF['index'] < 111),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K280 i F major.mid by Mozart.csv') & (entireDF['index'] >= 111) & (entireDF['index'] < 235),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K280 i F major.mid by Mozart.csv') & (entireDF['index'] >= 235) & (entireDF['index'] < 342),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K280 i F major.mid by Mozart.csv') & (entireDF['index'] >= 342) & (entireDF['index'] < 449),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K280 i F major.mid by Mozart.csv') & (entireDF['index'] >= 449) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K282 i Eb major.mid by Mozart.csv') & (entireDF['index'] < 69),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K282 i Eb major.mid by Mozart.csv') & (entireDF['index'] >= 69) & (entireDF['index'] < 123),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K282 i Eb major.mid by Mozart.csv') & (entireDF['index'] >= 123) & (entireDF['index'] < 169),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K282 i Eb major.mid by Mozart.csv') & (entireDF['index'] >= 169) & (entireDF['index'] < 199),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K282 i Eb major.mid by Mozart.csv') & (entireDF['index'] >= 199) ,'PS']=5
+    ##
+    
+
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K283 i G major.mid by Mozart.csv') & (entireDF['index'] < 69),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K283 i G major.mid by Mozart.csv') & (entireDF['index'] >= 69) & (entireDF['index'] < 160),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K283 i G major.mid by Mozart.csv') & (entireDF['index'] >= 160) & (entireDF['index'] < 214),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K283 i G major.mid by Mozart.csv') & (entireDF['index'] >= 214) & (entireDF['index'] < 267),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K283 i G major.mid by Mozart.csv') & (entireDF['index'] >= 267) ,'PS']=5
+    ##
+    
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K284 i D major.mid by Mozart.csv') & (entireDF['index'] < 175),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K284 i D major.mid by Mozart.csv') & (entireDF['index'] >= 175) & (entireDF['index'] < 414),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K284 i D major.mid by Mozart.csv') & (entireDF['index'] >= 414) & (entireDF['index'] < 573),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K284 i D major.mid by Mozart.csv') & (entireDF['index'] >= 573) & (entireDF['index'] < 739),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K284 i D major.mid by Mozart.csv') & (entireDF['index'] >= 739) ,'PS']=5
+    ##
+    
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K309 i C major.mid by Mozart.csv') & (entireDF['index'] < 250),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K309 i C major.mid by Mozart.csv') & (entireDF['index'] >= 250) & (entireDF['index'] < 447),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K309 i C major.mid by Mozart.csv') & (entireDF['index'] >= 447) & (entireDF['index'] < 712),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K309 i C major.mid by Mozart.csv') & (entireDF['index'] >= 712) & (entireDF['index'] < 962),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K309 i C major.mid by Mozart.csv') & (entireDF['index'] >= 962) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K311 i D major.mid by Mozart.csv') & (entireDF['index'] < 89),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K311 i D major.mid by Mozart.csv') & (entireDF['index'] >= 89) & (entireDF['index'] < 209),'PS']=2
+    #entireDF.loc[(entireDF['filename']=='Piano Sonata K311 i D major.mid by Mozart.csv') & (entireDF['index'] >= 209) & (entireDF['index'] < 316),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K311 i D major.mid by Mozart.csv') & (entireDF['index'] >= 209) & (entireDF['index'] < 411),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K311 i D major.mid by Mozart.csv') & (entireDF['index'] >= 411) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 i C major.mid by Mozart.csv') & (entireDF['index'] < 125),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 i C major.mid by Mozart.csv') & (entireDF['index'] >= 125) & (entireDF['index'] < 283),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 i C major.mid by Mozart.csv') & (entireDF['index'] >= 283) & (entireDF['index'] < 422),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 i C major.mid by Mozart.csv') & (entireDF['index'] >= 422) & (entireDF['index'] < 541),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 i C major.mid by Mozart.csv') & (entireDF['index'] >= 541) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 iii C major.mid by Mozart.csv') & (entireDF['index'] < 136),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 136) & (entireDF['index'] < 284),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 284) & (entireDF['index'] < 395),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 395) & (entireDF['index'] < 559),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K330 iii C major.mid by Mozart.csv') & (entireDF['index'] >= 559) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K332 i F major.mid by Mozart.csv') & (entireDF['index'] < 119),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K332 i F major.mid by Mozart.csv') & (entireDF['index'] >= 119) & (entireDF['index'] < 273),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K332 i F major.mid by Mozart.csv') & (entireDF['index'] >= 273) & (entireDF['index'] < 386),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K332 i F major.mid by Mozart.csv') & (entireDF['index'] >= 386) & (entireDF['index'] < 514),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K332 i F major.mid by Mozart.csv') & (entireDF['index'] >= 514) ,'PS']=5
+    ##
+    
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K333 i Bb major.mid by Mozart.csv') & (entireDF['index'] < 92),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K333 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 92) & (entireDF['index'] < 255),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K333 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 255) & (entireDF['index'] < 415),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K333 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 415) & (entireDF['index'] < 506),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K333 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 506) ,'PS']=5
+    ##
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv') & (entireDF['index'] < 48),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv') & (entireDF['index'] >= 48) & (entireDF['index'] < 106),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv') & (entireDF['index'] >= 106) & (entireDF['index'] < 154),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv') & (entireDF['index'] >= 154) & (entireDF['index'] < 212),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K545 i C major.mid by Mozart.csv') & (entireDF['index'] >= 212) ,'PS']=5
+    ##
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv') & (entireDF['index'] < 118),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 118) & (entireDF['index'] < 230),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 230) & (entireDF['index'] < 382),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 382) & (entireDF['index'] < 491),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K570 i Bb major.mid by Mozart.csv') & (entireDF['index'] >= 491) ,'PS']=5
+    
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv') & (entireDF['index'] < 35),'PS']=1
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv') & (entireDF['index'] >= 35) & (entireDF['index'] < 74),'PS']=2
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv') & (entireDF['index'] >= 74) & (entireDF['index'] < 124),'PS']=3
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv') & (entireDF['index'] >= 124) & (entireDF['index'] < 152),'PS']=4
+    entireDF.loc[(entireDF['filename']=='Piano Sonata K576 ii A major.mid by Mozart.csv') & (entireDF['index'] >= 152) ,'PS']=5
+    
+    
+    
+    
+    
+    
+    
+    cwd = os.getcwd()
+    fn = 'testresult.csv'
+    fn = os.path.join(cwd,fn)
+    fn
+    entireDF.to_csv(fn)
+    
+    entireDF.head()
+ 
+    
+    
+    
+# stage / cluster        
+    for v,smallDF in entireDF.groupby('PS'):
+        v = str(v)
+        #print(smallDF['filename'].iloc[0])
+        #print(v)
+        print(smallDF)
+        cwd = os.getcwd()
+        filename = 'stage_'+v+'.csv'
+        new_path = os.path.join(cwd,"smallDF")
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+            print("=======================================")
+            print("directory \"{}\" has been created".format(new_path))
+            print("=======================================")
+        final_dir= os.path.join(new_path,filename)
+        ####!!!!Save smallDF as needeed!
+        smallDF.to_csv(final_dir, index = None)
+        print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,v)
+        #smallDF.plot(linewidth=0.5)
+        smallNorm = smallDF.newCentroidIndex.value_counts(normalize=True)
+        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
+        #smallNorm.plot.bar(y=[0], alpha=0.5, title=v)
+        smallNorm
+        countDF
+        plt.cla()
+        fig = plt.figure()
+        df = pd.DataFrame({'Total': countDF, 'Stage '+v: smallNorm} )
+        
+        
+
+        
+        fig = df.plot.bar(rot=45)
+        
+        plt.savefig('Stage '+firDir+' by cluster.png',dpi=500)     
+        print("Current working piece is: "+v)
+        print(smallDF.head(5))
+        
+        
+#    dfOut=os.path.join(cwd,"entireDF.csv")
+#    entireDF.to_csv(dfOut,index=None)
+    
+    
+    
         
     for v,smallDF in entireDF.groupby('filename'):
         #print(smallDF['filename'].iloc[0])
