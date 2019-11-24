@@ -11,10 +11,18 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
-import matplotlib.pyplot as plt
+
 from ast import literal_eval
 import matplotlib
 from matplotlib import cm
+
+
+import scipy.stats as stats
+import researchpy as rp
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+    
+
 # %matplotlib inline
 
 # 1st param = dataframe, 2nd param String(title)
@@ -315,13 +323,14 @@ def histogram(df):
 def centroids_finder(arr, K):
     # print(arr)
     distortionFinder(arr)
+    distances, iVal, varianceVal, retVal , retCount = inertiaFinder(arr)
     # print(K)
     kmeans = KMeans(n_clusters=K, random_state=1).fit(arr)
     labels = kmeans.labels_
     inertia = kmeans.inertia_
     # print(inertia)
     centroids = kmeans.cluster_centers_
-    return centroids , labels , inertia
+    return centroids , labels , inertia, distances, iVal, varianceVal , retVal , retCount
 
 def listToArray(df):
     df = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
@@ -348,12 +357,7 @@ def distortionFinder(X):
     # X = X[:,[0,1]]
     distortions = []
     for i in range(1,30):
-        km = KMeans(n_clusters=i, 
-                    init='k-means++', 
-                    n_init=10, 
-                    max_iter=300, 
-                    random_state=0)
-        km.fit(X)
+        km = KMeans(n_clusters=i, random_state=1).fit(X)
         distortions.append(km.inertia_)
     plt.plot(range(1, 30), distortions, marker='o')
     plt.xlabel('Number of clusters')
@@ -361,6 +365,33 @@ def distortionFinder(X):
     plt.tight_layout()
     # plt.savefig('./figures/elbow.png', dpi=300)
     plt.show()
+
+def inertiaFinder(X):
+    # X = X[:,[0,1]]
+    km = KMeans(n_clusters=20, random_state=1)
+    distances= km.fit_transform(X)
+    print(distances)
+    variance = 0
+    i=0
+    retVal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    retCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    
+    
+    
+    
+    # i = total counts of vector points
+    # label = centroid index
+    
+    for label in km.labels_:
+        print(label)
+  
+        variance = variance + distances[i][label]*distances[i][label]
+        retVal[label] += distances[i][label]*distances[i][label] 
+        retCount[label] += 1
+        i = i + 1
+    return distances, i, variance , retVal , retCount
+    
+    
 
 
 
@@ -446,9 +477,22 @@ def main():
 
     vectorPointE = np.asarray(entireVP)
     #check optimized number of centroid
-    centroidsVectorE, labelsArrayE, inertiaValueE = centroids_finder(vectorPointE,20)
+    centroidsVectorE, labelsArrayE, inertiaValueE, distancesE, iValE, varianceValE, retVal, retCount = centroids_finder(vectorPointE,20)
+    for x in range(0,20):
+        retVal[x] = retVal[x] / retCount[x]
+        print(x)
+        
+    
+    myorder = [11, 19, 8, 15, 2, 17, 10, 9, 4, 3, 16, 18, 13, 6, 12, 0, 1, 5, 7, 14]
+    #retval = summation of squared distance of each centroid / count of element in the cluster 
+    retVal = [retVal[i] for i in myorder]
+    retCount =  [retCount[i] for i in myorder]
+
+            
     
     
+    
+
     print(labelsArrayE)
     a = np.asarray(labelsArrayE)
     #np.savetxt("countList.csv", a, delimiter=",")
@@ -882,9 +926,182 @@ def main():
     entireDF.to_csv(fn)
     
     entireDF.head()
+    anovaDF = entireDF[['newCentroidIndex','PS','filename']].copy()
+    anovaDF.head()
+    
+    
+    
+    
+    
+    #stateCount => stCount.
+    stateGroup = anovaDF.groupby('PS').count()
+    stateCount = stateGroup.iloc[:,0:1].copy().values
+    stCount = []
+    type(stateCount)
+    for l in stateCount:
+        print(l[0])
+        stCount.append(l[0])
+    print(stCount)
+    st1 = []
+    st2 = []
+    st3 = []
+    st4 = []
+    st5 = []
+    
+    
+    clusterGroup = anovaDF.groupby(['newCentroidIndex','PS']).count()
+    fn = 'clusterGroup.csv'
+    fn = os.path.join(cwd,fn)
+    clusterGroup.to_csv(fn)
+    clusterCounts = clusterGroup.iloc[:,0:1].copy().values
+    clusterCount = []
+    for l in clusterCounts:
+        clusterCount.append(l[0])
+        #filling up the missing data. 
+        if l[0]==156:
+            clusterCount.append(0)            
+    print(len(clusterCount))
+    
+    st0 = clusterCount[0::6]
+    st1 = clusterCount[1::6]
+    st2 = clusterCount[2::6]
+    st3 = clusterCount[3::6]
+    st4 = clusterCount[4::6]
+    st5 = clusterCount[5::6]
+    
+
+    st1 = [round(x / stCount[1] * 100, 2) for x in st1] 
+    st2 = [round(x / stCount[2] * 100, 2) for x in st2]
+    st3 = [round(x / stCount[3] * 100, 2) for x in st3]
+    st4 = [round(x / stCount[4] * 100, 2) for x in st4]
+    st5 = [round(x / stCount[5] * 100, 2) for x in st5]
+    
  
+    for x in range(0,20):
+        probList = []
+        probList.append(st1[x])
+        probList.append(st2[x])
+        probList.append(st3[x])
+        probList.append(st4[x])
+        probList.append(st5[x])
+        print(probList)
+        
+        ddddd=pd.DataFrame({'x': range(1,6), 'y': probList })
+        plt.cla()
+        plt.plot( 'x', 'y', data=ddddd, linestyle='-', marker='o', color = color[x], label=str(x))
+        plt.ylabel('Prob Of Cluster$(\%)$')
+        plt.xlabel('Stage')
+        xint = range(1, 6)
+        plt.xticks(xint)
+        #plt.show()
+        
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,'Cluster_'+str(x))
+        #plt.savefig(firDir+'.png',dpi=500)   
+        #plt.cla()
+    #plt.show()
+    figDir = os.path.join(cwd,"smallDF")
+    firDir = os.path.join(figDir,'All_cluster_'+str(x))
+    plt.savefig(firDir+'.png',dpi=500)  
+    
+#Run until right here!!! different results based on the entireDF below
     
     
+        
+    
+    
+    
+    
+    
+    def anova_table(aov):
+        aov['mean_sq'] = aov[:]['sum_sq']/aov[:]['df']
+        
+        aov['eta_sq'] = aov[:-1]['sum_sq']/sum(aov['sum_sq'])
+        
+        aov['omega_sq'] = (aov[:-1]['sum_sq']-(aov[:-1]['df']*aov['mean_sq'][-1]))/(sum(aov['sum_sq'])+aov['mean_sq'][-1])
+        
+        cols = ['sum_sq', 'df', 'mean_sq', 'F', 'PR(>F)', 'eta_sq', 'omega_sq']
+        aov = aov[cols]
+        return aov
+
+
+    
+    
+#one-way ANOVA
+    import io
+    import csv    
+    output = io.StringIO()
+    #v= cluster index
+    for v,smallDF in anovaDF.groupby('newCentroidIndex'):
+        cwd = os.getcwd()
+        fn = str(v)+'_anovaTable_result.csv'
+        fn = os.path.join(cwd,fn)
+        k = rp.summary_cont(smallDF['PS'].groupby(smallDF['filename']))
+        results = ols('PS ~ C(filename)', data=smallDF).fit()
+        ret = results.summary().as_csv()
+        print(ret)
+        type(ret)
+        aov_table = sm.stats.anova_lm(results, typ=2)
+        type(aov_table)
+        #aov_table.to_csv(fn)
+
+        smallDF.boxplot('PS', by= 'filename')
+        plt.subplots_adjust(bottom=0.25)
+        plt.xticks(rotation=90)
+        #plt.show()
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,'stat_cluster_'+str(v))
+        
+        plt.savefig(firDir+'.png',dpi=500,bbox_inches="tight")
+        anova_table(aov_table).to_csv(fn)
+                
+        
+       
+    
+ 
+
+   
+    
+# year / cluster        
+    for v,smallDF in entireDF.groupby('year'):
+        v = str(v)
+        #print(smallDF['filename'].iloc[0])
+        #print(v)
+        print(smallDF)
+        cwd = os.getcwd()
+        filename = 'year_'+v+'.csv'
+        new_path = os.path.join(cwd,"smallDF")
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+            print("=======================================")
+            print("directory \"{}\" has been created".format(new_path))
+            print("=======================================")
+        final_dir= os.path.join(new_path,filename)
+        ####!!!!Save smallDF as needeed!
+        smallDF.to_csv(final_dir, index = None)
+        print("filename: \"{}\" has been successfully created :^D".format(filename))
+
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,'Year '+v)
+        #smallDF.plot(linewidth=0.5)
+        smallNorm = smallDF.newCentroidIndex.value_counts(normalize=True)
+        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
+        #smallNorm.plot.bar(y=[0], alpha=0.5, title=v)
+        smallNorm
+        countDF
+        plt.cla()
+        fig = plt.figure()
+        df = pd.DataFrame({'Total': countDF, 'Year '+v: smallNorm} )
+        
+        
+
+        
+        fig = df.plot.bar(rot=45)
+        
+        plt.savefig(firDir+' by cluster.png',dpi=500)     
+        print("Current working piece is: "+v)
+        print(smallDF.head(5))
+        
     
 # stage / cluster        
     for v,smallDF in entireDF.groupby('PS'):
@@ -906,7 +1123,7 @@ def main():
         print("filename: \"{}\" has been successfully created :^D".format(filename))
 
         figDir = os.path.join(cwd,"smallDF")
-        firDir = os.path.join(figDir,v)
+        firDir = os.path.join(figDir,'Stage '+v)
         #smallDF.plot(linewidth=0.5)
         smallNorm = smallDF.newCentroidIndex.value_counts(normalize=True)
         smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
@@ -922,7 +1139,7 @@ def main():
         
         fig = df.plot.bar(rot=45)
         
-        plt.savefig('Stage '+firDir+' by cluster.png',dpi=500)     
+        plt.savefig(firDir+' by cluster.png',dpi=500)     
         print("Current working piece is: "+v)
         print(smallDF.head(5))
         
@@ -1069,6 +1286,12 @@ def main():
         plt.savefig(firDir+str(v)+'_norm_colormap.png',dpi=500)
                 
                 
+        
+        
+        
+        
+        
+        
         
         
         
