@@ -487,9 +487,22 @@ def main():
     #retval = summation of squared distance of each centroid / count of element in the cluster 
     retVal = [retVal[i] for i in myorder]
     retCount =  [retCount[i] for i in myorder]
-
-            
-    
+    type(retVal)
+    plt.plot(retVal)
+    plt.ylabel('Sum of squared Euclidean distance / count of points\n(of Each cluster)')
+    plt.xlabel('Cluster index')
+    plt.xticks(np.arange(0,20,1))
+    plt.yticks(np.arange(1,2.5,.1))
+    figDir = os.path.join(cwd,"smallDF")
+    firDir = os.path.join(figDir,'distortion_plot')
+    plt.savefig(firDir+'.png',dpi=500)  
+    retValSeries = pd.Series(retVal, name = 'Tightness')
+    retCountSeries = pd.Series(retCount, name ='VectorCount')
+    outFile = pd.concat([retValSeries, retCountSeries],axis = 1)
+    cwd = os.getcwd()
+    fn = 'DistortionData.csv'
+    fn = os.path.join(cwd,fn)
+    outFile.to_csv(fn)
     
     
 
@@ -976,7 +989,41 @@ def main():
     st4 = [round(x / stCount[4] * 100, 2) for x in st4]
     st5 = [round(x / stCount[5] * 100, 2) for x in st5]
     
- 
+
+#======================== stage by cluster prob analysis begins================================
+    newDF=pd.DataFrame({ 'x':range(1,6)})
+
+    
+    dfdf['prob(%)'] = dfdf['countInCluster']/dfdf['TotalCount'] * 100
+    dfdf = dfdf.reset_index()
+    xx = np.arange(len(dfdf))
+    yy= dfdf['year'].tolist()
+    width = 0.35
+    tc = dfdf['TotalCount'].tolist()
+    cic = dfdf['countInCluster'].tolist()
+    p = dfdf['prob(%)'].tolist()
+    p = list(np.around(np.array(p),3))
+    fig, ax = plt.subplots()
+    rects1 = ax.bar(xx, p, width,label = 'countInCluster/TotalCount(%)')
+    
+    ax.set_ylabel('Probabilities%')
+    ax.set_title('Percentage of data points in the given cluster over all pieces')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(rects1)
+    
+    fig.tight_layout()
+    #plt.show()
+    
+    plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
+    print("Current working cluster index is: "+str(v))
+    
+    cwd = os.getcwd()
+    fn = 'Index_'+str(v) + '_Cluster by year.csv'
+    fn = os.path.join(cwd,fn)
+    dfdf.to_csv(fn)
+    
     for x in range(0,20):
         probList = []
         probList.append(st1[x])
@@ -986,7 +1033,11 @@ def main():
         probList.append(st5[x])
         print(probList)
         
-        ddddd=pd.DataFrame({'x': range(1,6), 'y': probList })
+        ddddd=pd.DataFrame({ x: probList })
+        
+        newDF = pd.concat([newDF, ddddd],1)
+        newDF.set_index('x')
+        
         plt.cla()
         plt.plot( 'x', 'y', data=ddddd, linestyle='-', marker='o', color = color[x], label=str(x))
         plt.ylabel('Prob Of Cluster$(\%)$')
@@ -1062,7 +1113,7 @@ def main():
 
    
     
-# year / cluster        
+# year / cluster         = This is not good
     for v,smallDF in entireDF.groupby('year'):
         v = str(v)
         #print(smallDF['filename'].iloc[0])
@@ -1192,10 +1243,28 @@ def main():
     dfOut=os.path.join(cwd,"entireDF.csv")
     entireDF.to_csv(dfOut,index=None)
     
+#    ====================================== Year analysis begins=======================
     
+    yearCount = entireDF.groupby('year').count()[['index']]
+    yearCount.reset_index().set_index('year')
+    yearCount.rename(columns = {'index':'TotalCount'},inplace = True)
+    
+    yearCount.values[2][0]
+
     # x-axis: Year(in order), y-axis: norm dist, 20 charts
     # normal distributed 20 charts vs year per Chart
     # v = cluster index, smallDF = corresponding dataframe
+        
+    def autolabel(rects):
+        """Attach a text label above each bar in *rects*, displaying its height."""
+        for rect in rects:
+            height = rect.get_height()
+            ax.annotate('{}'.format(height),
+                        xy=(rect.get_x() + rect.get_width() / 2, height),
+                        xytext=(0, 3),  # 3 points vertical offset
+                        textcoords="offset points",
+                        ha='center', va='bottom')
+        
     for v, smallDF in entireDF.groupby('newCentroidIndex'):
         print(smallDF)
         print(v)
@@ -1216,23 +1285,47 @@ def main():
 #        Do not save this dataframe. only for plot
 #        smallDF.to_csv(final_dir, index = None)
 #        print("filename: \"{}\" has been successfully created :^D".format(filename))
-
+        
+    
         figDir = os.path.join(cwd,"smallDF")
         firDir = os.path.join(figDir,'ClusterIndex_')
-        smallDF.plot(linewidth=0.5)
-        smallNorm = smallDF.year.value_counts(normalize=True)
-        smallNorm = smallNorm.sort_index(axis=0, level=None, ascending=True, inplace=False, sort_remaining=True)
-        #smallNorm.plot.bar(y=[0], alpha=0.5, title='ClusterIndex_'+v)
-        smallNorm
-        plt.cla()
-        fig = plt.figure()
-        fig = smallNorm.plot.bar(rot=0, color=(0.2, 0.4, 0.6, 0.6))
-       
+        yearCountCluster = smallDF.groupby('year').count()[['index']]
+        yearCountCluster.rename(columns = {'index':'countInCluster'}, inplace = True)
+        dfdf = pd.concat([yearCount, yearCountCluster],1)
+        dfdf['prob(%)'] = dfdf['countInCluster']/dfdf['TotalCount'] * 100
+        dfdf = dfdf.reset_index()
+        xx = np.arange(len(dfdf))
+        yy= dfdf['year'].tolist()
+        width = 0.35
+        tc = dfdf['TotalCount'].tolist()
+        cic = dfdf['countInCluster'].tolist()
+        p = dfdf['prob(%)'].tolist()
+        p = list(np.around(np.array(p),3))
+        fig, ax = plt.subplots()
+        rects1 = ax.bar(xx, p, width,label = 'countInCluster/TotalCount(%)')
+        
+        ax.set_ylabel('Probabilities%')
+        ax.set_title('Percentage of data points in the given cluster over all pieces')
+        ax.set_xticks(xx)
+        ax.set_xticklabels(yy)
+        ax.legend()
+        autolabel(rects1)
+        
+        fig.tight_layout()
+        #plt.show()
+        
         plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
         print("Current working cluster index is: "+str(v))
-        print(smallDF.head(5))
+
+        cwd = os.getcwd()
+        fn = 'Index_'+str(v) + '_Cluster by year.csv'
+        fn = os.path.join(cwd,fn)
+        dfdf.to_csv(fn)
+    
         
         
+        
+        #=======Year analysis ends =======================
         
         
         
