@@ -269,7 +269,15 @@ def labelCoef(df1, df2):
     # print(max_coef)
     # print(max_coef_label)
     return max_coef
-
+def autolabel(rects):
+    """Attach a text label above each bar in *rects*, displaying its height."""
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate('{}'.format(height),
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, 3),  # 3 points vertical offset
+                    textcoords="offset points",
+                    ha='center', va='bottom')
 def histogram(df):
     major_label = ['cMajor','c#Major','dMajor','e-Major','eMajor','fMajor','f#Major','gMajor','g#Major','aMajor','b-Major','bMajor']
     minor_label = ['cMinor','c#Minor','dMinor','e-Minor','eMinor','fMinor','f#Minor','gMinor','g#Minor','aMinor','b-Minor','bMinor']
@@ -488,6 +496,7 @@ def main():
     retVal = [retVal[i] for i in myorder]
     retCount =  [retCount[i] for i in myorder]
     type(retVal)
+    
     plt.plot(retVal)
     plt.ylabel('Sum of squared Euclidean distance / count of points\n(of Each cluster)')
     plt.xlabel('Cluster index')
@@ -963,6 +972,7 @@ def main():
     
     
     clusterGroup = anovaDF.groupby(['newCentroidIndex','PS']).count()
+    filenameGroup = anovaDF.groupby(['filename']).values
     fn = 'clusterGroup.csv'
     fn = os.path.join(cwd,fn)
     clusterGroup.to_csv(fn)
@@ -991,14 +1001,179 @@ def main():
     
 
 #======================== stage by cluster prob analysis begins================================
-    newDF=pd.DataFrame({ 'x':range(1,6)})
-
+    newDF=pd.DataFrame({'stage':range(1,6)})
     
-    dfdf['prob(%)'] = dfdf['countInCluster']/dfdf['TotalCount'] * 100
-    dfdf = dfdf.reset_index()
-    xx = np.arange(len(dfdf))
-    yy= dfdf['year'].tolist()
-    width = 0.35
+    for x in range(0,20):
+        probList = []
+        probList.append(st1[x])
+        probList.append(st2[x])
+        probList.append(st3[x])
+        probList.append(st4[x])
+        probList.append(st5[x])
+        print(probList)
+        ddddd=pd.DataFrame({ x: probList })
+        newDF = pd.concat([newDF, ddddd],1)
+        newDF.set_index('stage')
+        
+
+    #HK1
+    xx = np.arange(len(newDF))
+    yy= newDF['stage'].tolist()
+    width = 0.2
+    fig, ax = plt.subplots()
+    temp = newDF[2].tolist()
+    r2 = ax.bar(xx - width, temp, width, label='c2')
+    temp = newDF[3].tolist()
+    r3 = ax.bar(xx - width/2, temp, width, label='c3')
+    temp = newDF[5].tolist()
+    r5 = ax.bar(xx , temp, width, label='c5')
+    temp = newDF[6].tolist()
+    r6 = ax.bar(xx + width/2, temp, width, label='c6')
+    temp = newDF[8].tolist()
+    r8 = ax.bar(xx + width, temp, width, label='c8')
+    ax.set_ylabel('prob(%)')
+    ax.set_title('stageByClusterProb')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(r2)
+    autolabel(r3)
+    autolabel(r5)
+    autolabel(r6)
+    autolabel(r8)
+    fig.tight_layout()
+    #plt.show()
+    plt.savefig(firDir+'HK1.png',dpi=500)
+    
+    #HK2
+    xx = np.arange(len(newDF))
+    yy= newDF['stage'].tolist()
+    width = 0.2
+    fig, ax = plt.subplots()
+    temp = newDF[1].tolist()
+    r1 = ax.bar(xx - width, temp, width, label='c1')
+    temp = newDF[4].tolist()
+    r4 = ax.bar(xx , temp, width, label='c4')
+    temp = newDF[7].tolist()
+    r7 = ax.bar(xx +width, temp, width, label='c7')
+    ax.set_ylabel('prob(%)')
+    ax.set_title('stageByClusterProb')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(r1)
+    autolabel(r4)
+    autolabel(r7)
+    fig.tight_layout()
+    #plt.show()
+    plt.savefig(firDir+'HK2.png',dpi=500)
+    
+    #SK: Subordinate key areas (frequent in stage 2)
+    #9, 13, 15, 17, 18
+    xx = np.arange(len(newDF))
+    yy= newDF['stage'].tolist()
+    width = 0.2
+    fig, ax = plt.subplots()
+    temp = newDF[9].tolist()
+    r9 = ax.bar(xx - width, temp, width, label='c9')
+    temp = newDF[13].tolist()
+    r13 = ax.bar(xx - width/2, temp, width, label='c13')
+    temp = newDF[15].tolist()
+    r15 = ax.bar(xx , temp, width, label='c15')
+    temp = newDF[17].tolist()
+    r17 = ax.bar(xx + width/2, temp, width, label='c17')
+    temp = newDF[18].tolist()
+    r18 = ax.bar(xx + width, temp, width, label='c18')
+    ax.set_ylabel('prob(%)')
+    ax.set_title('stageByClusterProb')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(r9)
+    autolabel(r13)
+    autolabel(r15)
+    autolabel(r17)
+    autolabel(r18)
+    fig.tight_layout()
+    #plt.show()
+    plt.savefig(firDir+'SK.png',dpi=500)
+    
+    
+    
+    #Dev: Developmental (frequent in stage 3)
+    #0, 10, 14, 16, 19
+
+    xx = np.arange(len(newDF))
+    yy= newDF['stage'].tolist()
+    width = 0.2
+    fig, ax = plt.subplots()
+    temp = newDF[0].tolist()
+    r0 = ax.bar(xx - width, temp, width, label='c0')
+    temp = newDF[10].tolist()
+    r10 = ax.bar(xx - width/2, temp, width, label='c10')
+    temp = newDF[14].tolist()
+    r14 = ax.bar(xx , temp, width, label='c14')
+    temp = newDF[16].tolist()
+    r16 = ax.bar(xx + width/2, temp, width, label='c16')
+    temp = newDF[19].tolist()
+    r19 = ax.bar(xx + width, temp, width, label='c19')
+    ax.set_ylabel('prob(%)')
+    ax.set_title('stageByClusterProb')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(r0)
+    autolabel(r10)
+    autolabel(r14)
+    autolabel(r16)
+    autolabel(r19)
+    fig.tight_layout()
+    #plt.show()
+    plt.savefig(firDir+'DEV.png',dpi=500)
+    
+    
+    #XD: Expo-Dev. (frequent in stages 1, 2, 3)
+    #11, 12
+    xx = np.arange(len(newDF))
+    yy= newDF['stage'].tolist()
+    width = 0.2
+    fig, ax = plt.subplots()
+    temp = newDF[0].tolist()
+    r11 = ax.bar(xx - width/2, temp, width, label='c11')
+    temp = newDF[10].tolist()
+    r12 = ax.bar(xx + width/2, temp, width, label='c12')
+
+    ax.set_ylabel('prob(%)')
+    ax.set_title('stageByClusterProb')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(yy)
+    ax.legend()
+    autolabel(r11)
+    autolabel(r12)
+    fig.tight_layout()
+    #plt.show()
+    plt.savefig(firDir+'XD.png',dpi=500)
+    
+   
+    
+    
+''' 
+HK1: Home key – non-development (frequent in stages 1 and 5, infrequent in 3)
+2, 3, 5, 6, 8,
+
+HK2: Home key – non-ST (frequent in stages 4, 5; infrequent in 2)
+1, 4, 7
+
+SK: Subordinate key areas (frequent in stage 2)
+9, 13, 15, 17, 18
+
+Dev: Developmental (frequent in stage 3)
+0, 10, 14, 16, 19
+
+XD: Expo-Dev. (frequent in stages 1, 2, 3)
+11, 12
+''' 
+    
     tc = dfdf['TotalCount'].tolist()
     cic = dfdf['countInCluster'].tolist()
     p = dfdf['prob(%)'].tolist()
@@ -1054,7 +1229,7 @@ def main():
     figDir = os.path.join(cwd,"smallDF")
     firDir = os.path.join(figDir,'All_cluster_'+str(x))
     plt.savefig(firDir+'.png',dpi=500)  
-    
+#======================== stage by cluster prob analysis ends ================================
 #Run until right here!!! different results based on the entireDF below
     
     
