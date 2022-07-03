@@ -194,16 +194,12 @@ Command looks like
 ```
 $ python pitchFinder.py -i directory_name
 ```
->for example:
+
 ```
 $ py pitchFinder.py -i sample
 
 ```
->Auto dir generator by composer's names
->>![](dumpfile/pitchSet.gif)
 
->Final result looks like
->>![](dumpfile/y.png)
 
 ## Input & Output
 Input
