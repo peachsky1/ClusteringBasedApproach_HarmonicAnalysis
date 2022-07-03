@@ -24,10 +24,10 @@ $ python splitter.py -i directory_name
 $ python splitter.py -i YCAC-data-1
 ```
 >Auto dir generator by composer's names
->>![](dump_files/auto_dir_generator.gif)
+>>![](gifForREADME/auto_dir_generator.gif)
 
 >Generating .csv files by title
->>![](dump_files/automation.gif)
+>>![](gifForREADME/automation.gif)
 
 ## Input & Output
 Input
