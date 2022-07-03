@@ -16,49 +16,13 @@ from ast import literal_eval
 import matplotlib
 from matplotlib import cm
 
-from sklearn.cluster import SpectralClustering
-from sklearn.metrics import pairwise_distances
-
 
 import scipy.stats as stats
+import researchpy as rp
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
     
-def transition_matrix(transitions):
-    n = 1+ max(transitions) #number of states
 
-    M = [[0]*n for _ in range(n)]
-
-    for (i,j) in zip(transitions,transitions[1:]):
-        M[i][j] += 1
-
-    #now convert to probabilities:
-    for row in M:
-        s = sum(row)
-        if s > 0:
-            row[:] = [f/s for f in row]
-    return M
-
-
-
-
-def transition_prob(transitions):
-    n = 1+ max(transitions) #number of states
-
-    M = [[0]*n for _ in range(n)]
-
-    for (i,j) in zip(transitions,transitions[1:]):
-        M[i][j] += 1
-
-    #now convert to probabilities:
-    tot = 0
-    for row in M:
-        tot += sum(row)
-    
-    for row in M:
-        if tot > 0:
-            row[:] = [f/tot for f in row]
-    return M
 # %matplotlib inline
 
 # 1st param = dataframe, 2nd param String(title)
@@ -86,11 +50,7 @@ def csv_generator(df_X, d):
     df_X.to_csv(final_dir, index = None)
     print("filename: \"{}\" has been successfully created :^D".format(filename))
 
-def makeCSV(nparray,fn):
-    cwd = os.getcwd()
-    fn = os.path.join(cwd,fn)
-    pd.DataFrame(nparray).to_csv(fn+".csv")
-    
+
 def csv_gen(df_X, directoryName, pieceName, composerName, optionalString):
     # directory = directoryName
     cwd = os.getcwd()
@@ -243,7 +203,7 @@ def octScalePitch(c):
 # df1(offsetRange [,C,C#,D,E-,E,F,F#,G,G#,A,B-,B]), df2(triad, label)
 def triadLabeling(df1, df2):
     x = df1['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
-    coef_list=[]
+    coef_list = []
     for e in range(0,len(df2.index)):
         coef_list.append(np.corrcoef(x,df2['triad'][e])[0][1])
         # print(e)
@@ -309,35 +269,15 @@ def labelCoef(df1, df2):
     # print(max_coef)
     # print(max_coef_label)
     return max_coef
-# =============================================================================
-# def autolabel(rects):
-#     """Attach a text label above each bar in *rects*, displaying its height."""
-#     #init ax
-#     fig, ax = plt.subplots()
-#     for rect in rects:
-#         height = rect.get_height()
-#         ax.annotate('{}'.format(height),
-#                     xy=(rect.get_x() + rect.get_width() / 2, height),
-#                     xytext=(0, 3),  # 3 points vertical offset
-#                     textcoords="offset points",
-#                     ha='center', va='bottom')
-#         
-# 
-# =============================================================================
-        
-# =============================================================================
-# def autolabel(rects):
-#     """Attach a text label above each bar in *rects*, displaying its height."""
-#     for rect in rects:
-#         height = rect.get_height()
-#         ax.annotate('{}'.format(height),
-#                     xy=(rect.get_x() + rect.get_width() / 2, height),
-#                     xytext=(0, 3),  # 3 points vertical offset
-#                     textcoords="offset points",
-#                     ha='center', va='bottom')
-# =============================================================================
-
-
+def autolabel(rects):
+    """Attach a text label above each bar in *rects*, displaying its height."""
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate('{}'.format(height),
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, 3),  # 3 points vertical offset
+                    textcoords="offset points",
+                    ha='center', va='bottom')
 def histogram(df):
     major_label = ['cMajor','c#Major','dMajor','e-Major','eMajor','fMajor','f#Major','gMajor','g#Major','aMajor','b-Major','bMajor']
     minor_label = ['cMinor','c#Minor','dMinor','e-Minor','eMinor','fMinor','f#Minor','gMinor','g#Minor','aMinor','b-Minor','bMinor']
@@ -393,28 +333,26 @@ def centroids_finder(arr, K):
     distortionFinder(arr)
     distances, iVal, varianceVal, retVal , retCount = inertiaFinder(arr)
     # print(K)
-    kmeans = KMeans(init='k-means++', n_clusters=K, random_state=1).fit(arr)
+    kmeans = KMeans(n_clusters=K, random_state=1).fit(arr)
     labels = kmeans.labels_
     inertia = kmeans.inertia_
     # print(inertia)
     centroids = kmeans.cluster_centers_
     return centroids , labels , inertia, distances, iVal, varianceVal , retVal , retCount
 
-# =============================================================================
-# def listToArray(df):
-#     df = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
-#     coef_list = []
-#     for e in range(0,len(df.index)):
-# 
-#         coef_list.append(np.corrcoef(x,df2['triad'][e])[0][1])
-#         # print(e)
-#         # print(df2[])
-#     # print(coef_list)
-#     max_coef = max(coef_list)
-#     label_index = coef_list.index(max_coef)
-#     max_coef_label = df2['label'][label_index]
-#     return max_coef_label
-# =============================================================================
+def listToArray(df):
+    df = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
+    # coef_list = []
+    for e in range(0,len(df.index)):
+
+        coef_list.append(np.corrcoef(x,df2['triad'][e])[0][1])
+        # print(e)
+        # print(df2[])
+    # print(coef_list)
+    max_coef = max(coef_list)
+    label_index = coef_list.index(max_coef)
+    max_coef_label = df2['label'][label_index]
+    return max_coef_label
 def strToArr(df):
     # df = df['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']
     arr = []
@@ -426,10 +364,10 @@ def strToArr(df):
 def distortionFinder(X):
     # X = X[:,[0,1]]
     distortions = []
-    for i in range(1,40):
+    for i in range(1,30):
         km = KMeans(n_clusters=i, random_state=1).fit(X)
         distortions.append(km.inertia_)
-    plt.plot(range(1, 40), distortions, marker='o')
+    plt.plot(range(1, 30), distortions, marker='o')
     plt.xlabel('Number of clusters')
     plt.ylabel('Distortion')
     plt.tight_layout()
@@ -544,49 +482,16 @@ def main():
     directory = "all"
     
     entireVP = strToArr(entireDF)
-    type(entireVP)
-    
 
     vectorPointE = np.asarray(entireVP)
     #check optimized number of centroid
-    type(vectorPointE)
-    #the distance measure to be used. This must be one of "euclidean", "maximum", "manhattan", "canberra", "binary", "pearson" , "abspearson" , "abscorrelation", "correlation", "spearman" or "kendall". Any unambiguous substring can be given.
-    #X_precomputed = pairwise_distances(vectorPointE, metric='manhattan')
-    #clustering = SpectralClustering(n_clusters=20, affinity='linear', assign_labels="kmeans", random_state=1)
-    #clustering = SpectralClustering(n_clusters=2, affinity='precomputed', assign_labels="discretize",random_state=1)
-    #clusters_manhattan = clustering.fit(X_precomputed)
-    #ak  =clustering.labels_
-    #clustering.centroids_ 
-    #seriesE_m = pd.Series(ak)
-    #entireDF_m = entireDF
-    ##entireDF_m.insert(2, "CentroidLabelIndex_entireUnits", seriesE_m)
-    #entireDF_m
-    #entireDF_m = entireDF_m.drop(['CentroidLabelIndex_individualUnit'],axis=1)
-    #fn = 'cluster_manhattan.csv'
-    #fn = os.path.join(cwd,fn)
-    #entireDF_m.to_csv(fn)
-    entireDF = entireDF.drop(['CentroidLabelIndex_individualUnit'],axis=1)
-    
     centroidsVectorE, labelsArrayE, inertiaValueE, distancesE, iValE, varianceValE, retVal, retCount = centroids_finder(vectorPointE,20)
     for x in range(0,20):
         retVal[x] = retVal[x] / retCount[x]
         print(x)
-    makeCSV(centroidsVectorE,"centroidsVectorE")
-    makeCSV(labelsArrayE,"labelsArrayE")
-    #makeCSV(inertiaValueE,"inertiaValueE")
-    makeCSV(distancesE,"distancesE")
-    #makeCSV(iValE,"iValE")
-    #makeCSV(varianceValE,"varianceValE")
-    makeCSV(retVal,"retVal")
-    makeCSV(retCount,"retCount")
-    makeCSV(entireDF, "entireDF")
-    
-    
-        
         
     
-    #myorder = [11, 19, 8, 15, 2, 17, 10, 9, 4, 3, 16, 18, 13, 6, 12, 0, 1, 5, 7, 14]
-    myorder = [12,14,18,6,17,7,19,5,10,1,13,2,16,3,0,8,15,11,4,9]
+    myorder = [11, 19, 8, 15, 2, 17, 10, 9, 4, 3, 16, 18, 13, 6, 12, 0, 1, 5, 7, 14]
     #retval = summation of squared distance of each centroid / count of element in the cluster 
     retVal = [retVal[i] for i in myorder]
     retCount =  [retCount[i] for i in myorder]
@@ -597,7 +502,6 @@ def main():
     plt.xlabel('Cluster index')
     plt.xticks(np.arange(0,20,1))
     plt.yticks(np.arange(1,2.5,.1))
-    
     figDir = os.path.join(cwd,"smallDF")
     firDir = os.path.join(figDir,'distortion_plot')
     plt.savefig(firDir+'.png',dpi=500)  
@@ -690,52 +594,50 @@ def main():
     yearCount['percentage'] = yearCount['rowCount']/yearCount['rowCount'].sum()*100
       
     
+
+    oldCentroid = [11, 19, 8, 15, 2, 17, 10, 9, 4, 3, 16, 18, 13, 6, 12, 0, 1, 5, 7, 14]
     
-    #oldCentroid = [11, 19, 8, 15, 2, 17, 10, 9, 4, 3, 16, 18, 13, 6, 12, 0, 1, 5, 7, 14]
-    oldCentroid = [12,14,18,6,17,7,19,5,10,1,13,2,16,3,0,8,15,11,4,9]
-    
-    # chordName=['iv_ofDmin',
-    #              '4ofC',
-    #              'Cmaj-root',
-    #              'Cmaj1-4tet',
-    #              '2/4ofCmaj',
-    #              'CmajTriad',
-    #              'Cmaj2-5tet',
-    #              '6-1ofC',
-    #              'Cmaj3rd5th',
-    #              'Gmaj-root',
-    #              'chr',
-    #              'V-IofC',
-    #              'Cmaj5-1tet',
-    #              'GmajTriad',
-    #              'AminTriad',
-    #              'VofG',
-    #              'Gmaj-IV/vii',
-    #              'Gmaj3rd5th',
-    #              'V7ofG',
-    #              'VofAmin']
-    chordName=['','','','','','','','','','','','','','','','','','','','']
-    pc_labels = ['C-EbF#','GBb-C#D','F-D','FAC','FG-BD','CE-G','EFG-A','FA-C','CEG','DEFG-BC','G-F#','CEG','D','GB-D','ABC-DG','BD-G','A-CE','DF#A-C','E-GC','B-DG']
-    # pc_labels = ['GBb-C#D',
-    #              'F-AC',
-    #              'C-EG',
-    #              'C-DEF',
-    #              'DF',
-    #              'CEG',
-    #              'DEFG',
-    #              'A-CF',
-    #              'EG-C',
-    #              'G-BD',
-    #              'FGAB',
-    #              'D-GBC',
-    #              'BC-AG',
-    #              'GBD',
-    #              'ACE',
-    #              'D-F#A',
-    #              'F#G-ACE',
-    #              'BD-G',
-    #              'DF#AC',
-    #              'E-BCD']
+    chordName=['iv_ofDmin',
+                 '4ofC',
+                 'Cmaj-root',
+                 'Cmaj1-4tet',
+                 '2/4ofCmaj',
+                 'CmajTriad',
+                 'Cmaj2-5tet',
+                 '6-1ofC',
+                 'Cmaj3rd5th',
+                 'Gmaj-root',
+                 'chr',
+                 'V-IofC',
+                 'Cmaj5-1tet',
+                 'GmajTriad',
+                 'AminTriad',
+                 'VofG',
+                 'Gmaj-IV/vii',
+                 'Gmaj3rd5th',
+                 'V7ofG',
+                 'VofAmin']
+     
+    pc_labels = ['GBb-C#D',
+                 'F-AC',
+                 'C-EG',
+                 'C-DEF',
+                 'DF',
+                 'CEG',
+                 'DEFG',
+                 'A-CF',
+                 'EG-C',
+                 'G-BD',
+                 'FGAB',
+                 'D-GBC',
+                 'BC-AG',
+                 'GBD',
+                 'ACE',
+                 'D-F#A',
+                 'F#G-ACE',
+                 'BD-G',
+                 'DF#AC',
+                 'E-BCD']
 
     
     color = ['yellow',
@@ -779,10 +681,6 @@ def main():
     
 
     entireDF
-    makeCSV(entireDF,"entireDF_manhattan")
-    entireDF
-    
-    
     
      
 #        
@@ -896,7 +794,7 @@ def main():
 
     
     
-    #entireDF = entireDF.drop(['CentroidLabelIndex_individualUnit'],axis=1)
+    entireDF = entireDF.drop(['CentroidLabelIndex_individualUnit'],axis=1)
     entireDF.rename(columns={'CentroidLabelIndex_entireUnits':'oldCentroidIndex'}, inplace=True)
     
     # entire bar chart
@@ -1042,16 +940,13 @@ def main():
     
     
     
-
-    #cwd = os.getcwd()
-    #fn2 = 'originalDataSet.csv'
-    #fn2 = os.path.join(cwd,fn2)
-    #original_df = pd.read_csv(fn2,index_col=0)
-    #original_df
-    #entireDF = original_df
     
-    makeCSV(entireDF, "entireDF_m_ps")
-    entireDF = pd.read_csv("entireDF_m_ps.csv",index_col=0)
+    cwd = os.getcwd()
+    fn = 'testresult.csv'
+    fn = os.path.join(cwd,fn)
+    fn
+    entireDF.to_csv(fn)
+    
     entireDF.head()
     anovaDF = entireDF[['newCentroidIndex','PS','filename']].copy()
     anovaDF.head()
@@ -1077,17 +972,16 @@ def main():
     
     
     clusterGroup = anovaDF.groupby(['newCentroidIndex','PS']).count()
-    #filenameGroup = anovaDF.groupby(['filename']).values
+    filenameGroup = anovaDF.groupby(['filename']).values
     fn = 'clusterGroup.csv'
     fn = os.path.join(cwd,fn)
     clusterGroup.to_csv(fn)
     clusterCounts = clusterGroup.iloc[:,0:1].copy().values
-    len(clusterCounts)
     clusterCount = []
     for l in clusterCounts:
         clusterCount.append(l[0])
         #filling up the missing data. 
-        if l[0]==106:
+        if l[0]==156:
             clusterCount.append(0)            
     print(len(clusterCount))
     
@@ -1105,65 +999,10 @@ def main():
     st4 = [round(x / stCount[4] * 100, 2) for x in st4]
     st5 = [round(x / stCount[5] * 100, 2) for x in st5]
     
-    st_total = [st1,st2,st3,st4,st5]
-    st_arr = np.asarray(st_total)
-    makeCSV(st_arr,'probofClusterbyStage')
-    
-    
-    type(st1)
-    
-    
-        
-    ''' 
-    Euclidean
-    HK1: Home key – non-development (frequent in stages 1 and 5, infrequent in 3)
-    2, 3, 5, 6, 8,
-    
-    HK2: Home key – non-ST (frequent in stages 4, 5; infrequent in 2)
-    1, 4, 7
-    
-    SK: Subordinate key areas (frequent in stage 2)
-    9, 13, 15, 17, 18
-    
-    Dev: Developmental (frequent in stage 3)
-    0, 10, 14, 16, 19
-    
-    XD: Expo-Dev. (frequent in stages 1, 2, 3)
-    11, 12
-    ''' 
-            
-    ''' 
-    Manhattan
-    Dev:
-    HK: 
-    Exposition:
-    ST-Dev:
-    Recap:
-    
-    
-    
-    HK1: Home key – non-development (frequent in stages 1 and 5, infrequent in 3)
-    2, 3, 5, 6, 8,
-    
-    HK2: Home key – non-ST (frequent in stages 4, 5; infrequent in 2)
-    1, 4, 7
-    
-    SK: Subordinate key areas (frequent in stage 2)
-    9, 13, 15, 17, 18
-    
-    Dev: Developmental (frequent in stage 3)
-    0, 10, 14, 16, 19
-    
-    XD: Expo-Dev. (frequent in stages 1, 2, 3)
-    11, 12
-    ''' 
-    
-    
-    
 
 #======================== stage by cluster prob analysis begins================================
     newDF=pd.DataFrame({'stage':range(1,6)})
-    newDF
+    
     for x in range(0,20):
         probList = []
         probList.append(st1[x])
@@ -1176,79 +1015,40 @@ def main():
         newDF = pd.concat([newDF, ddddd],1)
         newDF.set_index('stage')
         
-    #newDF = newDF.round(1)
-    newDF
+
     #HK1
-    
-    
     xx = np.arange(len(newDF))
-    yy= newDF['stage'].values.tolist()
-    width = 0.15
+    yy= newDF['stage'].tolist()
+    width = 0.2
     fig, ax = plt.subplots()
-    
-    temp = newDF[2].values.tolist()
-    r2 = ax.bar(xx - width*2, temp, width, label='c2')
+    temp = newDF[2].tolist()
+    r2 = ax.bar(xx - width, temp, width, label='c2')
     temp = newDF[3].tolist()
-    r3 = ax.bar(xx - width, temp, width, label='c3')
+    r3 = ax.bar(xx - width/2, temp, width, label='c3')
     temp = newDF[5].tolist()
     r5 = ax.bar(xx , temp, width, label='c5')
     temp = newDF[6].tolist()
-    r6 = ax.bar(xx + width, temp, width, label='c6')
+    r6 = ax.bar(xx + width/2, temp, width, label='c6')
     temp = newDF[8].tolist()
-    r8 = ax.bar(xx + width*2, temp, width, label='c8')
-    
+    r8 = ax.bar(xx + width, temp, width, label='c8')
     ax.set_ylabel('prob(%)')
     ax.set_title('stageByClusterProb')
     ax.set_xticks(xx)
     ax.set_xticklabels(yy)
     ax.legend()
-    
-    for rect in r2:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-    for rect in r3:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-    for rect in r5:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-    for rect in r6:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-    for rect in r8:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
+    autolabel(r2)
+    autolabel(r3)
+    autolabel(r5)
+    autolabel(r6)
+    autolabel(r8)
     fig.tight_layout()
-    
     #plt.show()
     plt.savefig(firDir+'HK1.png',dpi=500)
     
     #HK2
     xx = np.arange(len(newDF))
     yy= newDF['stage'].tolist()
-    width = 0.15
+    width = 0.2
     fig, ax = plt.subplots()
     temp = newDF[1].tolist()
     r1 = ax.bar(xx - width, temp, width, label='c1')
@@ -1261,31 +1061,9 @@ def main():
     ax.set_xticks(xx)
     ax.set_xticklabels(yy)
     ax.legend()
-    for rect in r1:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-    for rect in r4:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-    for rect in r7:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
+    autolabel(r1)
+    autolabel(r4)
+    autolabel(r7)
     fig.tight_layout()
     #plt.show()
     plt.savefig(firDir+'HK2.png',dpi=500)
@@ -1294,67 +1072,28 @@ def main():
     #9, 13, 15, 17, 18
     xx = np.arange(len(newDF))
     yy= newDF['stage'].tolist()
-    width = 0.15
+    width = 0.2
     fig, ax = plt.subplots()
     temp = newDF[9].tolist()
-    r9 = ax.bar(xx - width*2, temp, width, label='c9')
+    r9 = ax.bar(xx - width, temp, width, label='c9')
     temp = newDF[13].tolist()
-    r13 = ax.bar(xx - width, temp, width, label='c13')
+    r13 = ax.bar(xx - width/2, temp, width, label='c13')
     temp = newDF[15].tolist()
     r15 = ax.bar(xx , temp, width, label='c15')
     temp = newDF[17].tolist()
-    r17 = ax.bar(xx + width, temp, width, label='c17')
+    r17 = ax.bar(xx + width/2, temp, width, label='c17')
     temp = newDF[18].tolist()
-    r18 = ax.bar(xx + width*2, temp, width, label='c18')
+    r18 = ax.bar(xx + width, temp, width, label='c18')
     ax.set_ylabel('prob(%)')
     ax.set_title('stageByClusterProb')
     ax.set_xticks(xx)
     ax.set_xticklabels(yy)
     ax.legend()
-    
-    for rect in r9:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r13:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r15:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r17:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-    for rect in r18:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
+    autolabel(r9)
+    autolabel(r13)
+    autolabel(r15)
+    autolabel(r17)
+    autolabel(r18)
     fig.tight_layout()
     #plt.show()
     plt.savefig(firDir+'SK.png',dpi=500)
@@ -1366,69 +1105,28 @@ def main():
 
     xx = np.arange(len(newDF))
     yy= newDF['stage'].tolist()
-    width = 0.15
+    width = 0.2
     fig, ax = plt.subplots()
     temp = newDF[0].tolist()
-    r0 = ax.bar(xx - width*2, temp, width, label='c0')
+    r0 = ax.bar(xx - width, temp, width, label='c0')
     temp = newDF[10].tolist()
-    r10 = ax.bar(xx - width, temp, width, label='c10')
+    r10 = ax.bar(xx - width/2, temp, width, label='c10')
     temp = newDF[14].tolist()
     r14 = ax.bar(xx , temp, width, label='c14')
     temp = newDF[16].tolist()
-    r16 = ax.bar(xx + width, temp, width, label='c16')
+    r16 = ax.bar(xx + width/2, temp, width, label='c16')
     temp = newDF[19].tolist()
-    r19 = ax.bar(xx + width*2, temp, width, label='c19')
+    r19 = ax.bar(xx + width, temp, width, label='c19')
     ax.set_ylabel('prob(%)')
     ax.set_title('stageByClusterProb')
     ax.set_xticks(xx)
     ax.set_xticklabels(yy)
     ax.legend()
-    
-    for rect in r0:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r10:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r14:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r16:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-    for rect in r19:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
+    autolabel(r0)
+    autolabel(r10)
+    autolabel(r14)
+    autolabel(r16)
+    autolabel(r19)
     fig.tight_layout()
     #plt.show()
     plt.savefig(firDir+'DEV.png',dpi=500)
@@ -1438,11 +1136,11 @@ def main():
     #11, 12
     xx = np.arange(len(newDF))
     yy= newDF['stage'].tolist()
-    width = 0.15
+    width = 0.2
     fig, ax = plt.subplots()
-    temp = newDF[11].tolist()
+    temp = newDF[0].tolist()
     r11 = ax.bar(xx - width/2, temp, width, label='c11')
-    temp = newDF[12].tolist()
+    temp = newDF[10].tolist()
     r12 = ax.bar(xx + width/2, temp, width, label='c12')
 
     ax.set_ylabel('prob(%)')
@@ -1450,21 +1148,8 @@ def main():
     ax.set_xticks(xx)
     ax.set_xticklabels(yy)
     ax.legend()
-
-    for rect in r11:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-    for rect in r12:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
+    autolabel(r11)
+    autolabel(r12)
     fig.tight_layout()
     #plt.show()
     plt.savefig(firDir+'XD.png',dpi=500)
@@ -1472,332 +1157,23 @@ def main():
    
     
     
-    ''' 
-    HK1: Home key – non-development (frequent in stages 1 and 5, infrequent in 3)
-    2, 3, 5, 6, 8,
-    
-    HK2: Home key – non-ST (frequent in stages 4, 5; infrequent in 2)
-    1, 4, 7
-    
-    SK: Subordinate key areas (frequent in stage 2)
-    9, 13, 15, 17, 18
-    
-    Dev: Developmental (frequent in stage 3)
-    0, 10, 14, 16, 19
-    
-    XD: Expo-Dev. (frequent in stages 1, 2, 3)
-    11, 12
-    ''' 
-    
-    
-    
-    afaf = entireDF['newCentroidIndex'].tolist()
-    afaf
-    m1 = transition_matrix(afaf)
-    for row in m1: print(' '.join('{0:.3f}'.format(x) for x in row))
-    #Sum of each row is 1(marcov chain transition matrix)
-    
-    m2 = transition_prob(afaf)
-    for row in m2: print(' '.join('{0:.3f}'.format(x) for x in row))
-    #Sum of entire probs is 1
-    m2
-    
-    
-    matrix1 =  pd.DataFrame(m1)
-    ax = sns.heatmap(matrix1, annot=True, annot_kws={"size": 4.5}, fmt=".3f", cmap="YlGnBu")
-    ax.figure.savefig("matrix1.png", dpi=300)
-    ax.clear()
+''' 
+HK1: Home key – non-development (frequent in stages 1 and 5, infrequent in 3)
+2, 3, 5, 6, 8,
 
-    matrix2 =  pd.DataFrame(m2)
-    ax = sns.heatmap(matrix2, annot=True, annot_kws={"size": 4.5}, fmt=".3f", cmap="YlGnBu")
-    ax.figure.savefig("matrix2.png", dpi=300)
-    ax.clear()
+HK2: Home key – non-ST (frequent in stages 4, 5; infrequent in 2)
+1, 4, 7
+
+SK: Subordinate key areas (frequent in stage 2)
+9, 13, 15, 17, 18
+
+Dev: Developmental (frequent in stage 3)
+0, 10, 14, 16, 19
+
+XD: Expo-Dev. (frequent in stages 1, 2, 3)
+11, 12
+''' 
     
-    matrix2
-    
-    cwd = os.getcwd()
-    fn = 'matrix2.csv'
-    fn = os.path.join(cwd,fn)
-    matrix2.to_csv(fn, index=True,header=True)
-# ==================================test case===========================================
-    testchain =[1,1,1,1,2,3,4,5,6,7,8,1,1,1,1]
-    n = transition_matrix(testchain)
-    for row in n: print(' '.join('{0:.2f}'.format(x) for x in row))
-    
-    n = transition_prob(testchain)
-    for row in n: print(' '.join('{0:.2f}'.format(x) for x in row))
-    axt = sns.heatmap(n, annot=True, annot_kws={"size": 4.5}, fmt=".3f", cmap="YlGnBu")
-    axt.figure.savefig("axt.png", dpi=300)
-    
-#   Read row to col
-# =============================================================================
-      
-    from sklearn.decomposition import PCA
-
-
-    # Run The PCA
-    pca = PCA(n_components=12)
-    pca.fit(matrix2)
-    PCA(copy=True, iterated_power='auto', n_components=12, random_state=None,
-    svd_solver='auto', tol=0.0, whiten=False)
-
-    cwd = os.getcwd()
-
-    print('singular value :', pca.singular_values_)
-    pca_sigular_values = pd.DataFrame(pca.singular_values_)
-    fn = 'pca_sigular_values.csv'
-    fn = os.path.join(cwd,fn)
-    pca_sigular_values.to_csv(fn, index=True,header=True)
-    
-    print('singular vector :\n', pca.components_.T)
-    sigular_vector = pd.DataFrame(pca.components_.T)
-    fn = 'sigular_vector.csv'
-    fn = os.path.join(cwd,fn)
-    sigular_vector.to_csv(fn, index=True,header=True)
-    
-    
-    
-    print('eigen_value(variance) :', pca.explained_variance_)
-    eigen_values = pd.DataFrame(pca.explained_variance_)
-    print('explained variance ratio :', pca.explained_variance_ratio_)
-    explained_variance_ratio = pd.DataFrame(pca.explained_variance_ratio_)
-    fn = 'explained_variance_ratio.csv'
-    fn = os.path.join(cwd,fn)
-    explained_variance_ratio.to_csv(fn, index=True,header=True)
-   
-    cumsum = np.cumsum(pca.explained_variance_ratio_)
-    d = np.argmax(cumsum >= 0.95) + 1
-    print('The cumulative distribution ratio :', d)
-# The cumulative distribution ratio 12
-
-
-
-
-
-
-####==========================
-
-
-    with open('afaf.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % af for af in afaf)
-
-    from sklearn.linear_model import LinearRegression
-    import statsmodels.api as sm
-
-
-#    ====================================== Year analysis begins=======================
-    
-    yearCount = entireDF.groupby('year').count()[['index']]
-    yearCount.reset_index().set_index('year')
-    yearCount.rename(columns = {'index':'TotalCount'},inplace = True)
-    
-    yearCount.values[2][0]
-    p_values = pd.Series([])
-    lr_analysis = pd.Series([])
-    # x-axis: Year(in order), y-axis: norm dist, 20 charts
-    # normal distributed 20 charts vs year per Chart
-    # v = cluster index, smallDF = corresponding dataframe
-        
-    def autolabel(rects):
-        """Attach a text label above each bar in *rects*, displaying its height."""
-        for rect in rects:
-            height = rect.get_height()
-            ax.annotate('{}'.format(height),
-                        xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, 3),  # 3 points vertical offset
-                        textcoords="offset points",
-                        ha='center', va='bottom')
-        
-    
-    for v, smallDF in entireDF.groupby('newCentroidIndex'):
-        yearCount = yearCount.reset_index()
-        print(smallDF)
-        print(v)
-        
-        #print(smallDF['filename'].iloc[0])
-        #print(v)
-#        print(smallDF)
-        cwd = os.getcwd()
-#        filename = 'custerIndex_'+ str(v)+'.csv'
-        new_path = os.path.join(cwd,"smallDF")
-        if not os.path.exists(new_path):
-            os.mkdir(new_path)
-            print("=======================================")
-            print("directory \"{}\" has been created".format(new_path))
-            print("=======================================")
-#        final_dir= os.path.join(new_path,filename)
-         ####!!!!Save smallDF as needeed!
-#        Do not save this dataframe. only for plot
-#        smallDF.to_csv(final_dir, index = None)
-#        print("filename: \"{}\" has been successfully created :^D".format(filename))
-        
-    
-    
-    
-        cwd = os.getcwd()
-        fn2 = 'entireDF_m_ps.csv'
-        fn2 = os.path.join(cwd,fn2)
-        original_df = pd.read_csv(fn2,index_col=0)
-        original_df
-        figDir = os.path.join(cwd,"smallDF")
-        
-        firDir = os.path.join(figDir,'ClusterIndex_')
-        smallDF = original_df
-        
-        yearCountCluster = smallDF.groupby(['year', 'filename']).count()[['index']]
-        pleaceCount = entireDF.groupby([ 'filename']).count()[['index']]
-        yearCountCluster.rename(columns = {'index':'countInCluster'}, inplace = True)
-        yearCountCluster = yearCountCluster.reset_index()
-
-        #yearCountCluster = yearCountCluster.drop(columns = ['filename'])
-        yearCountCluster = yearCountCluster.sort_values(by = ['filename'])
-        pleaceCount = pleaceCount.sort_values(by=['filename'])
-        pleaceCount = pleaceCount.reset_index()
-    
-        yearCount = yearCount.set_index('year')
-        yearCountCluster = yearCountCluster.set_index('filename')
-        pleaceCount = pleaceCount.set_index('filename')
-        
-        
-        dfdf = pd.concat([pleaceCount, yearCountCluster], axis=1, join='inner')
-        #group by the cluster, counted number of cluster then normalized.
-        #got p value for each of 'year' and cluster''
-        
-        dfdf['prob(%)'] = dfdf['countInCluster']/dfdf['index'] * 100
-        dfdf = dfdf.reset_index()
-        
-        X_g = dfdf.iloc[:,2].values.reshape(-1,1)
-        Y_g = dfdf.iloc[:,4].values.reshape(-1,1)
-        X_l = dfdf.iloc[:,2].values
-        X_l = X_l-1774
-        Y_l = dfdf.iloc[:,4].values
-        
-        lr = LinearRegression()
-        lr.fit(X_g,Y_g)
-        Y_pred = lr.predict(X_g)
-        
-        
-        slope, intercept, r_value, p_value, std_err = stats.linregress(X_l,Y_l)
-        p_value = pd.Series(p_value)
-        lr_analysis = pd.concat([p_value, lr_analysis], ignore_index=True)
-        #marginal significance
-        
- 
-            
-        #vis
-        # plot the results
-        plt.figure(figsize=(8, 8))
-        ax = plt.axes()
-        plt.scatter(X_g, Y_g)
-        plt.plot(X_g, Y_pred, color= 'red')
-
-        ax.set_xlabel('year')
-        ax.set_ylabel('prob')
-        ax.axis('tight')
-        
-        
-        plt.savefig(firDir+str(v)+'_norm_by_year_linear_reg.png',dpi=500)
-        
-   
-        '''
-        # predict y from the data
-        x_new = np.linspace(1774, 1790, 100)
-        y_new = model.predict(x_new[:, np.newaxis])
-        
-        # plot the results
-        plt.figure(figsize=(8, 8))
-        ax = plt.axes()
-        ax.scatter(yynp, pnp)
-        ax.plot(x_new, y_new)
-        
-        ax.set_xlabel('year')
-        ax.set_ylabel('prob')
-        
-        ax.axis('tight')
-        
-        
-        plt.savefig(firDir+str(v)+'_norm_by_year_linear_reg.png',dpi=500)
-
-        mod = sm.OLS(yynp, pnp)
-        fii = mod.fit()
-        p_value = fii.summary2().tables[1]['P>|t|']
-        p_values = pd.concat([p_value, p_values], ignore_index=True)
-        
-        
-        
-        #xx = np.arange(len(dfdf))
-        #yy= dfdf['year'].tolist()
-        #width = 0.35
-        #tc = dfdf['TotalCount'].tolist()
-        #cic = dfdf['countInCluster'].tolist()
-        #p = dfdf['prob(%)'].tolist()
-        #p = list(np.around(np.array(p),1))
-        #fig, ax = plt.subplots()
-        #rects1 = ax.bar(xx, p, width,label = 'countInCluster/TotalCount(%)')
-        
- 
-        
-        
-        #ax.set_ylabel('Probabilities%')
-        #ax.set_title('Percentage of data points in the given cluster over all pieces')
-        #ax.set_xticks(xx)
-        #ax.set_xticklabels(yy)
-        #ax.legend()
-        #autolabel(rects1)
-        
-        #fig.tight_layout()
-        #plt.show()
-        
-        #plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
-        #print("Current working cluster index is: "+str(v))
-
-        #cwd = os.getcwd()
-        #fn = 'Index_'+str(v) + '_Cluster by year.csv'
-        #fn = os.path.join(cwd,fn)
-        #dfdf.to_csv(fn)
-    
-        #yy and p
-        # create a linear regression model
-        model = LinearRegression()
-        yynp = np.reshape(yy, (6,-1))
-        pnp = np.reshape(p, (6,-1))
-        model.fit(yynp, pnp)
-        # predict y from the data
-        x_new = np.linspace(1774, 1790, 100)
-        y_new = model.predict(x_new[:, np.newaxis])
-        
-        # plot the results
-        plt.figure(figsize=(8, 8))
-        ax = plt.axes()
-        ax.scatter(yynp, pnp)
-        ax.plot(x_new, y_new)
-        
-        ax.set_xlabel('year')
-        ax.set_ylabel('prob')
-        
-        ax.axis('tight')
-        
-        
-        plt.savefig(firDir+str(v)+'_norm_by_year_linear_reg.png',dpi=500)
-
-        mod = sm.OLS(yynp, pnp)
-        fii = mod.fit()
-        p_value = fii.summary2().tables[1]['P>|t|']
-        p_values = pd.concat([p_value, p_values], ignore_index=True)
-        '''
-        
-    cwd = os.getcwd()
-    fn = 'significance'+ '_clusters_by_year.csv'
-    fn = os.path.join(cwd,fn)
-    lr_analysis.to_csv(fn)
-
-        
-        #=======Year analysis ends =======================
-        
-        
-        
-    
-
     tc = dfdf['TotalCount'].tolist()
     cic = dfdf['countInCluster'].tolist()
     p = dfdf['prob(%)'].tolist()
@@ -1813,8 +1189,7 @@ def main():
     autolabel(rects1)
     
     fig.tight_layout()
-    plt.show()
-    
+    #plt.show()
     
     plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
     print("Current working cluster index is: "+str(v))
@@ -1823,18 +1198,6 @@ def main():
     fn = 'Index_'+str(v) + '_Cluster by year.csv'
     fn = os.path.join(cwd,fn)
     dfdf.to_csv(fn)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     for x in range(0,20):
         probList = []
@@ -1848,7 +1211,7 @@ def main():
         ddddd=pd.DataFrame({ x: probList })
         
         newDF = pd.concat([newDF, ddddd],1)
-        #newDF.set_index('stage')
+        newDF.set_index('x')
         
         plt.cla()
         plt.plot( 'x', 'y', data=ddddd, linestyle='-', marker='o', color = color[x], label=str(x))
@@ -2054,7 +1417,93 @@ def main():
         
     dfOut=os.path.join(cwd,"entireDF.csv")
     entireDF.to_csv(dfOut,index=None)
-  
+    
+#    ====================================== Year analysis begins=======================
+    
+    yearCount = entireDF.groupby('year').count()[['index']]
+    yearCount.reset_index().set_index('year')
+    yearCount.rename(columns = {'index':'TotalCount'},inplace = True)
+    
+    yearCount.values[2][0]
+
+    # x-axis: Year(in order), y-axis: norm dist, 20 charts
+    # normal distributed 20 charts vs year per Chart
+    # v = cluster index, smallDF = corresponding dataframe
+        
+    def autolabel(rects):
+        """Attach a text label above each bar in *rects*, displaying its height."""
+        for rect in rects:
+            height = rect.get_height()
+            ax.annotate('{}'.format(height),
+                        xy=(rect.get_x() + rect.get_width() / 2, height),
+                        xytext=(0, 3),  # 3 points vertical offset
+                        textcoords="offset points",
+                        ha='center', va='bottom')
+        
+    for v, smallDF in entireDF.groupby('newCentroidIndex'):
+        print(smallDF)
+        print(v)
+        
+        #print(smallDF['filename'].iloc[0])
+        #print(v)
+#        print(smallDF)
+        cwd = os.getcwd()
+#        filename = 'custerIndex_'+ str(v)+'.csv'
+        new_path = os.path.join(cwd,"smallDF")
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+            print("=======================================")
+            print("directory \"{}\" has been created".format(new_path))
+            print("=======================================")
+#        final_dir= os.path.join(new_path,filename)
+        ####!!!!Save smallDF as needeed!
+#        Do not save this dataframe. only for plot
+#        smallDF.to_csv(final_dir, index = None)
+#        print("filename: \"{}\" has been successfully created :^D".format(filename))
+        
+    
+        figDir = os.path.join(cwd,"smallDF")
+        firDir = os.path.join(figDir,'ClusterIndex_')
+        yearCountCluster = smallDF.groupby('year').count()[['index']]
+        yearCountCluster.rename(columns = {'index':'countInCluster'}, inplace = True)
+        dfdf = pd.concat([yearCount, yearCountCluster],1)
+        dfdf['prob(%)'] = dfdf['countInCluster']/dfdf['TotalCount'] * 100
+        dfdf = dfdf.reset_index()
+        xx = np.arange(len(dfdf))
+        yy= dfdf['year'].tolist()
+        width = 0.35
+        tc = dfdf['TotalCount'].tolist()
+        cic = dfdf['countInCluster'].tolist()
+        p = dfdf['prob(%)'].tolist()
+        p = list(np.around(np.array(p),3))
+        fig, ax = plt.subplots()
+        rects1 = ax.bar(xx, p, width,label = 'countInCluster/TotalCount(%)')
+        
+        ax.set_ylabel('Probabilities%')
+        ax.set_title('Percentage of data points in the given cluster over all pieces')
+        ax.set_xticks(xx)
+        ax.set_xticklabels(yy)
+        ax.legend()
+        autolabel(rects1)
+        
+        fig.tight_layout()
+        #plt.show()
+        
+        plt.savefig(firDir+str(v)+'_norm_by_year.png',dpi=500)     
+        print("Current working cluster index is: "+str(v))
+
+        cwd = os.getcwd()
+        fn = 'Index_'+str(v) + '_Cluster by year.csv'
+        fn = os.path.join(cwd,fn)
+        dfdf.to_csv(fn)
+    
+        
+        
+        
+        #=======Year analysis ends =======================
+        
+        
+        
         
         
         

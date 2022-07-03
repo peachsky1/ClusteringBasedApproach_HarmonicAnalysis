@@ -387,6 +387,41 @@ def histogram(df):
     plt.ylabel('Normalized traid frequency')
     plt.title('Side-by-Side Histogram with Triads')
 
+
+def distortionFinder(X):
+    # X = X[:,[0,1]]
+    distortions = []
+    for i in range(1,40):
+        km = KMeans(n_clusters=i, random_state=1).fit(X)
+        distortions.append(km.inertia_)
+    plt.plot(range(1, 40), distortions, marker='o')
+    plt.xlabel('Number of clusters')
+    plt.ylabel('Distortion')
+    plt.tight_layout()
+    # plt.savefig('./figures/elbow.png', dpi=300)
+    plt.show()
+
+def inertiaFinder(X):
+    # X = X[:,[0,1]]
+    km = KMeans(n_clusters=20, random_state=1)
+    distances= km.fit_transform(X)
+    print(distances)
+    variance = 0
+    i=0
+    retVal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    retCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    # i = total counts of vector points
+    # label = centroid index
+    
+    for label in km.labels_:
+        print(label)
+  
+        variance = variance + distances[i][label]*distances[i][label]
+        retVal[label] += distances[i][label]*distances[i][label] 
+        retCount[label] += 1
+        i = i + 1
+    return distances, i, variance , retVal , retCount
+    
 # input df
 def centroids_finder(arr, K):
     # print(arr)
@@ -423,44 +458,7 @@ def strToArr(df):
         arr.append(row['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]'])
         # print(type(row['[C,C#,D,E-,E,F,F#,G,G#,A,B-,B]']))
     return arr
-def distortionFinder(X):
-    # X = X[:,[0,1]]
-    distortions = []
-    for i in range(1,40):
-        km = KMeans(n_clusters=i, random_state=1).fit(X)
-        distortions.append(km.inertia_)
-    plt.plot(range(1, 40), distortions, marker='o')
-    plt.xlabel('Number of clusters')
-    plt.ylabel('Distortion')
-    plt.tight_layout()
-    # plt.savefig('./figures/elbow.png', dpi=300)
-    plt.show()
 
-def inertiaFinder(X):
-    # X = X[:,[0,1]]
-    km = KMeans(n_clusters=20, random_state=1)
-    distances= km.fit_transform(X)
-    print(distances)
-    variance = 0
-    i=0
-    retVal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    retCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    
-    
-    
-    
-    # i = total counts of vector points
-    # label = centroid index
-    
-    for label in km.labels_:
-        print(label)
-  
-        variance = variance + distances[i][label]*distances[i][label]
-        retVal[label] += distances[i][label]*distances[i][label] 
-        retCount[label] += 1
-        i = i + 1
-    return distances, i, variance , retVal , retCount
-    
     
 
 
@@ -1050,8 +1048,11 @@ def main():
     #original_df
     #entireDF = original_df
     
-    makeCSV(entireDF, "entireDF_m_ps")
+    #makeCSV(entireDF, "entireDF_m_ps")
+    
+    
     entireDF = pd.read_csv("entireDF_m_ps.csv",index_col=0)
+    entireDF
     entireDF.head()
     anovaDF = entireDF[['newCentroidIndex','PS','filename']].copy()
     anovaDF.head()
@@ -1630,6 +1631,85 @@ def main():
 #        Do not save this dataframe. only for plot
 #        smallDF.to_csv(final_dir, index = None)
 #        print("filename: \"{}\" has been successfully created :^D".format(filename))
+        
+    
+        
+        import scipy.stats as stats
+        import pandas as pd
+        import urllib
+        from statsmodels.formula.api import ols
+        from statsmodels.stats.anova import anova_lm
+        import matplotlib.pyplot as plt
+        import numpy as np
+            
+        entireDF
+        
+        
+        group0 = entireDF[entireDF['newCentroidIndex']== 0][["year"]]
+        group1 = entireDF[entireDF['newCentroidIndex']== 1][["year"]]
+        group2 = entireDF[entireDF['newCentroidIndex']== 2][["year"]]
+        group3 = entireDF[entireDF['newCentroidIndex']== 3][["year"]]
+        group4 = entireDF[entireDF['newCentroidIndex']== 4][["year"]]
+        group5 = entireDF[entireDF['newCentroidIndex']== 5][["year"]]
+        group6 = entireDF[entireDF['newCentroidIndex']== 6][["year"]]
+        group7 = entireDF[entireDF['newCentroidIndex']== 7][["year"]]
+        group8 = entireDF[entireDF['newCentroidIndex']== 8][["year"]]
+        group9 = entireDF[entireDF['newCentroidIndex']== 9][["year"]]
+        group10 = entireDF[entireDF['newCentroidIndex']== 10][["year"]]
+        group11 = entireDF[entireDF['newCentroidIndex']== 11][["year"]]
+        group12 = entireDF[entireDF['newCentroidIndex']== 12][["year"]]
+        group13 = entireDF[entireDF['newCentroidIndex']== 13][["year"]]
+        group14 = entireDF[entireDF['newCentroidIndex']== 14][["year"]]
+        group15 = entireDF[entireDF['newCentroidIndex']== 15][["year"]]
+        group16 = entireDF[entireDF['newCentroidIndex']== 16][["year"]]
+        group17 = entireDF[entireDF['newCentroidIndex']== 17][["year"]]
+        group18 = entireDF[entireDF['newCentroidIndex']== 18][["year"]]
+        group19 = entireDF[entireDF['newCentroidIndex']== 19][["year"]]
+        
+
+        # matplotlib plotting
+        plot_data = [group0, group1, group2, group3, group4, group5, group6, group7, group8, group9, group10, group11, group12, group13, group14, group15, group16, group17, group18, group19]
+        ax = plt.boxplot(plot_data)
+        plt.show()
+
+        F_statistic, pVal = stats.f_oneway(group0, group1, group2, group3, group4, group5, group6, group7, group8, group9, group10, group11, group12, group13, group14, group15, group16, group17, group18, group19)
+        F_statistic
+        pVal
+            
+        year = entireDF["year"].to_numpy()
+        cent = entireDF["newCentroidIndex"].to_numpy()
+        
+        one_sample = [177.3, 182.7, 169.6, 176.3, 180.3, 179.4, 178.5, 177.2, 181.8, 176.5]
+        print(mean(one_sample)   # 177.96
+        result1 = stats.ttest_1samp(one_sample, 175.6)   # 비교집단, 관측치
+        
+        print('t검정 통계량 = %.3f, pvalue = %.3f'%(one_sample_result))  
+
+
+
+        
+
+        import warnings
+        warnings.filterwarnings('ignore')
+        
+        df = pd.DataFrame(entireDF, columns=['newCentroidIndex', 'year'])    
+        
+        # the "C" indicates categorical data
+        model = ols('newCentroidIndex ~ C(year)', df).fit()
+        
+        print(anova_lm(model))
+
+
+        
+
+
+
+
+
+        from scipy.stats import f_oneway
+        fstat, pval = f_oneway(year, cent)
+        fstat
+        
         
     
     
